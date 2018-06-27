@@ -40,3 +40,42 @@ mount -o vers=3,udp,uid=0,gid=0 172.28.128.1:/home/trapapa/.vagrant.d/cache/apt/
 ```txt
 mount.nfs: an incorrect mount option was specified
 ```
+
+##netx
+
+```txt
+Shared folders that have NFS enabled do not support owner/group
+```
+
+## install dig
+
+```bash
+sudo apt-get install dnsutils
+```
+
+## show VirtualBox shared folder
+
+```bash
+# get name or id from running vm
+> VBoxManage list runningvms
+# show all information
+# VBoxManage showvminfo <name|id>
+> VBoxManage showvminfo vagrant-stretch64-docker-jenkins
+# used the --machinereadable format and grep for SharedFolder
+> VBoxManage showvminfo vagrant-stretch64-docker-jenkins --machinereadable |grep SharedFolder
+
+# help
+> VBoxManage showvminfo --help
+```
+
+vagrant on /vagrant type vboxsf (rw,nodev,relatime)
+var*cache_apt_archives* on var*cache_apt_archives* type vboxsf (rw,nodev,relatime)
+
+## works mount
+
+```bash
+# bad because is with backtick
+sudo mount -t vboxsf -o uid=`id -u vagrant`,gid=`id -g vagrant` var_cache_apt_archives_ /var/cache/apt/archives
+# better with inline
+sudo mount -t vboxsf -o uid=$(id -u vagrant),gid=$(id -g vagrant) var_cache_apt_archives_ /var/cache/apt/archives
+```

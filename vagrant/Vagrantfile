@@ -225,8 +225,20 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     # config.vm.provision "shell", inline: $script
 
+    # mount share folders before provision
+    # from here
+    # https://github.com/hashicorp/vagrant/issues/936
+    config.vm.provision :shell do |shell|
+      shell.inline = "sudo mount -t vboxsf -o uid=$(id -u vagrant),gid=$(id -g vagrant) var_cache_apt_archives_ /var/cache/apt/archives"
+    end
+
+
     # install ansible from source
-    config.vm.provision "shell", inline: $script_ansible
+    # config.vm.provision "shell", inline: $script_ansible
+
+    # use external script
+    config.vm.provision "shell", path: "ansible_install_from_source.sh"
+
 
     # TODO sepaerate in scripts
     # config.vm.provision "one", type: "shell", path: "vagrant/1.bat"
