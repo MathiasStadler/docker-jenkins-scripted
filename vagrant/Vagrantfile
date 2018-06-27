@@ -173,7 +173,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       config.vm.synced_folder cache_dir, "/var/cache/apt/archives/", nfs: true, :bsd__nfs_options => ["-maproot=0:0"]
     else
       #config.vm.synced_folder cache_dir, "/var/cache/apt/archives/", nfs: true, :linux__nfs_options => ["no_root_squash"]
-      config.vm.synced_folder cache_dir, "/var/cache/apt/archives/", nfs: true, :bsd__nfs_options => ["-maproot=0:0"]
+      #org config.vm.synced_folder cache_dir, "/var/cache/apt/archives/", nfs: true, :bsd__nfs_options => ["-maproot=0:0"]
+      # from here
+      # https://www.vagrantup.com/docs/synced-folders/basic_usage.html
+      config.vm.synced_folder cache_dir, "/var/cache/apt/archives/", owner: "root", group: "root", mount_options: ["uid=0", "gid=0"], nfs: true, :bsd__nfs_options => ["-maproot=0:0"]
 
     end
 
