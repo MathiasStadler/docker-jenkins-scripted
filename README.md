@@ -12,7 +12,7 @@ vagrant up
 ```
 
 - deploy ansible jenkins role
-  -- all roles in the repo
+  -- all roles in the repository
 
 ```bash
 
