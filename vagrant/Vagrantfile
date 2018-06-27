@@ -232,7 +232,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     #  shell.inline = "sudo mount -t vboxsf -o uid=$(id -u vagrant),gid=$(id -g vagrant) var_cache_apt_archives_ /var/cache/apt/archives"
     #  end
 
-    config.vm.provision "shell", inline = "sudo mount -t vboxsf -o uid=$(id -u vagrant),gid=$(id -g vagrant) var_cache_apt_archives_ /var/cache/apt/archives"
+    config.vm.provision "shell", inline: "sudo mount -t vboxsf -o uid=$(id -u vagrant),gid=$(id -g vagrant) var_cache_apt_archives_ /var/cache/apt/archives"
 
 
     # install ansible from source
