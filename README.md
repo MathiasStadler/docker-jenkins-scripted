@@ -32,3 +32,11 @@ vagrant up
 34 ansible-galaxy install -r requirements.yml
 
 ip route get $(dig +short google.com | tail -1) | grep $(dig +short google.com | tail -1)| awk '{print $5}').chomp
+
+mount -o vers=3,udp,uid=0,gid=0 172.28.128.1:/home/trapapa/.vagrant.d/cache/apt/debian/contrib-stretch64 /var/cache/apt/archives
+
+## trouble shooting
+
+```txt
+mount.nfs: an incorrect mount option was specified
+```
