@@ -165,7 +165,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.box = VAGRANT_BOX_NAME
     cache_dir = local_cache(config.vm.box)
     #config.vm.share_folder "v-cache","/var/cache/apt/archives/",cache_dir
-    config.vm.network "private_network", type: "dhcp"
+    # double ntwork
+    # config.vm.network "private_network", type: "dhcp"
+
+    # disable vgguest plugin to start before cache dir is mounted
+    config.vbguest.auto_update = false
 
     # from here
     # https://serverfault.com/questions/487862/vagrant-os-x-host-nfs-share-permissions-error-failed-to-set-owner-to-1000
@@ -234,6 +238,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     config.vm.provision "shell", inline: "sudo mount -t vboxsf -o uid=$(id -u vagrant),gid=$(id -g vagrant) var_cache_apt_archives_ /var/cache/apt/archives"
 
+
+    # vbguest github
+    # https://github.com/dotless-de/vagrant-vbguest
+
+    if Vagrant.has_plugin?("vagrant-vbguest")
+      system "vagrant vbguest --auto-reboot --no-provision" if ARGV[0] == 'up'
+    end
 
     # install ansible from source
     config.vm.provision "shell", inline: $script_ansible
