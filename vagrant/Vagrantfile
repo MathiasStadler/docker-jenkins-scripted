@@ -1,8 +1,21 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+
+
+VM_NAME = "vagrant-stretch64-docker-jenkins"
+VAGRANT_BOX_NAME = "debian/contrib-stretch64"
+VAGRANT_HOME_PATH = ENV["VAGRANT_HOME"] ||= "~/.vagrant.d"
+VIRTUALBOX_MEMORY = "4096"
+VIRTUALBOX_CPU = "4"
+VIRTUALBOX_DISKSIZE = '20GB'
+VAGRANT_VERSION = "2.0.1"
+VAGRANTFILE_API_VERSION = "2"
+
+ENV["LC_ALL"] = "en_US.UTF-8"
+
 # from here https://github.com/popstas/ansible-server/blob/master/Vagrantfile
-$VM_NAME = ENV.has_key?('VM_NAME') ? ENV['VM_NAME'] : "vagrant-stretch64-docker-jenkins"
+$VM_NAME = ENV.has_key?('VM_NAME') ? ENV['VM_NAME'] : VM_NAME
 
 
 # from here https://github.com/fdemmer/vagrant-stretch64-docker/blob/master/Vagrantfile
@@ -141,13 +154,15 @@ SCRIPT1
 require "open3"
 #set internet device name to the world
 worldwideinterfaces=%x(ip route get  $(dig +short google.com | tail -1) | grep $(dig +short google.com | tail -1)| awk '{print $5}').chomp
-ENV["LC_ALL"] = "en_US.UTF-8"
+
+
+# ensure vagrant vdersion
 Vagrant.require_version ">= 1.8"
-VAGRANTFILE_API_VERSION = "2"
+
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 # network
     # What box should we base this build on?
-    config.vm.box = "debian/contrib-stretch64"
+    config.vm.box = VAGRANT_BOX_NAME
     cache_dir = local_cache(config.vm.box)
     #config.vm.share_folder "v-cache","/var/cache/apt/archives/",cache_dir
     config.vm.network "private_network", type: "dhcp"
@@ -157,18 +172,25 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     if (/darwin/ =~ RUBY_PLATFORM) != nil
       config.vm.synced_folder cache_dir, "/var/cache/apt/archives/", nfs: true, :bsd__nfs_options => ["-maproot=0:0"]
     else
-      config.vm.synced_folder cache_dir, "/var/cache/apt/archives/", nfs: true, :linux__nfs_options => ["no_root_squash"]
+      #config.vm.synced_folder cache_dir, "/var/cache/apt/archives/", nfs: true, :linux__nfs_options => ["no_root_squash"]
+      config.vm.synced_folder cache_dir, "/var/cache/apt/archives/", nfs: true, :bsd__nfs_options => ["-maproot=0:0"]
+
     end
 
 
    # TODO old config.vm.synced_folder cache_dir, '/var/cache/apt/archives/', type: 'nfs'
 
+# set disksize to 20GB
+    config.disksize.size = VIRTUALBOX_DISKSIZE
 
-    config.disksize.size = '20GB'
+     # Add 2nd network adapter
+    if (/darwin/ =~ RUBY_PLATFORM) != nil
     # Add 2nd network adapter
-    # config.vm.network "public_network", :type =>"dhcp" ,:bridge => "#{worldwideinterfaces}"
-    config.vm.network "public_network", :type =>"dhcp" ,:bridge => 'en0: Wi-Fi (AirPort)'
+      config.vm.network "public_network", :type =>"dhcp" ,:bridge => 'en0: Wi-Fi (AirPort)'
     #:bridge => 'en1: Wi-Fi (AirPort)'
+    else
+      config.vm.network "public_network", :type =>"dhcp" ,:bridge => "#{worldwideinterfaces}"
+    end
 
     config.ssh.insert_key = false
     #######################################################################
@@ -190,8 +212,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         # uncomment this to enable the VirtualBox GUI
         #vb.gui = true
         # Tweak these to fit your needs.
-        vb.memory = "8192"
-        vb.cpus = "4"
+        vb.memory = VIRTUALBOX_MEMORY
+        vb.cpus = VIRTUALBOX_CPU
      end
 
 
