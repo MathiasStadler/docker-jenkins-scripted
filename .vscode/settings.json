@@ -1,8 +1,19 @@
 {
     "cSpell.words": [
         "ansible",
+        "dnsutils",
         "libffi",
         "libssl",
-        "setuptools"
+        "machinereadable",
+        "mkdir",
+        "netx",
+        "nodev",
+        "noninteractive",
+        "relatime",
+        "runningvms",
+        "setuptools",
+        "showvminfo",
+        "trapapa",
+        "vboxsf"
     ]
 }

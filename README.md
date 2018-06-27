@@ -41,7 +41,7 @@ mount -o vers=3,udp,uid=0,gid=0 172.28.128.1:/home/trapapa/.vagrant.d/cache/apt/
 mount.nfs: an incorrect mount option was specified
 ```
 
-##netx
+## netx
 
 ```txt
 Shared folders that have NFS enabled do not support owner/group
