@@ -36,9 +36,13 @@ sudo mount -o loop,ro "$CACHE_DIRECTORY/VBoxGuestAdditions_$VERSION.iso" $LOOP_M
 # https://github.com/dotless-de/vagrant-vbguest/issues/252
 # disable exit on error for this error
 # Could not find the X.Org or XFree86 Window System, skipping
-set +x
-sudo sh /media/VBoxGuestAdditions/VBoxLinuxAdditions.run --nox11 -- --force
-set -x
+# subshell
+(set +x sudo sh $LOOP_MOUNT_POINT/VBoxLinuxAdditions.run --nox11 -- --force)
+
 sudo umount $LOOP_MOUNT_POINT
 # we used cache directory not delete for the next vm sudo rm -rf "VBoxGuestAdditions_$VERSION.iso"
 sudo rmdir $LOOP_MOUNT_POINT
+
+echo "VBox Linux Addition info"
+/sbin/modinfo vboxsf
+/sbin/modinfo vboxvideo
