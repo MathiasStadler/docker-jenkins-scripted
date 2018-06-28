@@ -9,7 +9,7 @@ VAGRANT_HOME_PATH = ENV["VAGRANT_HOME"] ||= "~/.vagrant.d"
 VIRTUALBOX_MEMORY = "4096"
 VIRTUALBOX_CPU = "4"
 VIRTUALBOX_DISKSIZE = '20GB'
-VAGRANT_VERSION = "2.0.1"
+VAGRANT_VERSION = "2.1"
 VAGRANTFILE_API_VERSION = "2"
 
 ENV["LC_ALL"] = "en_US.UTF-8"
@@ -164,8 +164,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # What box should we base this build on?
     config.vm.box = VAGRANT_BOX_NAME
     cache_dir = local_cache(config.vm.box)
-    #config.vm.share_folder "v-cache","/var/cache/apt/archives/",cache_dir
-    config.vm.network "private_network", type: "dhcp"
+
+    # old config.vm.share_folder "v-cache","/var/cache/apt/archives/",cache_dir
+
+    # old doppelt config.vm.network "private_network", type: "dhcp"
 
     # from here
     # https://serverfault.com/questions/487862/vagrant-os-x-host-nfs-share-permissions-error-failed-to-set-owner-to-1000
@@ -177,7 +179,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       # from here
       # https://www.vagrantup.com/docs/synced-folders/basic_usage.html
       # with vagrant user in the /etc/export
+      # with nfs flag
       # config.vm.synced_folder cache_dir, "/var/cache/apt/archives/",  mount_options: ["uid=0", "gid=0"], nfs: true, :bsd__nfs_options => ["-maproot=0:0"]
+      # without nfs flag
       config.vm.synced_folder cache_dir, "/var/cache/apt/archives/", owner: "_apt",
       group: "nogroup", :bsd__nfs_options => ["-maproot=0:0"]
 
