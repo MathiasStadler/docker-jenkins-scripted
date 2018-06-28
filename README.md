@@ -79,3 +79,7 @@ sudo mount -t vboxsf -o uid=`id -u vagrant`,gid=`id -g vagrant` var_cache_apt_ar
 # better with inline
 sudo mount -t vboxsf -o uid=$(id -u vagrant),gid=$(id -g vagrant) var_cache_apt_archives_ /var/cache/apt/archives
 ```
+
+```txt
+VM must be created before running this command. Run `vagrant up` first.
+```

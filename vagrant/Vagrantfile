@@ -9,8 +9,8 @@ VAGRANT_HOME_PATH = ENV["VAGRANT_HOME"] ||= "~/.vagrant.d"
 VIRTUALBOX_MEMORY = "4096"
 VIRTUALBOX_CPU = "4"
 VIRTUALBOX_DISKSIZE = '20GB'
-VAGRANT_VERSION = "2.0.1"
-VAGRANTFILE_API_VERSION = "2"
+VAGRANT_VERSION = "2.1"
+VAGRANTFILE_API_VERSION = "1.8"
 
 ENV["LC_ALL"] = "en_US.UTF-8"
 
@@ -216,15 +216,26 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     #  shell.inline = "sudo mount -t vboxsf -o uid=$(id -u vagrant),gid=$(id -g vagrant) var_cache_apt_archives_ /var/cache/apt/archives"
     #  end
 
-    config.vm.provision "shell", inline: "sudo mount -t vboxsf -o uid=$(id -u vagrant),gid=$(id -g vagrant) var_cache_apt_archives_ /var/cache/apt/archives"
+    # ERROR craete double mount entry
+    # config.vm.provision "shell", inline: "sudo mount -t vboxsf -o uid=$(id -u vagrant),gid=$(id -g vagrant) var_cache_apt_archives_ /var/cache/apt/archives"
 
 
     # vbguest github
     # https://github.com/dotless-de/vagrant-vbguest
 
-    if Vagrant.has_plugin?("vagrant-vbguest")
-      system "vagrant vbguest --auto-reboot --no-provision" if ARGV[0] == 'up'
-    end
+    # disable
+    #if Vagrant.has_plugin?("vagrant-vbguest")
+    #  system "vagrant vbguest --auto-reboot --no-provision" if ARGV[0] == 'up'
+    # end
+
+    #config.trigger.after :provision do |trigger|
+    #  trigger.name = "After provision"
+    #  trigger.info = "Install vbguest"
+    # system "vagrant vbguest --auto-reboot --no-provision"
+    #end
+
+    # check with
+    # vagrant vbguest --status
 
     # use external script
     config.vm.provision "shell", path: "ansible_install_from_source.sh"
