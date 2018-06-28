@@ -13,10 +13,8 @@ apt update && apt install -y make \
 	python-dev \
 	libffi-dev \
 	libssl-dev \
-	python-packaging
-
-exit 0
-git clone git://github.com/ansible/ansible.git &&
+	python-packaging &&
+	git clone git://github.com/ansible/ansible.git &&
 	cd ansible &&
 	git checkout "$(git branch -a | grep stable | tail -1 | cut -d "/" -f 3)" &&
 	make &&
