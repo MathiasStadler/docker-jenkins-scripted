@@ -9,7 +9,7 @@ VAGRANT_HOME_PATH = ENV["VAGRANT_HOME"] ||= "~/.vagrant.d"
 VIRTUALBOX_MEMORY = "4096"
 VIRTUALBOX_CPU = "4"
 VIRTUALBOX_DISKSIZE = '20GB'
-VAGRANT_VERSION = "2.1"
+VAGRANT_VERSION = "2"
 VAGRANTFILE_API_VERSION = "1.8"
 
 ENV["LC_ALL"] = "en_US.UTF-8"
@@ -223,10 +223,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # vbguest github
     # https://github.com/dotless-de/vagrant-vbguest
 
-    # disable
-    #if Vagrant.has_plugin?("vagrant-vbguest")
-    #  system "vagrant vbguest --auto-reboot --no-provision" if ARGV[0] == 'up'
-    # end
+
+    if Vagrant.has_plugin?("vagrant-vbguest")
+      system "vagrant vbguest --auto-reboot --no-provision" if ARGV[0] == 'up'
+    end
 
     #config.trigger.after :provision do |trigger|
     #  trigger.name = "After provision"
