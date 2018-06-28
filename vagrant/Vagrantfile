@@ -244,6 +244,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         # Tweak these to fit your needs.
         vb.memory = VIRTUALBOX_MEMORY
         vb.cpus = VIRTUALBOX_CPU
+        vb.linked_clone = true
      end
 
 
