@@ -261,6 +261,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # set VirtualBox version to file
     config.vm.provision "file", source: "/tmp/VirtualBoxHostVersion.txt", destination: "/home/vagrant/VirtualBoxHostVersion.txt"
 
+    # install install_VBoxGuestAdditions_debian_based_linux.sh
+    config.vm.provision "shell", path: "install_VBoxGuestAdditions_debian_based_linux.sh"
 
     # use external script
     config.vm.provision "shell", path: "ansible_install_from_source.sh"

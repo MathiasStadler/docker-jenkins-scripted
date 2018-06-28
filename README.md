@@ -105,3 +105,8 @@ echo $(VBoxManage --version | sed -E 's/r[^r]\*$//')
 %x(VBoxManage --version | sed -E 's/r[^r]\*$//' >/tmp/VirtualBoxHostVersion.txt)
 config.vm.provision "file", source: "/tmp/VirtualBoxHostVersion.txt", destination: "/VirtualBoxHostVersion.txt"
 ```
+
+```txt
+Verifying archive integrity... All good.
+About to extract 7992 KB in /tmp/selfgz15242 ... Proceed
+```

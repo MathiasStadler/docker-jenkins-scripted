@@ -2,6 +2,7 @@
     "cSpell.words": [
         "ansible",
         "dnsutils",
+        "dpkg",
         "libffi",
         "libssl",
         "machinereadable",
