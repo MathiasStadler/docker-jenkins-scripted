@@ -12,10 +12,12 @@
         "nodev",
         "noninteractive",
         "relatime",
+        "rmdir",
         "runningvms",
         "setuptools",
         "showvminfo",
         "trapapa",
+        "umount",
         "vbguest",
         "vboxsf",
         "virtualbox"
