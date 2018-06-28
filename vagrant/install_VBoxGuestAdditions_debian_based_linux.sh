@@ -35,6 +35,6 @@ sudo mount -o loop,ro "$CACHE_DIRECTORY/VBoxGuestAdditions_$VERSION.iso" $LOOP_M
 # from here
 # https://github.com/dotless-de/vagrant-vbguest/issues/252
 sudo sh /media/VBoxGuestAdditions/VBoxLinuxAdditions.run --nox11 -- --force
-sudo umount /media/VBoxGuestAdditions
-sudo rm -rf "VBoxGuestAdditions_$VERSION.iso"
-sudo rmdir /media/VBoxGuestAdditions
+sudo umount $LOOP_MOUNT_POINT
+# we used cache directory not delete for the next vm sudo rm -rf "VBoxGuestAdditions_$VERSION.iso"
+sudo rmdir $LOOP_MOUNT_POINT

@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "ansible",
+        "dkms",
         "dnsutils",
         "dpkg",
         "libffi",
@@ -16,6 +17,7 @@
         "showvminfo",
         "trapapa",
         "vbguest",
-        "vboxsf"
+        "vboxsf",
+        "virtualbox"
     ]
 }
