@@ -169,6 +169,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     # old doppelt config.vm.network "private_network", type: "dhcp"
 
+    # disable vgguest plugin to start before cache dir is mounted
+    config.vbguest.auto_update = false
+
+
     # from here
     # https://serverfault.com/questions/487862/vagrant-os-x-host-nfs-share-permissions-error-failed-to-set-owner-to-1000
     if (/darwin/ =~ RUBY_PLATFORM) != nil
