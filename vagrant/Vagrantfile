@@ -165,12 +165,21 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.box = VAGRANT_BOX_NAME
     cache_dir = local_cache(config.vm.box)
 
+
+
+
+
     # old config.vm.share_folder "v-cache","/var/cache/apt/archives/",cache_dir
 
     # old doppelt config.vm.network "private_network", type: "dhcp"
 
     # disable vgguest plugin to start before cache dir is mounted
     config.vbguest.auto_update = false
+
+    # write VirtualBoxHostVersion into guest vm for vbguest extension installation
+    %x(VBoxManage --version | sed -E 's/r[^r]\*$//' >/tmp/VirtualBoxHostVersion.txt)
+    config.vm.provision "file", source: "/tmp/VirtualBoxHostVersion.txt", destination: "/VirtualBoxHostVersion.txt"
+
 
 
     # from here

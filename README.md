@@ -83,3 +83,25 @@ sudo mount -t vboxsf -o uid=$(id -u vagrant),gid=$(id -g vagrant) var_cache_apt_
 ```txt
 VM must be created before running this command. Run `vagrant up` first.
 ```
+
+```bash
+lsmod | grep -io vboxguest | xargs modinfo | grep -iw version
+```
+
+```txt
+INFO subprocess: Starting process: ["/usr/bin/VBoxManage", "guestproperty", "get", "d1f61fa9-b925-4086-a638-de57639cccc5", "/VirtualBox/GuestAdd/Version"]
+```
+
+## get version
+
+- [from here](https://stackoverflow.com/questions/19807888/cut-the-first-and-the-last-part-of-a-string-in-bash)
+
+echo $(VBoxManage --version | sed -E 's/r[^r]\*$//')
+
+## vagrant file provider
+
+```bash
+# write VirtualBoxHostVersion into guest vm for vbguest extension installation
+%x(VBoxManage --version | sed -E 's/r[^r]\*$//' >/tmp/VirtualBoxHostVersion.txt)
+config.vm.provision "file", source: "/tmp/VirtualBoxHostVersion.txt", destination: "/VirtualBoxHostVersion.txt"
+```
