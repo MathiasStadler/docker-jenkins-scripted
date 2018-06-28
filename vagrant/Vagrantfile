@@ -18,6 +18,16 @@ ENV["LC_ALL"] = "en_US.UTF-8"
 $VM_NAME = ENV.has_key?('VM_NAME') ? ENV['VM_NAME'] : VM_NAME
 
 
+# provide the Virtualbox host version to file
+system("
+    if [ #{ARGV[0]} = 'up' ]; then
+        echo 'Provide the VirtualBox Host version to file'
+        VBoxManage --version | sed -E 's/r[^r]\*$//' >/tmp/VirtualBoxHostVersion.txt
+    fi
+")
+
+
+
 # from here https://github.com/fdemmer/vagrant-stretch64-docker/blob/master/Vagrantfile
 
 plugins = ["vagrant-disksize",
@@ -176,9 +186,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # disable vgguest plugin to start before cache dir is mounted
     config.vbguest.auto_update = false
 
-    # write VirtualBoxHostVersion into guest vm for vbguest extension installation
-    %x(VBoxManage --version | sed -E 's/r[^r]\*$//' >/tmp/VirtualBoxHostVersion.txt)
-    config.vm.provision "file", source: "/tmp/VirtualBoxHostVersion.txt", destination: "/VirtualBoxHostVersion.txt"
 
 
 
@@ -250,6 +257,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # config.vm.provision :shell do |shell|
     #  shell.inline = "sudo mount -t vboxsf -o uid=$(id -u vagrant),gid=$(id -g vagrant) var_cache_apt_archives_ /var/cache/apt/archives"
     # end
+
+    # set VirtualBox version to file
+    config.vm.provision "file", source: "/tmp/VirtualBoxHostVersion.txt", destination: "/VirtualBoxHostVersion.txt"
+
 
     # use external script
     config.vm.provision "shell", path: "ansible_install_from_source.sh"

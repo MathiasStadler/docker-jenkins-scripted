@@ -3,6 +3,8 @@
 # for info if cache dir mounted before script running
 mount >/tmp/mount.txt
 
+exit 0
+
 # from here https://linuxconfig.org/ansible-installation-on-debian-9-stretch-linux-from-source
 export DEBIAN_FRONTEND=noninteractive
 apt update && apt install -y make \
