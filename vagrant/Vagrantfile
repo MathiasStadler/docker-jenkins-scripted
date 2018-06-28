@@ -131,26 +131,6 @@ echo "Enojy! :)"
 
 SCRIPT
 
-$script_ansible = <<SCRIPT1
-# from here https://linuxconfig.org/ansible-installation-on-debian-9-stretch-linux-from-source
-export DEBIAN_FRONTEND=noninteractive
-apt update && apt install -y  make \
-git \
-make \
-python-setuptools \
-gcc \
-python-dev \
-libffi-dev \
-libssl-dev \
-python-packaging  && \
-git clone git://github.com/ansible/ansible.git  && \
-cd ansible && \
-git checkout $(git branch -a | grep stable |tail -1| cut -d "/" -f 3) && \
-make && \
-make install
-SCRIPT1
-
-
 require "open3"
 #set internet device name to the world
 worldwideinterfaces=%x(ip route get  $(dig +short google.com | tail -1) | grep $(dig +short google.com | tail -1)| awk '{print $5}').chomp
@@ -246,16 +226,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       system "vagrant vbguest --auto-reboot --no-provision" if ARGV[0] == 'up'
     end
 
-    # install ansible from source
-    config.vm.provision "shell", inline: $script_ansible
-
     # use external script
-    #
-    # config.vm.provision "shell", path: "ansible_install_from_source.sh"
+    config.vm.provision "shell", path: "ansible_install_from_source.sh"
 
 
-    # TODO sepaerate in scripts
-    # config.vm.provision "one", type: "shell", path: "vagrant/1.bat"
 
     # Set the name of the VM. See: http://stackoverflow.com/a/17864388/100134
     config.vm.define :jenkins do |jenkins|
