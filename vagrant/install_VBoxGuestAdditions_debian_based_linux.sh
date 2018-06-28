@@ -37,7 +37,7 @@ sudo mount -o loop,ro "$CACHE_DIRECTORY/VBoxGuestAdditions_$VERSION.iso" $LOOP_M
 # disable exit on error for this error
 # Could not find the X.Org or XFree86 Window System, skipping
 # subshell
-(set +x sudo sh $LOOP_MOUNT_POINT/VBoxLinuxAdditions.run --nox11 -- --force >/tmp/VBoxLinuxAdditions.out) &
+(env LOOP_MOUNT_POINT=$LOOP_MOUNT_POINT set +x sudo sh -c $LOOP_MOUNT_POINT/VBoxLinuxAdditions.run --nox11 -- --force >/tmp/VBoxLinuxAdditions.out) &
 
 wait # Don't execute the next command until subshells finish.
 

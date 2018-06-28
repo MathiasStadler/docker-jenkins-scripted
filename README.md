@@ -110,3 +110,7 @@ config.vm.provision "file", source: "/tmp/VirtualBoxHostVersion.txt", destinatio
 Verifying archive integrity... All good.
 About to extract 7992 KB in /tmp/selfgz15242 ... Proceed
 ```
+
+```txt
+modinfo: ERROR: Module vboxvideo not found.
+```
