@@ -259,7 +259,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # end
 
     # set VirtualBox version to file
-    config.vm.provision "file", source: "/tmp/VirtualBoxHostVersion.txt", destination: "/VirtualBoxHostVersion.txt"
+    config.vm.provision "file", source: "/tmp/VirtualBoxHostVersion.txt", destination: "/home/vagrant/VirtualBoxHostVersion.txt"
 
 
     # use external script
