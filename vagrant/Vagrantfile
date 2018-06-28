@@ -9,8 +9,8 @@ VAGRANT_HOME_PATH = ENV["VAGRANT_HOME"] ||= "~/.vagrant.d"
 VIRTUALBOX_MEMORY = "4096"
 VIRTUALBOX_CPU = "4"
 VIRTUALBOX_DISKSIZE = '20GB'
-VAGRANT_VERSION = "2"
-VAGRANTFILE_API_VERSION = "1.8"
+VAGRANT_VERSION = "2.0.1"
+VAGRANTFILE_API_VERSION = "2"
 
 ENV["LC_ALL"] = "en_US.UTF-8"
 
@@ -131,6 +131,26 @@ echo "Enojy! :)"
 
 SCRIPT
 
+$script_ansible = <<SCRIPT1
+# from here https://linuxconfig.org/ansible-installation-on-debian-9-stretch-linux-from-source
+export DEBIAN_FRONTEND=noninteractive
+apt update && apt install -y  make \
+git \
+make \
+python-setuptools \
+gcc \
+python-dev \
+libffi-dev \
+libssl-dev \
+python-packaging  && \
+git clone git://github.com/ansible/ansible.git  && \
+cd ansible && \
+git checkout $(git branch -a | grep stable |tail -1| cut -d "/" -f 3) && \
+make && \
+make install
+SCRIPT1
+
+
 require "open3"
 #set internet device name to the world
 worldwideinterfaces=%x(ip route get  $(dig +short google.com | tail -1) | grep $(dig +short google.com | tail -1)| awk '{print $5}').chomp
@@ -145,11 +165,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.box = VAGRANT_BOX_NAME
     cache_dir = local_cache(config.vm.box)
     #config.vm.share_folder "v-cache","/var/cache/apt/archives/",cache_dir
-    # double ntwork
-    # config.vm.network "private_network", type: "dhcp"
-
-    # disable vgguest plugin to start before cache dir is mounted
-    config.vbguest.auto_update = false
+    config.vm.network "private_network", type: "dhcp"
 
     # from here
     # https://serverfault.com/questions/487862/vagrant-os-x-host-nfs-share-permissions-error-failed-to-set-owner-to-1000
@@ -212,35 +228,20 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # mount share folders before provision
     # from here
     # https://github.com/hashicorp/vagrant/issues/936
-    # config.vm.provision :shell do |shell|
-    #  shell.inline = "sudo mount -t vboxsf -o uid=$(id -u vagrant),gid=$(id -g vagrant) var_cache_apt_archives_ /var/cache/apt/archives"
-    #  end
-
-    # ERROR craete double mount entry
-    # config.vm.provision "shell", inline: "sudo mount -t vboxsf -o uid=$(id -u vagrant),gid=$(id -g vagrant) var_cache_apt_archives_ /var/cache/apt/archives"
-
-
-    # vbguest github
-    # https://github.com/dotless-de/vagrant-vbguest
-
-
-    if Vagrant.has_plugin?("vagrant-vbguest")
-      system "vagrant vbguest --auto-reboot --no-provision" if ARGV[0] == 'up'
+    config.vm.provision :shell do |shell|
+      shell.inline = "sudo mount -t vboxsf -o uid=$(id -u vagrant),gid=$(id -g vagrant) var_cache_apt_archives_ /var/cache/apt/archives"
     end
 
-    #config.trigger.after :provision do |trigger|
-    #  trigger.name = "After provision"
-    #  trigger.info = "Install vbguest"
-    # system "vagrant vbguest --auto-reboot --no-provision"
-    #end
 
-    # check with
-    # vagrant vbguest --status
+    # install ansible from source
+    # config.vm.provision "shell", inline: $script_ansible
 
     # use external script
     config.vm.provision "shell", path: "ansible_install_from_source.sh"
 
 
+    # TODO sepaerate in scripts
+    # config.vm.provision "one", type: "shell", path: "vagrant/1.bat"
 
     # Set the name of the VM. See: http://stackoverflow.com/a/17864388/100134
     config.vm.define :jenkins do |jenkins|
