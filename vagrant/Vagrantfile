@@ -1,8 +1,6 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-
-
 VM_NAME = "vagrant-stretch64-docker-jenkins"
 VAGRANT_BOX_NAME = "debian/contrib-stretch64"
 VAGRANT_HOME_PATH = ENV["VAGRANT_HOME"] ||= "~/.vagrant.d"
@@ -17,7 +15,6 @@ ENV["LC_ALL"] = "en_US.UTF-8"
 # from here https://github.com/popstas/ansible-server/blob/master/Vagrantfile
 $VM_NAME = ENV.has_key?('VM_NAME') ? ENV['VM_NAME'] : VM_NAME
 
-
 # provide the Virtualbox host version to file
 system("
     if [ #{ARGV[0]} = 'up' ]; then
@@ -25,8 +22,6 @@ system("
         VBoxManage --version | sed -E 's/r[^r]\*$//' >/tmp/VirtualBoxHostVersion.txt
     fi
 ")
-
-
 
 # from here https://github.com/fdemmer/vagrant-stretch64-docker/blob/master/Vagrantfile
 
@@ -62,9 +57,7 @@ def ensure_plugins(plugins)
     logger.info("Finish Installing plugin #{plugins}")
   end
 
-
 ensure_plugins(plugins)
-
 
 # used share cache directory
 # from here https://gist.github.com/juanje/3797297
@@ -87,7 +80,6 @@ def local_cache(basebox_name)
   partial_dir.mkdir unless partial_dir.exist?
   cache_dir
 end
-
 
 # show all advaible version
 # apt-cache policy docker-ce
@@ -160,11 +152,9 @@ make && \
 make install
 SCRIPT1
 
-
 require "open3"
 #set internet device name to the world
 worldwideinterfaces=%x(ip route get  $(dig +short google.com | tail -1) | grep $(dig +short google.com | tail -1)| awk '{print $5}').chomp
-
 
 # ensure vagrant vdersion
 Vagrant.require_version ">= 1.8"
@@ -175,19 +165,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.box = VAGRANT_BOX_NAME
     cache_dir = local_cache(config.vm.box)
 
-
-
-
-
-    # old config.vm.share_folder "v-cache","/var/cache/apt/archives/",cache_dir
-
-    # old doppelt config.vm.network "private_network", type: "dhcp"
-
     # disable vgguest plugin to start before cache dir is mounted
     config.vbguest.auto_update = false
-
-
-
 
     # from here
     # https://serverfault.com/questions/487862/vagrant-os-x-host-nfs-share-permissions-error-failed-to-set-owner-to-1000
@@ -207,17 +186,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     end
 
-
-   # TODO old config.vm.synced_folder cache_dir, '/var/cache/apt/archives/', type: 'nfs'
-
-# set disksize to 20GB
+    # set disksize to 20GB
     config.disksize.size = VIRTUALBOX_DISKSIZE
 
      # Add 2nd network adapter
     if (/darwin/ =~ RUBY_PLATFORM) != nil
     # Add 2nd network adapter
       config.vm.network "public_network", :type =>"dhcp" ,:bridge => 'en0: Wi-Fi (AirPort)'
-    #:bridge => 'en1: Wi-Fi (AirPort)'
+    # Hint for you morre than one interfaces :bridge => 'en1: Wi-Fi (AirPort)'
     else
       config.vm.network "public_network", :type =>"dhcp" ,:bridge => "#{worldwideinterfaces}"
     end
@@ -247,10 +223,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         vb.linked_clone = true
      end
 
-
-    # config.vm.provision "shell", inline: $script
-
-
+    # approach for mount share volume on command line
     # mount share folders before provision
     # from here
     # https://github.com/hashicorp/vagrant/issues/936
@@ -278,4 +251,4 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     #    ansible.verbose = "v"
     # end
 
-end
+  end
