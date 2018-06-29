@@ -9,10 +9,12 @@
         "geerlingguy",
         "guestproperty",
         "hostfile",
+        "inet",
         "islocked",
         "libffi",
         "libssl",
         "lsmod",
+        "lsof",
         "machinereadable",
         "mkdir",
         "modinfo",
@@ -38,6 +40,7 @@
         "vboxsf",
         "vboxvideo",
         "virtualbox",
+        "worldwideinterfaces",
         "xargs"
     ]
 }
