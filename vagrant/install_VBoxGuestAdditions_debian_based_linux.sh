@@ -5,7 +5,7 @@ set -e
 echo "${BASH_SOURCE[${#BASH_SOURCE[@]} - 1]}" >"/tmp/mount_$(basename $0).txt"
 # blank line
 echo "mounts before run this script" >>"/tmp/mount_$(basename $0).txt"
-mount >>/tmp/mount_"$(basename $0)".txt
+mount >>/tmp/mount_$(basename $0).txt
 
 # from here
 # https://gist.github.com/hollodotme/9388876996845ed7397d
