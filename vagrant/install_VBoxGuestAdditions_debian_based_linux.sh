@@ -1,11 +1,14 @@
 #!/bin/bash
 set -e
 
+# get filename
+readonly FILENAME=$(basename "$0")
+
 # for info if cache dir mounted before script running
-echo "${BASH_SOURCE[${#BASH_SOURCE[@]} - 1]}" >"/tmp/mount_$(basename $0).txt"
+echo "${BASH_SOURCE[${#BASH_SOURCE[@]} - 1]}" >"/tmp/mount_$FILENAME.txt"
 # blank line
-echo "mounts before run this script" >>"/tmp/mount_$(basename $0).txt"
-mount >>/tmp/mount_$(basename $0).txt
+echo "mounts before run this script" >>"/tmp/mount_$FILENAME.txt"
+mount >>/tmp/mount_"$FILENAME".txt
 
 # from here
 # https://gist.github.com/hollodotme/9388876996845ed7397d
@@ -35,7 +38,7 @@ sudo apt-get install -y linux-headers-"$(uname -r)" curl build-essential dkms
 cd $CACHE_DIRECTORY
 
 # used available file is there save network bandwidth
-if [ ! -f $VBOX_GUEST_ADDITIONS ]; then
+if [ ! -f "$VBOX_GUEST_ADDITIONS" ]; then
 	sudo curl -O "http://download.virtualbox.org/virtualbox/$VERSION/$VBOX_GUEST_ADDITIONS"
 else echo "File already there"; fi
 sudo mkdir -p $LOOP_MOUNT_POINT

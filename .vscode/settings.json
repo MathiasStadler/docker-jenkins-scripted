@@ -19,6 +19,7 @@
         "netx",
         "nodev",
         "noninteractive",
+        "readonly",
         "relatime",
         "repo",
         "rmdir",

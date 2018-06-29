@@ -1,10 +1,14 @@
 #!/bin/bash
 
+# get filename
+readonly FILENAME=$(basename "$0")
+
 # for info if cache dir mounted before script running
-echo "${BASH_SOURCE[${#BASH_SOURCE[@]} - 1]}" >"/tmp/mount_$(basename $0).txt"
+echo "${BASH_SOURCE[${#BASH_SOURCE[@]} - 1]}" >"/tmp/mount_$FILENAME.txt"
+
 # blank line
-echo "mounts before run this script" >>"/tmp/mount_$(basename $0).txt"
-mount >>"/tmp/mount_$(basename $0).txt"
+echo "mounts before run this script" >>"/tmp/mount_$FILENAME.txt"
+mount >>/tmp/mount_"$FILENAME".txt
 
 # for test situation
 # TODO must be scripted
