@@ -24,6 +24,7 @@ cat <<ANSIBLE_CONF >ansible.yml
 roles_path=~/.ansible/roles
 ANSIBLE_CONF
 
+# create requirements.yml
 cat <<REQUIREMENTS >requirements.yml
 - src: https://github.com/angstwad/docker.ubuntu
   name: angstwad.docker.ubuntu
@@ -33,6 +34,9 @@ cat <<REQUIREMENTS >requirements.yml
   name: geerlingguy.jenkins
   version: master
 REQUIREMENTS
+
+# install requirements
+ansible-galaxy install -r requirements.yml
 
 # create playbook.yml
 cat <<PLAYBOOK >playbook.yml
@@ -48,9 +52,6 @@ PLAYBOOK
 
 # check syntax is compatible with ansible version
 ansible-playbook --syntax-check playbook.yml
-
-# install requirements
-ansible-galaxy install -r requirements.yml
 
 # run playbook
 ansible-playbook playbook.yml
