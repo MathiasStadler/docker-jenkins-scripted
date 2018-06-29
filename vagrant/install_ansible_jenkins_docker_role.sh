@@ -42,7 +42,8 @@ ansible-galaxy install -r requirements.yml
 cat <<PLAYBOOK >playbook.yml
 ---
 - hosts: all
-  remote_user: vagrant
+  hosts: localhost
+  connection: local
   become: yes
   become_method: sudo
   roles:
