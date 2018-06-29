@@ -1,14 +1,18 @@
 {
     "cSpell.words": [
         "VBOX",
+        "angstwad",
         "ansible",
         "dkms",
         "dnsutils",
         "dpkg",
         "geerlingguy",
+        "guestproperty",
         "hostfile",
+        "islocked",
         "libffi",
         "libssl",
+        "lsmod",
         "machinereadable",
         "mkdir",
         "modinfo",
@@ -16,17 +20,23 @@
         "nodev",
         "noninteractive",
         "relatime",
+        "repo",
         "rmdir",
         "runningvms",
         "sbin",
+        "selfgz",
         "setuptools",
         "showvminfo",
         "trapapa",
         "umount",
         "uname",
+        "unregister",
+        "unregistervm",
         "vbguest",
+        "vboxguest",
         "vboxsf",
         "vboxvideo",
-        "virtualbox"
+        "virtualbox",
+        "xargs"
     ]
 }

@@ -122,3 +122,9 @@ VBoxManage unregistervm vagrant-stretch64-docker-jenkins --delete
 ```txt
 VBoxManage: error: Cannot unregister the machine 'vagrant-stretch64-docker-jenkins' while it islocked
 ```
+
+## good ansible tutorial
+
+```txt
+https://www.tricksofthetrades.net/2017/10/02/ansible-local-playbooks/
+```

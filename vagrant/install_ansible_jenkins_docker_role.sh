@@ -10,8 +10,10 @@ git clone https://github.com/geerlingguy/ansible-role-jenkins.git
 cd ansible-role-jenkins
 
 # set variables
-export ANSIBLE_HOSTS=$(pwd)/hosts
-export ANSIBLE_CONFIG=$(pwd)/ansible.cfg
+ANSIBLE_INVENTORY=$(pwd)/hosts
+ANSIBLE_CONFIG=$(pwd)/ansible.cfg
+export ANSIBLE_INVENTORY
+export ANSIBLE_CONFIG
 
 # create hosts file
 cat <<HOSTS >hosts
