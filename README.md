@@ -128,3 +128,5 @@ VBoxManage: error: Cannot unregister the machine 'vagrant-stretch64-docker-jenki
 ```txt
 https://www.tricksofthetrades.net/2017/10/02/ansible-local-playbooks/
 ```
+
+https://www.cyberciti.biz/faq/display-iptables-router-nat-connections-using-netstat-nat/
