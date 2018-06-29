@@ -3,15 +3,15 @@
 # Exit immediately if a command returns a non-zero status
 set -e
 
-# set variables
-export ANSIBLE_HOSTS=$(pwd)/hosts
-export ANSIBLE_CONFIG=$(pwd)/ansible.cfg
-
 # clone repo
 git clone https://github.com/geerlingguy/ansible-role-jenkins.git
 
 # change into directory
 cd ansible-role-jenkins
+
+# set variables
+export ANSIBLE_HOSTS=$(pwd)/hosts
+export ANSIBLE_CONFIG=$(pwd)/ansible.cfg
 
 # create hosts file
 cat <<HOSTS >hosts
