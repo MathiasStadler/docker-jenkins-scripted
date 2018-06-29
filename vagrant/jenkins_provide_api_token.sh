@@ -1,7 +1,10 @@
 #!/bin/bash
 
 # install dig
-sudo apt-get install -y dnsutils
+# from here
+# https://askubuntu.com/questions/258219/how-do-i-make-apt-get-install-less-noisy
+# last entry
+sudo apt install -y -qq -o=Dpkg::Use-Pty=0 dnsutils
 
 # get ip from world wide web service e.g. google.com
 wwwIp=$(dig +short google.com | tail -1)
@@ -34,3 +37,8 @@ done
 
 # restore BASH Internal Field Separator (IFS)
 IFS=$OLDIFS
+
+# get Jenkins API token
+# from here
+# https://stackoverflow.com/questions/36633725/generate-jenkins-api-token-using-rest-api?rq=1
+curl --silent --basic http://admin:admin@${worldWideIp}:8080/me/configure | hxselect '#apiToken' | sed 's/.*value="\([^"]*\)".*/\1\n/g'
