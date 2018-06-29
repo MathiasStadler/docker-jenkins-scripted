@@ -214,7 +214,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     #config.ssh.password = "armbian"
     config.vm.provider "virtualbox" do |vb|
         #name of VM in virtualbox
-        vb.name = $VM_NAME
+        vb.name = VM_NAME
         # uncomment this to enable the VirtualBox GUI
         #vb.gui = true
         # Tweak these to fit your needs.
