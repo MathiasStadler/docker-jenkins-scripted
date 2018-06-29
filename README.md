@@ -114,3 +114,11 @@ About to extract 7992 KB in /tmp/selfgz15242 ... Proceed
 ```txt
 modinfo: ERROR: Module vboxvideo not found.
 ```
+
+```bash
+VBoxManage unregistervm vagrant-stretch64-docker-jenkins --delete
+```
+
+```txt
+VBoxManage: error: Cannot unregister the machine 'vagrant-stretch64-docker-jenkins' while it islocked
+```

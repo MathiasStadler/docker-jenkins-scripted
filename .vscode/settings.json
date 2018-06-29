@@ -5,6 +5,7 @@
         "dkms",
         "dnsutils",
         "dpkg",
+        "geerlingguy",
         "libffi",
         "libssl",
         "machinereadable",
