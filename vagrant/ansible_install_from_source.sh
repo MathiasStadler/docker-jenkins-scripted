@@ -1,9 +1,14 @@
 #!/bin/bash
 
 # for info if cache dir mounted before script running
-mount >/tmp/mount.txt
+echo "${BASH_SOURCE[${#BASH_SOURCE[@]} - 1]}" >"/tmp/mount_$(basename $0).txt"
+# blank line
+echo "mounts before run this script" >"/tmp/mount_$(basename $0).txt"
+mount >>"/tmp/mount_$(basename $0).txt"
 
-exit 0
+# for test situation
+# TODO must be scripted
+# exit 0
 
 # from here https://linuxconfig.org/ansible-installation-on-debian-9-stretch-linux-from-source
 export DEBIAN_FRONTEND=noninteractive

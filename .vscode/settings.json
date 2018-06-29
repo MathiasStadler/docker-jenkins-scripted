@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
+        "VBOX",
         "ansible",
         "dkms",
         "dnsutils",
@@ -8,18 +9,22 @@
         "libssl",
         "machinereadable",
         "mkdir",
+        "modinfo",
         "netx",
         "nodev",
         "noninteractive",
         "relatime",
         "rmdir",
         "runningvms",
+        "sbin",
         "setuptools",
         "showvminfo",
         "trapapa",
         "umount",
+        "uname",
         "vbguest",
         "vboxsf",
+        "vboxvideo",
         "virtualbox"
     ]
 }
