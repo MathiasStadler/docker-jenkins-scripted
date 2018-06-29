@@ -242,7 +242,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.provision "shell", path: "ansible_install_from_source.sh"
 
     # Set the name of the VM. See: http://stackoverflow.com/a/17864388/100134
-    config.vm.define :VM_NAME do |vm_define|
+    config.vm.define VM_NAME do |vm_define|
     end
 
     # # Ansible provisioner.
