@@ -239,8 +239,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # install install_VBoxGuestAdditions_debian_based_linux.sh
     config.vm.provision "shell", path: "install_VBoxGuestAdditions_debian_based_linux.sh"
 
-    # use external script
+    # install ansible use external script
     config.vm.provision "shell", path: "ansible_install_from_source.sh"
+
+    # install jenkins use external script
+    config.vm.provision "shell", path: "install_ansible_jenkins_docker_role.sh"
 
     # Set the name of the VM. See: http://stackoverflow.com/a/17864388/100134
     config.vm.define :VM_NAME do |vm_define|
