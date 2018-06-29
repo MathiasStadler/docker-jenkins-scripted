@@ -43,7 +43,7 @@ ansible-galaxy install -r requirements.yml
 # create playbook.yml
 cat <<PLAYBOOK >playbook.yml
 ---
-- hosts: localhost
+- hosts: local
   become: yes
   become_method: sudo
   roles:
