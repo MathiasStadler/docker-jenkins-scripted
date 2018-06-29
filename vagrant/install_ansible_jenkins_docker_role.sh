@@ -15,13 +15,15 @@ export ANSIBLE_CONFIG=$(pwd)/ansible.cfg
 
 # create hosts file
 cat <<HOSTS >hosts
-127.0.0.1
+[local]
+localhost ansible_connection=local
 HOSTS
 
 # create ansible.cfg
 cat <<ANSIBLE_CONF >ansible.yml
 [defaults]
-roles_path=~/.ansible/roles
+roles_path = ~/.ansible/roles
+hostfile = hosts
 ANSIBLE_CONF
 
 # create requirements.yml

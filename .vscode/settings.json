@@ -6,6 +6,7 @@
         "dnsutils",
         "dpkg",
         "geerlingguy",
+        "hostfile",
         "libffi",
         "libssl",
         "machinereadable",
