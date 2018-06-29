@@ -10,8 +10,8 @@ git clone https://github.com/geerlingguy/ansible-role-jenkins.git
 cd ansible-role-jenkins
 
 # set variables
-ANSIBLE_INVENTORY=$(pwd)/hosts
-ANSIBLE_CONFIG=$(pwd)/ansible.cfg
+ANSIBLE_INVENTORY=$(pwd)/hosts || true
+ANSIBLE_CONFIG=$(pwd)/ansible.cfg || true
 export ANSIBLE_INVENTORY
 export ANSIBLE_CONFIG
 
