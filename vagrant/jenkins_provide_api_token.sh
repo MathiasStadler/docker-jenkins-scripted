@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # install dig
-apt-get install -y dnsutils
+sudo apt-get install -y dnsutils
 
 # get ip from world wide web service e.g. google.com
 wwwIp=$(dig +short google.com | tail -1)
@@ -15,15 +15,15 @@ worldWideIp=$(ip -f inet addr show "${worldWideInterfaces}" | sed -En -e 's/.*in
 # which port used jenkins
 # from here
 # https://cloudvedas.com/solved-how-to-start-or-stop-jenkins-in-linux-and-check-its-port-number/
-sudo lsof -i -P | grep -i jenkins
+# sudo lsof -i -P | grep -i jenkins
 
 # user message
-echo "try to reach jenkins on standard port  http://${worldWideIp}:8080"
+echo "try to reach jenkins on STANDARD port  http://${worldWideIp}:8080"
 echo "or"
 
 # save BASH Internal Field Separator (IFS)
 OLDIFS=$IFS
-IFS=$('\n')
+IFS=$'\n'
 
 # get all port from jenkins
 for i in $(sudo lsof -i -P | grep -i jenkins | grep LISTEN); do
