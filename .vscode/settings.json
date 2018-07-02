@@ -18,6 +18,7 @@
         "libssl",
         "lsmod",
         "lsof",
+        "macaddress",
         "machinereadable",
         "mkdir",
         "modinfo",
