@@ -60,8 +60,8 @@ cdr2mask() {
 readonly NETMASK=$(cdr2mask "${CIDR}")
 
 echo "First bridge interface of vm"
-echo "Adapter ${ADAPTER}"
-echo "MAC address ${MAC}"
+echo "Interface ${INTERFACE}"
+echo "MAC address ${MAC_ADDRESS_ADAPTER}"
 echo "IP ${IP}"
 echo "CIDR ${CIDR}"
 echo "NETMASK ${NETMASK}"
