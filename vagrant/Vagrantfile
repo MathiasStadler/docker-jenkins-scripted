@@ -286,7 +286,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     puts shell_scripts.length
 
     logger = Vagrant::UI::Colored.new
-    logger.info("run provisioner for scripts )
+    logger.info("run provisioner for scripts ")
 
     # loop over all script
     shell_scripts.each do |s|
