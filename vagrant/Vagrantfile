@@ -86,7 +86,8 @@ def ensure_plugins(plugins)
     else
       logger.info('Not additional plugins installed')
     end
-    logger.info("Finish Installing plugin #{plugins}")
+    # logger.info("Finish Installing plugin #{plugins}")
+    logger.info("Finish Installing plugin")
   end
 
 ensure_plugins(plugins)
@@ -285,7 +286,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     puts shell_scripts.length
 
     logger = Vagrant::UI::Colored.new
-    logger.info("run provisioner for #{shell_scripts}")
+    logger.info("run provisioner for scripts )
 
     # loop over all script
     shell_scripts.each do |s|
