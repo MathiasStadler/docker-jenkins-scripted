@@ -274,7 +274,29 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # set VirtualBox version to file
     config.vm.provision "file", source: "/tmp/#{VM_NAME}.vminfo", destination: "/home/vagrant/vm.info"
 
+    # shell scripts
+    shell_scripts = ["found-bridge-adapter.sh",
+    "install_VBoxGuestAdditions_debian_based_linux.sh",
+    "ansible_install_from_source.sh",
+    "install_ansible_jenkins_docker_role.sh",
+    "install_ansible_jenkins_docker_role.sh"
+    ]
 
+    puts shell_scripts.length
+
+    logger = Vagrant::UI::Colored.new
+    logger.info("run provisioner for #{shell_scripts}")
+
+    # loop over all script
+    shell_scripts.each do |s|
+      # install script
+      config.vm.provision "shell", path: s
+
+    end
+
+    logger.info("finish provisioner")
+
+=begin
     # install install_VBoxGuestAdditions_debian_based_linux.sh
     config.vm.provision "shell", path: "install_VBoxGuestAdditions_debian_based_linux.sh"
 
@@ -283,6 +305,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     # install jenkins use external script
     config.vm.provision "shell", path: "install_ansible_jenkins_docker_role.sh"
+
+=end
+
 
     # test of localshell
     config.vm.provision "list-files", type: "local_shell", command: "ls >/tmp/test_out.out"
