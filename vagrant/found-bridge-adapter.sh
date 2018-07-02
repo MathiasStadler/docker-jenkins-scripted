@@ -30,13 +30,13 @@ readonly NUMBER_OF_NETWORK_ADAPTER=$(cat ${VM_INFO_FILE} | grep bridged | sed 's
 readonly MAC_ADDRESS_ADAPTER=$(cat vm.info | grep "macaddress${NUMBER_OF_NETWORK_ADAPTER}" | sed 's/.*=//' | sed 's/"//g' | sed 's/.\{2\}/&:/g' | sed 's/.$//')
 
 # parse adapter
-readonly INTERFACE=$(ip -o link | grep -i $(MAC_ADDRESS_OF_NETWORK_ADAPTER) | awk '{print $2}' | sed 's/.$//')
+readonly INTERFACE=$(ip -o link | grep -i "${MAC_ADDRESS_ADAPTER}" | awk '{print $2}' | sed 's/.$//')
 
 # parse ip of bridge adapter
-readonly IP=$(ip -o address | grep eth1 | awk '{print $4}' | ip -o address | grep eth1 | awk '{print $4}' | sed 's#/.*##')
+readonly IP=$(ip -o address | grep eth1 | awk '{print $4}' | ip -o address | grep "${INTERFACE}" | awk '{print $4}' | sed 's#/.*##')
 
 # Classless Inter-Domain Routing
-readonly CIDR=$(ip -o address | grep eth1 | awk '{print $4}' | ip -o address | grep eth1 | awk '{print $4}' | sed 's#.*/##')
+readonly CIDR=$(ip -o address | grep eth1 | awk '{print $4}' | ip -o address | grep "${INTERFACE}" | awk '{print $4}' | sed 's#.*/##')
 
 # netmask
 # from here
