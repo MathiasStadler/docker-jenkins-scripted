@@ -41,6 +41,7 @@ VIRTUALBOX_DISKSIZE = '20GB'
 VAGRANT_VERSION = "2.1"
 VAGRANTFILE_API_VERSION = "2"
 
+# Overwrite host locale in ssh session
 ENV["LC_ALL"] = "en_US.UTF-8"
 
 # from here https://github.com/popstas/ansible-server/blob/master/Vagrantfile
