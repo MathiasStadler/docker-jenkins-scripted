@@ -188,7 +188,7 @@ require "open3"
 worldwideinterfaces=%x(ip route get  $(dig +short google.com | tail -1) | grep $(dig +short google.com | tail -1)| awk '{print $5}').chomp
 
 # ensure vagrant vdersion
-Vagrant.require_version ">= 1.8"
+Vagrant.require_version ">= #{VAGRANT_VERSION}"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 # network
@@ -276,7 +276,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # install jenkins use external script
     config.vm.provision "shell", path: "install_ansible_jenkins_docker_role.sh"
 
-    config.vm.provision "list-files", type: "local_shell", command: "ls"
+    # test of localshell
+    config.vm.provision "list-files", type: "local_shell", command: "ls >/tmp/test_out.out"
+
+    # test of localshell
+    config.vm.provision "create-vminfo", type: "local_shell", command: "VBoxManage showvminfo #{VM_NAME} --machinereadable > /tmp/#{VM_NAME}.vminfo"
 
     # Set the name of the VM. See: http://stackoverflow.com/a/17864388/100134
     config.vm.define :VM_NAME do |vm_define|
