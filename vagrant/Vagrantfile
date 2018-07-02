@@ -267,6 +267,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # set VirtualBox version to file
     config.vm.provision "file", source: "/tmp/VirtualBoxHostVersion.txt", destination: "/home/vagrant/VirtualBoxHostVersion.txt"
 
+    # test of localshell
+    config.vm.provision "create-vminfo", type: "local_shell", command: "VBoxManage showvminfo #{VM_NAME} --machinereadable > /tmp/#{VM_NAME}.vminfo"
+
+    # set VirtualBox version to file
+    config.vm.provision "copy-vminfo-to-geust", type: "file", source: "/tmp/#{VM_NAME}.vminfo", destination: "/home/vagrant/vm.info"
+
+
     # install install_VBoxGuestAdditions_debian_based_linux.sh
     config.vm.provision "shell", path: "install_VBoxGuestAdditions_debian_based_linux.sh"
 
@@ -279,11 +286,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # test of localshell
     config.vm.provision "list-files", type: "local_shell", command: "ls >/tmp/test_out.out"
 
-    # test of localshell
-    config.vm.provision "create-vminfo", type: "local_shell", command: "VBoxManage showvminfo #{VM_NAME} --machinereadable > /tmp/#{VM_NAME}.vminfo"
-
-    # set VirtualBox version to file
-    config.vm.provision "copy-vminfo-to-geust", type: "file", source: "/tmp/#{VM_NAME}.vminfo", destination: "/home/vagrant/vm.info"
 
 
     # Set the name of the VM. See: http://stackoverflow.com/a/17864388/100134
