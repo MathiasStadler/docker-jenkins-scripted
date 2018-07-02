@@ -282,6 +282,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # test of localshell
     config.vm.provision "create-vminfo", type: "local_shell", command: "VBoxManage showvminfo #{VM_NAME} --machinereadable > /tmp/#{VM_NAME}.vminfo"
 
+    # set VirtualBox version to file
+    config.vm.provision "copy-vminfo-to-geust",type: "shell", source: "/tmp/#{VM_NAME}.vminfo", destination: "/home/vagrant/.vminfo"
+
+
     # Set the name of the VM. See: http://stackoverflow.com/a/17864388/100134
     config.vm.define :VM_NAME do |vm_define|
     end
