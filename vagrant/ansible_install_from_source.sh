@@ -12,7 +12,7 @@ mount >>/tmp/mount_"$FILENAME".txt
 
 # for test situation
 # TODO must be scripted
-exit 0
+# xit 0
 
 # from here https://linuxconfig.org/ansible-installation-on-debian-9-stretch-linux-from-source
 export DEBIAN_FRONTEND=noninteractive

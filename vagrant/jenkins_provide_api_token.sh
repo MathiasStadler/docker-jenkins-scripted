@@ -6,14 +6,9 @@
 # last entry
 sudo apt install -y -qq -o=Dpkg::Use-Pty=0 dnsutils html-xml-utils
 
-# get ip from world wide web service e.g. google.com
-wwwIp=$(dig +short google.com | tail -1)
-
-# get the world wide interface
-worldWideInterfaces=$(ip route get "${wwwIp}" | grep "${wwwIp}" | awk '{print $5}')
-
 # get the ip of worldwideinterfaces
-worldWideIp=$(ip -f inet addr show "${worldWideInterfaces}" | sed -En -e 's/.*inet ([0-9.]+).*/\1/p')
+# vm.bridge.ip would be provide from found-bridge-adapter.sh script
+worldWideIp=$(cat /home/vagrant/vm.bridge.ip)
 
 # which port used jenkins
 # from here

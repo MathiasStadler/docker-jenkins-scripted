@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # for test only
-exit 0
+# exit 0
 
 # Exit immediately if a command returns a non-zero status
 set -e
