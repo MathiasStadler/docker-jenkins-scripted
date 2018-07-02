@@ -60,7 +60,7 @@ cdr2mask() {
 readonly NETMASK=$(cdr2mask "${CIDR}")
 
 echo "${IP}" >/home/vagrant/vm.bridge.ip
-echo "${INTERFACE}" >:/home/vagrant/vm.bridge.interface
+echo "${INTERFACE}" >/home/vagrant/vm.bridge.interface
 
 echo "First bridge interface of vm"
 echo "Interface ${INTERFACE}"
