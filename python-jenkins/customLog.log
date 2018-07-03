@@ -1,0 +1,28 @@
+2018-07-03 11:35:30,743 - DEBUG    - customLog - 	 Debug Log Start 
+2018-07-03 11:35:30,744 - INFO     - customLog - 	 Info Log start
+2018-07-03 11:35:30,744 - WARNING  - customLog - 	 Warn Log start
+2018-07-03 11:35:30,744 - ERROR    - customLog - 	 Error Loh start
+2018-07-03 11:35:30,744 - CRITICAL - customLog - 	 Critical Log start
+2018-07-03 11:35:31,090 - INFO     - customLog - 	 name => remote 
+2018-07-03 11:35:31,091 - INFO     - customLog - 	 serverName => 192.168.178.48 
+2018-07-03 11:35:31,091 - INFO     - customLog - 	 port => 8080
+2018-07-03 11:35:31,091 - INFO     - customLog - 	 protocol => http
+2018-07-03 11:35:31,091 - INFO     - customLog - 	 user => admin
+2018-07-03 11:35:31,091 - INFO     - customLog - 	 password => XXXXX
+2018-07-03 11:35:31,091 - INFO     - customLog - 	 timeout for connect the server => None
+2018-07-03 11:35:31,092 - INFO     - customLog - 	 URL of Jenkins server => http://192.168.178.48:8080
+2018-07-03 11:35:31,092 - INFO     - customLog - 	 Try to connect to server
+2018-07-03 11:37:46,701 - DEBUG    - customLog - 	 Debug Log Start 
+2018-07-03 11:37:46,701 - INFO     - customLog - 	 Info Log start
+2018-07-03 11:37:46,701 - WARNING  - customLog - 	 Warn Log start
+2018-07-03 11:37:46,702 - ERROR    - customLog - 	 Error Loh start
+2018-07-03 11:37:46,702 - CRITICAL - customLog - 	 Critical Log start
+2018-07-03 11:37:47,127 - INFO     - customLog - 	 name => remote 
+2018-07-03 11:37:47,127 - INFO     - customLog - 	 serverName => 192.168.178.48 
+2018-07-03 11:37:47,127 - INFO     - customLog - 	 port => 8080
+2018-07-03 11:37:47,127 - INFO     - customLog - 	 protocol => http
+2018-07-03 11:37:47,127 - INFO     - customLog - 	 user => admin
+2018-07-03 11:37:47,127 - INFO     - customLog - 	 password => XXXXX
+2018-07-03 11:37:47,127 - INFO     - customLog - 	 timeout for connect the server => 3
+2018-07-03 11:37:47,128 - INFO     - customLog - 	 URL of Jenkins server => http://192.168.178.48:8080
+2018-07-03 11:37:47,128 - INFO     - customLog - 	 Try to connect to server

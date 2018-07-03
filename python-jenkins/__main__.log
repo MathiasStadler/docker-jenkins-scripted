@@ -1,0 +1,5 @@
+2018-07-03 11:32:12,201 - DEBUG    - __main__ - 	 Debug Log Start 
+2018-07-03 11:32:12,201 - INFO     - __main__ - 	 Info Log start
+2018-07-03 11:32:12,201 - WARNING  - __main__ - 	 Warn Log start
+2018-07-03 11:32:12,201 - ERROR    - __main__ - 	 Error Loh start
+2018-07-03 11:32:12,201 - CRITICAL - __main__ - 	 Critical Log start

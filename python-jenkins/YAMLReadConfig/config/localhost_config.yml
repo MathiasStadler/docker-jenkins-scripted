@@ -6,6 +6,7 @@ default:
   protocol: https
   user: admin
   password: admin
+  timeout: 3
 remote:
   name: remote
   server: 192.168.178.48
@@ -13,3 +14,4 @@ remote:
   protocol: http
   user: admin
   password: admin
+  timeout: 3
