@@ -1,9 +1,10 @@
 import getopt
 import os
 import sys
-import ensurePythonVersion
-from customLog import log
 import jenkins
+import ensurePythonVersion
+from custom_log import LOGGER
+
 
 # load custom module
 sys.path.insert(0, os.path.abspath(
@@ -14,14 +15,14 @@ from YAMLReadConfig.bin.YamlReadConfig import YamlReadConfig
 # getopt
 
 # default values
-version = '1.0'
-verbose = False
-config = 'default.out'
+VERSION = '1.0'
+VERBOSE = False
+CONFIG = 'default.out'
 
 # print('ARGV      :', sys.argv[1:])
 
 try:
-    options, remainder = getopt.gnu_getopt(
+    OPTIONS, REMAINDER = getopt.gnu_getopt(
         sys.argv[1:],
         'c:v',
         ['config=',
@@ -32,9 +33,9 @@ except getopt.GetoptError as err:
     print('ERROR:', err)
     sys.exit(1)
 
-print('OPTIONS   :', options)
+print('OPTIONS   :', OPTIONS)
 
-for opt, arg in options:
+for opt, arg in OPTIONS:
     if opt in ('-c', '--config'):
         config_filename = arg
     elif opt in ('-v', '--verbose'):
@@ -42,69 +43,69 @@ for opt, arg in options:
     elif opt == '--version':
         version = arg
 
-print('VERSION   :', version)
-print('VERBOSE   :', verbose)
+print('VERSION   :', VERSION)
+print('VERBOSE   :', VERBOSE)
 print('CONFIG    :', config_filename)
-print('REMAINING :', remainder)
+print('REMAINING :', REMAINDER)
 
 
 # read deafult
 config = YamlReadConfig('remote', config_filename)
 
-name = config.getConfigValue('name')
-serverName = config.getConfigValue('server')
-port = config.getConfigValue('port')
-protocol = config.getConfigValue('protocol')
-user = config.getConfigValue('user')
-password = config.getConfigValue('password')
-timeout = config.getConfigValue('timeout')
+NAME = config.get_config_value('name')
+SERVER_NAME = config.get_config_value('server')
+PORT = config.get_config_value('port')
+PROTOCOL = config.get_config_value('protocol')
+USER = config.get_config_value('user')
+PASSWORD = config.get_config_value('password')
+TIMEOUT = config.get_config_value('timeout')
 
-# log default
-log.info("name => % ".format(name))
-log.info("serverName => {} ".format(serverName))
-log.info("port => {}".format(port))
-log.info("protocol => {}".format(protocol))
-log.info("user => {}".format(user))
-log.info("password => {}".format(len(password) * 'X'))
-log.info("timeout for connect the server => {}".format(timeout))
+# LOGGER default
+LOGGER.info("name => %s", NAME)
+LOGGER.info("serverName => %s", SERVER_NAME)
+LOGGER.info("port => %i", PORT)
+LOGGER.info("protocol => %s", PROTOCOL)
+LOGGER.info("user => %s", USER)
+LOGGER.info("password => %s", len(PASSWORD) * 'X')
+LOGGER.info("timeout for connect the server => %i", TIMEOUT)
 
 # create jenkins server url
-jenkinsURL = "{}://{}:{}".format(protocol, serverName, port)
+JENKINS_URL = "{}://{}:{}".format(PROTOCOL, SERVER_NAME, PORT)
 
-# log
-log.info("Jenkins URL server => {}".format(jenkinsURL))
+# LOGGER
+LOGGER.info("Jenkins URL server => {}".format(JENKINS_URL))
 
 # try to connect
 try:
-    log.info("Try to connect to server")
-    server = jenkins.Jenkins(jenkinsURL,
-                             username=user, password=password, timeout=timeout)
+    LOGGER.info("Try to connect to server")
+    SERVER = jenkins.Jenkins(JENKINS_URL,
+                             username=USER, password=PASSWORD, timeout=TIMEOUT)
 
 except TimeoutError as err:
     # pylint: disable=no-member
-    log.error({"message": err.message})
+    LOGGER.error({"message": err.message})
 except EnvironmentError as err:
     # handle other errors
     # pylint: disable=no-member
-    log.error({"message": err.message})
+    LOGGER.error({"message": err.message})
 finally:
     config = None
 
-user = server.get_whoami()
-version = server.get_version()
+REMOTE_USER = SERVER.get_whoami()
+VERSION = SERVER.get_version()
 
-info = server.get_info()
+SERVER_INFO = SERVER.get_info()
 
-print(type(info))
+print(type(SERVER_INFO))
 
-for key, value in info.items():
+for key, value in SERVER_INFO.items():
     # print (key, value)
     print(key)
 
-job = info['jobs']
+SERVER_JOBS = SERVER_INFO['jobs']
 
-print("info => {}".format(info))
+LOGGER.info("info => %s", SERVER_INFO)
 
-print("jobs => {} ".format(job))
+LOGGER.info("jobs => %s ", SERVER_JOBS)
 
-print('Hello %s from Jenkins %s' % (user['fullName'], version))
+print('Hello %s from Jenkins %s' % (REMOTE_USER['fullName'], version))
