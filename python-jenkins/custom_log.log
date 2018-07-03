@@ -151,3 +151,40 @@
 2018-07-03 17:29:15,115 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
 2018-07-03 17:29:15,115 - INFO     - custom_log - 	 jobs => [] 
 2018-07-03 17:29:15,115 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-03 17:34:27,559 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:34:27,560 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:34:27,560 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:34:27,561 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:34:27,561 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-03 17:34:27,593 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-03 17:34:27,593 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-03 17:34:27,594 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-03 17:34:27,594 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-03 17:34:27,614 - INFO     - custom_log - 	 name => remote
+2018-07-03 17:34:27,614 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-03 17:34:27,614 - INFO     - custom_log - 	 port => 8080
+2018-07-03 17:34:27,614 - INFO     - custom_log - 	 protocol => http
+2018-07-03 17:34:27,614 - INFO     - custom_log - 	 user => admin
+2018-07-03 17:34:27,614 - INFO     - custom_log - 	 password => XXXXX
+2018-07-03 17:34:27,614 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-03 17:34:27,615 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-03 17:34:27,615 - INFO     - custom_log - 	 Try to connect to server
+2018-07-03 17:34:28,263 - INFO     - custom_log - 	 Server items => _class
+2018-07-03 17:34:28,263 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-03 17:34:28,263 - INFO     - custom_log - 	 Server items => mode
+2018-07-03 17:34:28,263 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-03 17:34:28,263 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-03 17:34:28,263 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-03 17:34:28,263 - INFO     - custom_log - 	 Server items => description
+2018-07-03 17:34:28,263 - INFO     - custom_log - 	 Server items => jobs
+2018-07-03 17:34:28,263 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-03 17:34:28,263 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-03 17:34:28,263 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-03 17:34:28,263 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-03 17:34:28,264 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-03 17:34:28,264 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-03 17:34:28,264 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-03 17:34:28,264 - INFO     - custom_log - 	 Server items => views
+2018-07-03 17:34:28,264 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-03 17:34:28,264 - INFO     - custom_log - 	 jobs => [] 
+2018-07-03 17:34:28,264 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130

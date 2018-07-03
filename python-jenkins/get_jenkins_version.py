@@ -15,7 +15,7 @@ from custom_log import LOGGER
 sys.path.insert(0, os.path.abspath(
     os.path.join(os.path.dirname(__file__), './yaml_read_config')))
 
-print("sys.path => {}".format(sys.path))
+LOGGER.info("sys.path => %s", sys.path)
 
 import yaml_read_config
 
@@ -112,7 +112,7 @@ SERVER_INFO = SERVER.get_info()
 
 for key, value in SERVER_INFO.items():
     # print (key, value)
-    print(key)
+    LOGGER.info("Server items => %s", key)
 
 SERVER_JOBS = SERVER_INFO['jobs']
 
