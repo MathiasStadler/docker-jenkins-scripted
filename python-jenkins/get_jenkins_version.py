@@ -14,7 +14,10 @@ from custom_log import LOGGER
 # pylint: disable=C0413
 sys.path.insert(0, os.path.abspath(
     os.path.join(os.path.dirname(__file__), './yaml_read_config')))
-from yaml_read_config import yaml_read_config
+
+print("sys.path => {}".format(sys.path))
+
+import yaml_read_config
 
 
 # getopt
@@ -114,4 +117,4 @@ LOGGER.info("info => %s", SERVER_INFO)
 
 LOGGER.info("jobs => %s ", SERVER_JOBS)
 
-print('Hello %s from Jenkins %s' % (REMOTE_USER['fullName'], version))
+print('Hello %s from Jenkins %s' % (REMOTE_USER['fullName'], VERSION))

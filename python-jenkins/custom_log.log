@@ -1,0 +1,58 @@
+2018-07-03 17:01:05,575 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:01:05,575 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:01:05,575 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:01:05,575 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:01:30,085 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:01:30,085 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:01:30,085 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:01:30,085 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:05:20,444 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:05:20,445 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:05:20,445 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:05:20,445 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:05:59,145 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:05:59,145 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:05:59,146 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:05:59,146 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:07:03,180 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:07:03,180 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:07:03,180 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:07:03,180 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:08:14,232 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:08:14,232 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:08:14,232 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:08:14,232 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:08:51,356 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:08:51,367 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:08:51,368 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:08:51,368 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:11:58,781 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:11:58,782 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:11:58,782 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:11:58,782 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:11:58,841 - INFO     - custom_log - 	 name => remote
+2018-07-03 17:11:58,841 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-03 17:11:58,841 - INFO     - custom_log - 	 port => 8080
+2018-07-03 17:11:58,842 - INFO     - custom_log - 	 protocol => http
+2018-07-03 17:11:58,842 - INFO     - custom_log - 	 user => admin
+2018-07-03 17:11:58,842 - INFO     - custom_log - 	 password => XXXXX
+2018-07-03 17:11:58,842 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-03 17:11:58,842 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-03 17:11:58,842 - INFO     - custom_log - 	 Try to connect to server
+2018-07-03 17:11:59,709 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-03 17:11:59,710 - INFO     - custom_log - 	 jobs => [] 
+2018-07-03 17:12:48,074 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:12:48,074 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:12:48,074 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:12:48,074 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:12:48,117 - INFO     - custom_log - 	 name => remote
+2018-07-03 17:12:48,117 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-03 17:12:48,117 - INFO     - custom_log - 	 port => 8080
+2018-07-03 17:12:48,117 - INFO     - custom_log - 	 protocol => http
+2018-07-03 17:12:48,117 - INFO     - custom_log - 	 user => admin
+2018-07-03 17:12:48,117 - INFO     - custom_log - 	 password => XXXXX
+2018-07-03 17:12:48,118 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-03 17:12:48,118 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-03 17:12:48,118 - INFO     - custom_log - 	 Try to connect to server
+2018-07-03 17:12:50,186 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-03 17:12:50,186 - INFO     - custom_log - 	 jobs => [] 
