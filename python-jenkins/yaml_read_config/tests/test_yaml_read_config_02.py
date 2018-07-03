@@ -1,65 +1,76 @@
+"""TODO Missing docstring"""
 # -*- coding: utf-8 -*-
 
 import os
 import inspect
-from .context import bin
+# from .context import bin
+from .. import yaml_read_config
 
-
-math_obj = 0
+MATH_OBJ = 0
 
 
 def set_up_module():
     """called once, before anything else in this module"""
     print("In set_up_module()...")
-    global math_obj
-    math_obj = bin.YamlReadConfig()
+    # pylint: disable=W0603
+    global MATH_OBJ
+    MATH_OBJ = yaml_read_config.YamlReadConfig()
 
 
-def tearDownModule():
+def tear_down_module():
+    # pylint: disable=W0612,W0613,R0201
     """called once, after everything else in this module"""
     print("In tearDownModule()...")
-    global math_obj
-    del math_obj
+    # pylint: disable=W0603
+    global MATH_OBJ
+    del MATH_OBJ
 
 
 class TestClass01:
+    """TODO Missing docstring"""
 
     @classmethod
-    def setUpClass(cls):
+    def set_up_class(cls):
         """called once, before any test in the class"""
         print("In setUpClass()...")
 
-    def setUp(self):
+    def set_up(self):
+         # pylint: disable=W0612,W0613,R0201
         """called before every test method"""
         print("\nIn setUp() method...")
 
-    def whereWeAre(self):
+    def where_we_are(self):
+        """TODO Missing docstring"""
         print("File => %s" % os.path.basename(__file__))
         print("CLass => %s" % self.__class__.__name__)
         print("def => %s" % inspect.stack()[1][3])
 
-    def tearDown(self):
+    def tear_down(self):
+        # pylint: disable=W0612,W0613,R0201
         """called after every test method"""
         print("In tearDown() method...")
 
     @classmethod
-    def tearDownClass(self):
+    def tear_down_class(cls):
+        # pylint: disable=W0612,W0613,R0201
         """called once, after all tests, if setUpClass() successful"""
         print("\nIn tearDownClass()...")
 
     def setup_function(self):
+        # pylint: disable=W0612,W0613,R0201
         """setup_function(): use it with @with_setup() decorator"""
         print("\nsetup_function()...")
 
     def teardown_function(self):
+        # pylint: disable=W0612,W0613,R0201
         """teardown_function(): use it with @with_setup() decorator"""
         print("\nteardown_function()...")
 
     # Test Cases
     def _test_case01(self):
-        self.whereWeAre()
-        assert bin.getConfigValue('server') == 'localhost'
+        self.where_we_are()
+        assert MATH_OBJ.get_config_value('server') == 'localhost'
 
     def _test_case02(self):
-        self.whereWeAre()
-        assert bin.getConfigValue('user') == 'admin'
+        self.where_we_are()
+        assert MATH_OBJ.get_config_value('user') == 'admin'

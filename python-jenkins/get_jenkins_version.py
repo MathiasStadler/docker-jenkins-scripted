@@ -1,15 +1,20 @@
+"""TODO Missing docstring"""
+
+
 import getopt
 import os
 import sys
 import jenkins
-import ensurePythonVersion
+
+# import ensure_python_version
 from custom_log import LOGGER
 
 
 # load custom module
+# pylint: disable=C0413
 sys.path.insert(0, os.path.abspath(
-    os.path.join(os.path.dirname(__file__), './YAMLReadConfig')))
-from YAMLReadConfig.bin.YamlReadConfig import YamlReadConfig
+    os.path.join(os.path.dirname(__file__), './yaml_read_config')))
+from yaml_read_config import yaml_read_config
 
 
 # getopt
@@ -22,6 +27,7 @@ CONFIG = 'default.out'
 # print('ARGV      :', sys.argv[1:])
 
 try:
+    # pylint: disable=C0330
     OPTIONS, REMAINDER = getopt.gnu_getopt(
         sys.argv[1:],
         'c:v',
@@ -50,15 +56,15 @@ print('REMAINING :', REMAINDER)
 
 
 # read deafult
-config = YamlReadConfig('remote', config_filename)
+CONFIG = yaml_read_config.YamlReadConfig('remote', config_filename)
 
-NAME = config.get_config_value('name')
-SERVER_NAME = config.get_config_value('server')
-PORT = config.get_config_value('port')
-PROTOCOL = config.get_config_value('protocol')
-USER = config.get_config_value('user')
-PASSWORD = config.get_config_value('password')
-TIMEOUT = config.get_config_value('timeout')
+NAME = CONFIG.get_config_value('name')
+SERVER_NAME = CONFIG.get_config_value('server')
+PORT = CONFIG.get_config_value('port')
+PROTOCOL = CONFIG.get_config_value('protocol')
+USER = CONFIG.get_config_value('user')
+PASSWORD = CONFIG.get_config_value('password')
+TIMEOUT = CONFIG.get_config_value('timeout')
 
 # LOGGER default
 LOGGER.info("name => %s", NAME)
@@ -73,7 +79,7 @@ LOGGER.info("timeout for connect the server => %i", TIMEOUT)
 JENKINS_URL = "{}://{}:{}".format(PROTOCOL, SERVER_NAME, PORT)
 
 # LOGGER
-LOGGER.info("Jenkins URL server => {}".format(JENKINS_URL))
+LOGGER.info("Jenkins URL server => %s", JENKINS_URL)
 
 # try to connect
 try:
@@ -89,7 +95,7 @@ except EnvironmentError as err:
     # pylint: disable=no-member
     LOGGER.error({"message": err.message})
 finally:
-    config = None
+    CONFIG = None
 
 REMOTE_USER = SERVER.get_whoami()
 VERSION = SERVER.get_version()

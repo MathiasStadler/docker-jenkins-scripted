@@ -1,3 +1,4 @@
+""" TODO Missing docstring """
 import getopt
 import sys
 
@@ -8,13 +9,15 @@ CONFIG = 'default.out'
 # print('ARGV      :', sys.argv[1:])
 
 try:
+    # pylint: disable=C0330
     OPTIONS, REMAINDER = getopt.gnu_getopt(
         sys.argv[1:],
         'c:v',
         ['CONFIG=',
          'VERBOSE',
          'VERSION=',
-         ])
+         ]
+    )
 except getopt.GetoptError as err:
     print('ERROR:', err)
     sys.exit(1)

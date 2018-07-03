@@ -1,3 +1,4 @@
+"""TODO Missing docstring"""
 # from here
 # https://stackoverflow.com/questions/3760098/checking-version-of-python-interpreter-upon-execution-of-script-with-invalid-syn
 

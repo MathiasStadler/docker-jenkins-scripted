@@ -1,3 +1,2 @@
-python-jenkins
 pytest
 pytest-cov
