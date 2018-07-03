@@ -56,3 +56,98 @@
 2018-07-03 17:12:48,118 - INFO     - custom_log - 	 Try to connect to server
 2018-07-03 17:12:50,186 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
 2018-07-03 17:12:50,186 - INFO     - custom_log - 	 jobs => [] 
+2018-07-03 17:22:19,409 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:22:19,410 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:22:19,410 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:22:19,410 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:22:19,454 - INFO     - custom_log - 	 name => remote
+2018-07-03 17:22:19,454 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-03 17:22:19,454 - INFO     - custom_log - 	 port => 8080
+2018-07-03 17:22:19,454 - INFO     - custom_log - 	 protocol => http
+2018-07-03 17:22:19,455 - INFO     - custom_log - 	 user => admin
+2018-07-03 17:22:19,455 - INFO     - custom_log - 	 password => XXXXX
+2018-07-03 17:22:19,455 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-03 17:22:19,455 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-03 17:22:19,455 - INFO     - custom_log - 	 Try to connect to server
+2018-07-03 17:22:20,348 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-03 17:22:20,349 - INFO     - custom_log - 	 jobs => [] 
+2018-07-03 17:25:12,683 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:25:12,684 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:25:12,684 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:25:12,684 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:25:12,740 - INFO     - custom_log - 	 name => remote
+2018-07-03 17:25:12,740 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-03 17:25:12,740 - INFO     - custom_log - 	 port => 8080
+2018-07-03 17:25:12,741 - INFO     - custom_log - 	 protocol => http
+2018-07-03 17:25:12,741 - INFO     - custom_log - 	 user => admin
+2018-07-03 17:25:12,741 - INFO     - custom_log - 	 password => XXXXX
+2018-07-03 17:25:12,741 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-03 17:25:12,741 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-03 17:25:12,741 - INFO     - custom_log - 	 Try to connect to server
+2018-07-03 17:25:13,332 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-03 17:25:13,332 - INFO     - custom_log - 	 jobs => [] 
+2018-07-03 17:25:13,332 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-03 17:25:23,583 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:25:23,583 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:25:23,583 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:25:23,583 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:25:23,626 - INFO     - custom_log - 	 name => remote
+2018-07-03 17:25:23,627 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-03 17:25:23,627 - INFO     - custom_log - 	 port => 8080
+2018-07-03 17:25:23,627 - INFO     - custom_log - 	 protocol => http
+2018-07-03 17:25:23,627 - INFO     - custom_log - 	 user => admin
+2018-07-03 17:25:23,627 - INFO     - custom_log - 	 password => XXXXX
+2018-07-03 17:25:23,627 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-03 17:25:23,627 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-03 17:25:23,628 - INFO     - custom_log - 	 Try to connect to server
+2018-07-03 17:25:24,197 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-03 17:25:24,197 - INFO     - custom_log - 	 jobs => [] 
+2018-07-03 17:25:24,197 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-03 17:28:06,902 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:28:06,902 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:28:06,903 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:28:06,903 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:28:06,936 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-03 17:28:06,936 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-03 17:28:06,937 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-03 17:28:06,937 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-03 17:28:06,957 - INFO     - custom_log - 	 name => remote
+2018-07-03 17:28:06,957 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-03 17:28:06,957 - INFO     - custom_log - 	 port => 8080
+2018-07-03 17:28:06,957 - INFO     - custom_log - 	 protocol => http
+2018-07-03 17:28:06,957 - INFO     - custom_log - 	 user => admin
+2018-07-03 17:28:06,957 - INFO     - custom_log - 	 password => XXXXX
+2018-07-03 17:28:06,957 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-03 17:28:06,958 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-03 17:28:06,958 - INFO     - custom_log - 	 Try to connect to server
+2018-07-03 17:28:07,640 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-03 17:28:07,640 - INFO     - custom_log - 	 jobs => [] 
+2018-07-03 17:28:07,640 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-03 17:28:57,463 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:28:57,464 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:28:57,464 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:28:57,464 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:28:57,499 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-03 17:28:57,499 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-03 17:28:57,499 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-03 17:28:57,499 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-03 17:29:14,332 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:29:14,332 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:29:14,332 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:29:14,333 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:29:14,354 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-03 17:29:14,354 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-03 17:29:14,354 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-03 17:29:14,354 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-03 17:29:14,378 - INFO     - custom_log - 	 name => remote
+2018-07-03 17:29:14,378 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-03 17:29:14,378 - INFO     - custom_log - 	 port => 8080
+2018-07-03 17:29:14,378 - INFO     - custom_log - 	 protocol => http
+2018-07-03 17:29:14,379 - INFO     - custom_log - 	 user => admin
+2018-07-03 17:29:14,379 - INFO     - custom_log - 	 password => XXXXX
+2018-07-03 17:29:14,379 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-03 17:29:14,379 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-03 17:29:14,379 - INFO     - custom_log - 	 Try to connect to server
+2018-07-03 17:29:15,115 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-03 17:29:15,115 - INFO     - custom_log - 	 jobs => [] 
+2018-07-03 17:29:15,115 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130

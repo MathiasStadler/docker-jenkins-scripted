@@ -13,7 +13,7 @@ MODULE_ROOT_PATH = os.path.dirname(
 
 print("MODULE_ROOT_PATH => " + MODULE_ROOT_PATH)
 
-_LOGGING_CONFIG_FILE = MODULE_ROOT_PATH + '/config/logging_config.ini'
+# _LOGGING_CONFIG_FILE = MODULE_ROOT_PATH + '/config/logging_config.ini'
 
 # LOGGER.fileConfig(_LOGGING_CONFIG_FILE, disable_existing_loggers=False)
 LOGGER = logging.getLogger()

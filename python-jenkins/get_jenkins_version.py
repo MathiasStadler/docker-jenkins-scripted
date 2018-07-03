@@ -39,7 +39,7 @@ try:
          'version=',
          ])
 except getopt.GetoptError as err:
-    print('ERROR:', err)
+    LOGGER.error('ERROR: %s', err)
     sys.exit(1)
 
 print('OPTIONS   :', OPTIONS)
@@ -52,10 +52,10 @@ for opt, arg in OPTIONS:
     elif opt == '--version':
         version = arg
 
-print('VERSION   :', VERSION)
-print('VERBOSE   :', VERBOSE)
-print('CONFIG    :', config_filename)
-print('REMAINING :', REMAINDER)
+LOGGER.debug("VERSION   : %s", VERSION)
+LOGGER.debug("VERBOSE   :%s", VERBOSE)
+LOGGER.debug("CONFIG    : %s", config_filename)
+LOGGER.debug("REMAINING :%s", REMAINDER)
 
 
 # read deafult
@@ -100,12 +100,15 @@ except EnvironmentError as err:
 finally:
     CONFIG = None
 
+# get remote user
 REMOTE_USER = SERVER.get_whoami()
+# get Jenkins version
 VERSION = SERVER.get_version()
 
+# get complete server info
 SERVER_INFO = SERVER.get_info()
 
-print(type(SERVER_INFO))
+# old print(type(SERVER_INFO))
 
 for key, value in SERVER_INFO.items():
     # print (key, value)
@@ -117,4 +120,4 @@ LOGGER.info("info => %s", SERVER_INFO)
 
 LOGGER.info("jobs => %s ", SERVER_JOBS)
 
-print('Hello %s from Jenkins %s' % (REMOTE_USER['fullName'], VERSION))
+LOGGER.info('Hello %s from Jenkins %s', REMOTE_USER['fullName'], VERSION)
