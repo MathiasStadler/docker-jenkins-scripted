@@ -9,7 +9,7 @@ import yaml
 CURRENT_MODULE = sys.modules[__name__]
 MODULE_DIRECTORY = CURRENT_MODULE.__file__
 MODULE_ROOT_PATH = os.path.dirname(
-    os.path.abspath(MODULE_DIRECTORY))+os.sep+".."+os.sep
+    os.path.abspath(MODULE_DIRECTORY))+os.sep
 
 print("MODULE_ROOT_PATH => " + MODULE_ROOT_PATH)
 
@@ -28,7 +28,7 @@ class YamlReadConfig:
     CURRENT_MODULE = sys.modules[__name__]
     MODULE_DIRECTORY = CURRENT_MODULE.__file__
     MODULE_ROOT_PATH = os.path.dirname(
-        os.path.abspath(MODULE_DIRECTORY))+os.sep+".."+os.sep
+        os.path.abspath(MODULE_DIRECTORY))+os.sep
 
     _DEFAULT_CONFIG = 'default'
     _DEFAULT_CONFIG_FILE = MODULE_ROOT_PATH + '/config/localhost_config.yml'
