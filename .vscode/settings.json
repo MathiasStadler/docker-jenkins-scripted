@@ -23,6 +23,7 @@
         "mkdir",
         "modinfo",
         "netx",
+        "ngrep",
         "nodev",
         "noninteractive",
         "readonly",

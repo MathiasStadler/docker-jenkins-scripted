@@ -55,6 +55,13 @@ system("
     fi
 ")
 
+# ensure tmp files
+system("
+  if ! [ -e /tmp/#{VM_NAME}.vminfo ]; then
+    touch /tmp/#{VM_NAME}.vminfo
+  fi
+")
+
 # from here https://github.com/fdemmer/vagrant-stretch64-docker/blob/master/Vagrantfile
 
 plugins = ["vagrant-disksize",
