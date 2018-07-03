@@ -26,6 +26,7 @@
         "ngrep",
         "nodev",
         "noninteractive",
+        "pylint",
         "readonly",
         "relatime",
         "repo",

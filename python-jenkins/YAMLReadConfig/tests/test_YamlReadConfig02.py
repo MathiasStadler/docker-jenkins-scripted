@@ -1,17 +1,16 @@
 # -*- coding: utf-8 -*-
 
-from .context import bin
 import os
 import inspect
-import time
+from .context import bin
 
 
 math_obj = 0
 
 
-def setUpModule():
+def set_up_module():
     """called once, before anything else in this module"""
-    print("In setUpModule()...")
+    print("In set_up_module()...")
     global math_obj
     math_obj = bin.YamlReadConfig()
 

@@ -1,3 +1,4 @@
+import getopt
 import os
 import sys
 import ensurePythonVersion
@@ -10,8 +11,45 @@ sys.path.insert(0, os.path.abspath(
 from YAMLReadConfig.bin.YamlReadConfig import YamlReadConfig
 
 
+# getopt
+
+# default values
+version = '1.0'
+verbose = False
+config = 'default.out'
+
+# print('ARGV      :', sys.argv[1:])
+
+try:
+    options, remainder = getopt.gnu_getopt(
+        sys.argv[1:],
+        'c:v',
+        ['config=',
+         'verbose',
+         'version=',
+         ])
+except getopt.GetoptError as err:
+    print('ERROR:', err)
+    sys.exit(1)
+
+print('OPTIONS   :', options)
+
+for opt, arg in options:
+    if opt in ('-c', '--config'):
+        config_filename = arg
+    elif opt in ('-v', '--verbose'):
+        verbose = True
+    elif opt == '--version':
+        version = arg
+
+print('VERSION   :', version)
+print('VERBOSE   :', verbose)
+print('CONFIG    :', config_filename)
+print('REMAINING :', remainder)
+
+
 # read deafult
-config = YamlReadConfig('remote')
+config = YamlReadConfig('remote', config_filename)
 
 name = config.getConfigValue('name')
 serverName = config.getConfigValue('server')
@@ -22,7 +60,7 @@ password = config.getConfigValue('password')
 timeout = config.getConfigValue('timeout')
 
 # log default
-log.info("name => {} ".format(name))
+log.info("name => % ".format(name))
 log.info("serverName => {} ".format(serverName))
 log.info("port => {}".format(port))
 log.info("protocol => {}".format(protocol))
@@ -41,14 +79,16 @@ try:
     log.info("Try to connect to server")
     server = jenkins.Jenkins(jenkinsURL,
                              username=user, password=password, timeout=timeout)
+
 except TimeoutError as err:
+    # pylint: disable=no-member
     log.error({"message": err.message})
 except EnvironmentError as err:
     # handle other errors
+    # pylint: disable=no-member
     log.error({"message": err.message})
 finally:
     config = None
-
 
 user = server.get_whoami()
 version = server.get_version()

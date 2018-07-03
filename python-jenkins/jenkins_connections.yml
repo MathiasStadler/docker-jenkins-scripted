@@ -1,0 +1,17 @@
+---
+default:
+  name: default
+  server: localhost
+  port: 8080
+  protocol: https
+  user: admin
+  password: admin
+  timeout: 3
+remote:
+  name: remote
+  server: 192.168.178.96
+  port: 8080
+  protocol: http
+  user: admin
+  password: admin
+  timeout: 3

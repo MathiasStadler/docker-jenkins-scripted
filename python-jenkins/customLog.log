@@ -26,3 +26,27 @@
 2018-07-03 11:37:47,127 - INFO     - customLog - 	 timeout for connect the server => 3
 2018-07-03 11:37:47,128 - INFO     - customLog - 	 URL of Jenkins server => http://192.168.178.48:8080
 2018-07-03 11:37:47,128 - INFO     - customLog - 	 Try to connect to server
+2018-07-03 11:48:39,268 - DEBUG    - customLog - 	 Debug Log Start 
+2018-07-03 11:48:39,269 - INFO     - customLog - 	 Info Log start
+2018-07-03 11:48:39,269 - WARNING  - customLog - 	 Warn Log start
+2018-07-03 11:48:39,269 - ERROR    - customLog - 	 Error Loh start
+2018-07-03 11:48:39,270 - CRITICAL - customLog - 	 Critical Log start
+2018-07-03 11:49:20,006 - DEBUG    - customLog - 	 Debug Log Start 
+2018-07-03 11:49:20,007 - INFO     - customLog - 	 Info Log start
+2018-07-03 11:49:20,007 - WARNING  - customLog - 	 Warn Log start
+2018-07-03 11:49:20,007 - ERROR    - customLog - 	 Error Loh start
+2018-07-03 11:49:20,007 - CRITICAL - customLog - 	 Critical Log start
+2018-07-03 12:03:19,420 - DEBUG    - customLog - 	 Debug Log Start 
+2018-07-03 12:03:19,421 - INFO     - customLog - 	 Info Log start
+2018-07-03 12:03:19,421 - WARNING  - customLog - 	 Warn Log start
+2018-07-03 12:03:19,421 - ERROR    - customLog - 	 Error Loh start
+2018-07-03 12:03:19,421 - CRITICAL - customLog - 	 Critical Log start
+2018-07-03 12:03:19,768 - INFO     - customLog - 	 name => remote 
+2018-07-03 12:03:19,769 - INFO     - customLog - 	 serverName => 192.168.178.96 
+2018-07-03 12:03:19,769 - INFO     - customLog - 	 port => 8080
+2018-07-03 12:03:19,769 - INFO     - customLog - 	 protocol => http
+2018-07-03 12:03:19,769 - INFO     - customLog - 	 user => admin
+2018-07-03 12:03:19,769 - INFO     - customLog - 	 password => XXXXX
+2018-07-03 12:03:19,769 - INFO     - customLog - 	 timeout for connect the server => 3
+2018-07-03 12:03:19,769 - INFO     - customLog - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-03 12:03:19,769 - INFO     - customLog - 	 Try to connect to server
