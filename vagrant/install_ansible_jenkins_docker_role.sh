@@ -51,6 +51,15 @@ cat <<PLAYBOOK >playbook.yml
 - hosts: local
   become: yes
   become_method: sudo
+
+  vars:
+    jenkins_plugins:
+      - ssh
+      - ghprb
+      - greenballs
+      - workflow-aggregator
+    jenkins_plugin_timeout: 120
+
   roles:
     - geerlingguy.java
     - geerlingguy.jenkins

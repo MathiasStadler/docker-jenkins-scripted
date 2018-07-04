@@ -188,3 +188,1675 @@
 2018-07-03 17:34:28,264 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
 2018-07-03 17:34:28,264 - INFO     - custom_log - 	 jobs => [] 
 2018-07-03 17:34:28,264 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-03 17:39:35,446 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:39:35,447 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:39:35,447 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:39:35,447 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:39:35,448 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-03 17:39:35,481 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-03 17:39:35,481 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-03 17:39:35,481 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-03 17:39:35,482 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-03 17:39:35,501 - INFO     - custom_log - 	 name => remote
+2018-07-03 17:39:35,501 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-03 17:39:35,501 - INFO     - custom_log - 	 port => 8080
+2018-07-03 17:39:35,501 - INFO     - custom_log - 	 protocol => http
+2018-07-03 17:39:35,501 - INFO     - custom_log - 	 user => admin
+2018-07-03 17:39:35,501 - INFO     - custom_log - 	 password => XXXXX
+2018-07-03 17:39:35,501 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-03 17:39:35,502 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-03 17:39:35,502 - INFO     - custom_log - 	 Try to connect to server
+2018-07-03 17:39:36,382 - INFO     - custom_log - 	 Server items => _class
+2018-07-03 17:39:36,382 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-03 17:39:36,382 - INFO     - custom_log - 	 Server items => mode
+2018-07-03 17:39:36,382 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-03 17:39:36,382 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-03 17:39:36,383 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-03 17:39:36,383 - INFO     - custom_log - 	 Server items => description
+2018-07-03 17:39:36,383 - INFO     - custom_log - 	 Server items => jobs
+2018-07-03 17:39:36,383 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-03 17:39:36,383 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-03 17:39:36,383 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-03 17:39:36,383 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-03 17:39:36,383 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-03 17:39:36,384 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-03 17:39:36,384 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-03 17:39:36,384 - INFO     - custom_log - 	 Server items => views
+2018-07-03 17:39:36,384 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-03 17:39:36,384 - INFO     - custom_log - 	 jobs => [] 
+2018-07-03 17:39:36,384 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-03 17:40:19,071 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:40:19,071 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:40:19,072 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:40:19,072 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:40:19,072 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-03 17:40:19,106 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-03 17:40:19,106 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-03 17:40:19,106 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-03 17:40:19,106 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-03 17:40:19,130 - INFO     - custom_log - 	 name => remote
+2018-07-03 17:40:19,130 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-03 17:40:19,130 - INFO     - custom_log - 	 port => 8080
+2018-07-03 17:40:19,130 - INFO     - custom_log - 	 protocol => http
+2018-07-03 17:40:19,131 - INFO     - custom_log - 	 user => admin
+2018-07-03 17:40:19,131 - INFO     - custom_log - 	 password => XXXXX
+2018-07-03 17:40:19,131 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-03 17:40:19,131 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-03 17:40:19,131 - INFO     - custom_log - 	 Try to connect to server
+2018-07-03 17:40:19,845 - INFO     - custom_log - 	 Server items => _class
+2018-07-03 17:40:19,845 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-03 17:40:19,845 - INFO     - custom_log - 	 Server items => mode
+2018-07-03 17:40:19,846 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-03 17:40:19,846 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-03 17:40:19,846 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-03 17:40:19,846 - INFO     - custom_log - 	 Server items => description
+2018-07-03 17:40:19,846 - INFO     - custom_log - 	 Server items => jobs
+2018-07-03 17:40:19,846 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-03 17:40:19,846 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-03 17:40:19,846 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-03 17:40:19,846 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-03 17:40:19,847 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-03 17:40:19,847 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-03 17:40:19,847 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-03 17:40:19,847 - INFO     - custom_log - 	 Server items => views
+2018-07-03 17:40:19,847 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-03 17:40:19,847 - INFO     - custom_log - 	 jobs => [] 
+2018-07-03 17:40:19,847 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-03 17:40:56,407 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:40:56,408 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:40:56,408 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:40:56,408 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:40:56,408 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-03 17:40:56,439 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-03 17:40:56,439 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-03 17:40:56,439 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-03 17:40:56,439 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-03 17:40:56,457 - INFO     - custom_log - 	 name => remote
+2018-07-03 17:40:56,457 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-03 17:40:56,458 - INFO     - custom_log - 	 port => 8080
+2018-07-03 17:40:56,458 - INFO     - custom_log - 	 protocol => http
+2018-07-03 17:40:56,458 - INFO     - custom_log - 	 user => admin
+2018-07-03 17:40:56,458 - INFO     - custom_log - 	 password => XXXXX
+2018-07-03 17:40:56,458 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-03 17:40:56,458 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-03 17:40:56,458 - INFO     - custom_log - 	 Try to connect to server
+2018-07-03 17:40:57,222 - INFO     - custom_log - 	 Server items => _class
+2018-07-03 17:40:57,223 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-03 17:40:57,223 - INFO     - custom_log - 	 Server items => mode
+2018-07-03 17:40:57,223 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-03 17:40:57,223 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-03 17:40:57,223 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-03 17:40:57,224 - INFO     - custom_log - 	 Server items => description
+2018-07-03 17:40:57,224 - INFO     - custom_log - 	 Server items => jobs
+2018-07-03 17:40:57,224 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-03 17:40:57,224 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-03 17:40:57,224 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-03 17:40:57,224 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-03 17:40:57,224 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-03 17:40:57,224 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-03 17:40:57,225 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-03 17:40:57,225 - INFO     - custom_log - 	 Server items => views
+2018-07-03 17:40:57,225 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-03 17:40:57,225 - INFO     - custom_log - 	 jobs => [] 
+2018-07-03 17:40:57,225 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-03 17:45:55,818 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:45:55,818 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:45:55,819 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:45:55,819 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:45:55,819 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-03 17:45:55,855 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-03 17:45:55,855 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-03 17:45:55,855 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-03 17:45:55,855 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-03 17:45:55,875 - INFO     - custom_log - 	 name => remote
+2018-07-03 17:45:55,875 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-03 17:45:55,875 - INFO     - custom_log - 	 port => 8080
+2018-07-03 17:45:55,875 - INFO     - custom_log - 	 protocol => http
+2018-07-03 17:45:55,875 - INFO     - custom_log - 	 user => admin
+2018-07-03 17:45:55,876 - INFO     - custom_log - 	 password => XXXXX
+2018-07-03 17:45:55,876 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-03 17:45:55,876 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-03 17:45:55,876 - INFO     - custom_log - 	 Try to connect to server
+2018-07-03 17:45:56,536 - INFO     - custom_log - 	 Server items => _class
+2018-07-03 17:45:56,536 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-03 17:45:56,536 - INFO     - custom_log - 	 Server items => mode
+2018-07-03 17:45:56,536 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-03 17:45:56,537 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-03 17:45:56,537 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-03 17:45:56,537 - INFO     - custom_log - 	 Server items => description
+2018-07-03 17:45:56,537 - INFO     - custom_log - 	 Server items => jobs
+2018-07-03 17:45:56,537 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-03 17:45:56,537 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-03 17:45:56,537 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-03 17:45:56,538 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-03 17:45:56,538 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-03 17:45:56,538 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-03 17:45:56,538 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-03 17:45:56,538 - INFO     - custom_log - 	 Server items => views
+2018-07-03 17:45:56,538 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-03 17:45:56,539 - INFO     - custom_log - 	 jobs => [] 
+2018-07-03 17:45:56,539 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-03 17:47:10,329 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:47:10,329 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:47:10,330 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:47:10,330 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:47:10,330 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-03 17:47:10,361 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-03 17:47:10,361 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-03 17:47:10,361 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-03 17:47:10,361 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-03 17:47:10,379 - INFO     - custom_log - 	 name => remote
+2018-07-03 17:47:10,380 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-03 17:47:10,380 - INFO     - custom_log - 	 port => 8080
+2018-07-03 17:47:10,380 - INFO     - custom_log - 	 protocol => http
+2018-07-03 17:47:10,380 - INFO     - custom_log - 	 user => admin
+2018-07-03 17:47:10,380 - INFO     - custom_log - 	 password => XXXXX
+2018-07-03 17:47:10,380 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-03 17:47:10,380 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-03 17:47:10,380 - INFO     - custom_log - 	 Try to connect to server
+2018-07-03 17:47:10,990 - INFO     - custom_log - 	 Server items => _class
+2018-07-03 17:47:10,991 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-03 17:47:10,991 - INFO     - custom_log - 	 Server items => mode
+2018-07-03 17:47:10,991 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-03 17:47:10,991 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-03 17:47:10,991 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-03 17:47:10,991 - INFO     - custom_log - 	 Server items => description
+2018-07-03 17:47:10,991 - INFO     - custom_log - 	 Server items => jobs
+2018-07-03 17:47:10,992 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-03 17:47:10,992 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-03 17:47:10,992 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-03 17:47:10,992 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-03 17:47:10,992 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-03 17:47:10,992 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-03 17:47:10,992 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-03 17:47:10,993 - INFO     - custom_log - 	 Server items => views
+2018-07-03 17:47:10,993 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-03 17:47:10,993 - INFO     - custom_log - 	 jobs => [] 
+2018-07-03 17:47:10,993 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-03 17:48:00,245 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:48:00,245 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:48:00,246 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:48:00,246 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:48:00,246 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-03 17:48:00,275 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-03 17:48:00,276 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-03 17:48:00,276 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-03 17:48:00,276 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-03 17:48:00,296 - INFO     - custom_log - 	 name => remote
+2018-07-03 17:48:00,296 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-03 17:48:00,296 - INFO     - custom_log - 	 port => 8080
+2018-07-03 17:48:00,297 - INFO     - custom_log - 	 protocol => http
+2018-07-03 17:48:00,297 - INFO     - custom_log - 	 user => admin
+2018-07-03 17:48:00,297 - INFO     - custom_log - 	 password => XXXXX
+2018-07-03 17:48:00,297 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-03 17:48:00,297 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-03 17:48:00,297 - INFO     - custom_log - 	 Try to connect to server
+2018-07-03 17:48:01,180 - INFO     - custom_log - 	 Server items => _class
+2018-07-03 17:48:01,180 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-03 17:48:01,181 - INFO     - custom_log - 	 Server items => mode
+2018-07-03 17:48:01,181 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-03 17:48:01,181 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-03 17:48:01,181 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-03 17:48:01,181 - INFO     - custom_log - 	 Server items => description
+2018-07-03 17:48:01,181 - INFO     - custom_log - 	 Server items => jobs
+2018-07-03 17:48:01,182 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-03 17:48:01,182 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-03 17:48:01,182 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-03 17:48:01,182 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-03 17:48:01,182 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-03 17:48:01,182 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-03 17:48:01,182 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-03 17:48:01,183 - INFO     - custom_log - 	 Server items => views
+2018-07-03 17:48:01,183 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-03 17:48:01,183 - INFO     - custom_log - 	 jobs => [] 
+2018-07-03 17:48:01,183 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-03 17:48:20,506 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:48:20,507 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:48:20,507 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:48:20,507 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:48:20,507 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-03 17:48:20,538 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-03 17:48:20,539 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-03 17:48:20,539 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-03 17:48:20,539 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-03 17:48:20,559 - INFO     - custom_log - 	 name => remote
+2018-07-03 17:48:20,559 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-03 17:48:20,559 - INFO     - custom_log - 	 port => 8080
+2018-07-03 17:48:20,559 - INFO     - custom_log - 	 protocol => http
+2018-07-03 17:48:20,560 - INFO     - custom_log - 	 user => admin
+2018-07-03 17:48:20,560 - INFO     - custom_log - 	 password => XXXXX
+2018-07-03 17:48:20,560 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-03 17:48:20,560 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-03 17:48:20,560 - INFO     - custom_log - 	 Try to connect to server
+2018-07-03 17:48:21,115 - INFO     - custom_log - 	 Server items => _class
+2018-07-03 17:48:21,115 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-03 17:48:21,115 - INFO     - custom_log - 	 Server items => mode
+2018-07-03 17:48:21,115 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-03 17:48:21,115 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-03 17:48:21,115 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-03 17:48:21,116 - INFO     - custom_log - 	 Server items => description
+2018-07-03 17:48:21,116 - INFO     - custom_log - 	 Server items => jobs
+2018-07-03 17:48:21,116 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-03 17:48:21,117 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-03 17:48:21,117 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-03 17:48:21,118 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-03 17:48:21,118 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-03 17:48:21,118 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-03 17:48:21,118 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-03 17:48:21,118 - INFO     - custom_log - 	 Server items => views
+2018-07-03 17:48:21,118 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-03 17:48:21,118 - INFO     - custom_log - 	 jobs => [] 
+2018-07-03 17:48:21,118 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-03 17:48:58,040 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:48:58,040 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:48:58,040 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:48:58,040 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:48:58,040 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-03 17:48:58,064 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-03 17:48:58,064 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-03 17:48:58,064 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-03 17:48:58,064 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-03 17:48:58,082 - INFO     - custom_log - 	 name => remote
+2018-07-03 17:48:58,083 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-03 17:48:58,083 - INFO     - custom_log - 	 port => 8080
+2018-07-03 17:48:58,083 - INFO     - custom_log - 	 protocol => http
+2018-07-03 17:48:58,083 - INFO     - custom_log - 	 user => admin
+2018-07-03 17:48:58,083 - INFO     - custom_log - 	 password => XXXXX
+2018-07-03 17:48:58,083 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-03 17:48:58,083 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-03 17:48:58,083 - INFO     - custom_log - 	 Try to connect to server
+2018-07-03 17:48:58,827 - INFO     - custom_log - 	 Server items => _class
+2018-07-03 17:48:58,828 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-03 17:48:58,828 - INFO     - custom_log - 	 Server items => mode
+2018-07-03 17:48:58,828 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-03 17:48:58,828 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-03 17:48:58,828 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-03 17:48:58,828 - INFO     - custom_log - 	 Server items => description
+2018-07-03 17:48:58,829 - INFO     - custom_log - 	 Server items => jobs
+2018-07-03 17:48:58,829 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-03 17:48:58,829 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-03 17:48:58,829 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-03 17:48:58,829 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-03 17:48:58,829 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-03 17:48:58,829 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-03 17:48:58,830 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-03 17:48:58,830 - INFO     - custom_log - 	 Server items => views
+2018-07-03 17:48:58,830 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-03 17:48:58,830 - INFO     - custom_log - 	 jobs => [] 
+2018-07-03 17:48:58,830 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-03 17:49:25,966 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:49:25,966 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:49:25,966 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:49:25,966 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:49:25,966 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-03 17:49:25,988 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-03 17:49:25,988 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-03 17:49:25,988 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-03 17:49:25,988 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-03 17:49:26,011 - INFO     - custom_log - 	 name => remote
+2018-07-03 17:49:26,011 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-03 17:49:26,011 - INFO     - custom_log - 	 port => 8080
+2018-07-03 17:49:26,012 - INFO     - custom_log - 	 protocol => http
+2018-07-03 17:49:26,012 - INFO     - custom_log - 	 user => admin
+2018-07-03 17:49:26,012 - INFO     - custom_log - 	 password => XXXXX
+2018-07-03 17:49:26,012 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-03 17:49:26,012 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-03 17:49:26,012 - INFO     - custom_log - 	 Try to connect to server
+2018-07-03 17:49:26,961 - INFO     - custom_log - 	 Server items => _class
+2018-07-03 17:49:26,961 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-03 17:49:26,962 - INFO     - custom_log - 	 Server items => mode
+2018-07-03 17:49:26,962 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-03 17:49:26,962 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-03 17:49:26,962 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-03 17:49:26,962 - INFO     - custom_log - 	 Server items => description
+2018-07-03 17:49:26,962 - INFO     - custom_log - 	 Server items => jobs
+2018-07-03 17:49:26,962 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-03 17:49:26,962 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-03 17:49:26,963 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-03 17:49:26,963 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-03 17:49:26,963 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-03 17:49:26,963 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-03 17:49:26,963 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-03 17:49:26,963 - INFO     - custom_log - 	 Server items => views
+2018-07-03 17:49:26,964 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-03 17:49:26,964 - INFO     - custom_log - 	 jobs => [] 
+2018-07-03 17:49:26,964 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-03 17:51:40,855 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-03 17:51:40,856 - INFO     - custom_log - 	 Info Log start
+2018-07-03 17:51:40,856 - ERROR    - custom_log - 	 Error Loh start
+2018-07-03 17:51:40,856 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-03 17:51:40,856 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-03 17:51:40,886 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-03 17:51:40,886 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-03 17:51:40,886 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-03 17:51:40,886 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-03 17:51:40,909 - INFO     - custom_log - 	 name => remote
+2018-07-03 17:51:40,909 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-03 17:51:40,909 - INFO     - custom_log - 	 port => 8080
+2018-07-03 17:51:40,910 - INFO     - custom_log - 	 protocol => http
+2018-07-03 17:51:40,910 - INFO     - custom_log - 	 user => admin
+2018-07-03 17:51:40,910 - INFO     - custom_log - 	 password => XXXXX
+2018-07-03 17:51:40,910 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-03 17:51:40,911 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-03 17:51:40,911 - INFO     - custom_log - 	 Try to connect to server
+2018-07-03 17:51:41,609 - INFO     - custom_log - 	 Server items => _class
+2018-07-03 17:51:41,610 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-03 17:51:41,610 - INFO     - custom_log - 	 Server items => mode
+2018-07-03 17:51:41,610 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-03 17:51:41,610 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-03 17:51:41,610 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-03 17:51:41,610 - INFO     - custom_log - 	 Server items => description
+2018-07-03 17:51:41,611 - INFO     - custom_log - 	 Server items => jobs
+2018-07-03 17:51:41,611 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-03 17:51:41,611 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-03 17:51:41,611 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-03 17:51:41,611 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-03 17:51:41,611 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-03 17:51:41,611 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-03 17:51:41,611 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-03 17:51:41,611 - INFO     - custom_log - 	 Server items => views
+2018-07-03 17:51:41,612 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-03 17:51:41,612 - INFO     - custom_log - 	 jobs => [] 
+2018-07-03 17:51:41,612 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 11:41:25,458 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 11:41:25,458 - INFO     - custom_log - 	 Info Log start
+2018-07-04 11:41:25,458 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 11:41:25,459 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 11:41:25,459 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 11:41:25,493 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 11:41:25,493 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 11:41:25,494 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 11:41:25,494 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 11:41:25,513 - INFO     - custom_log - 	 name => remote
+2018-07-04 11:41:25,514 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 11:41:25,514 - INFO     - custom_log - 	 port => 8080
+2018-07-04 11:41:25,515 - INFO     - custom_log - 	 protocol => http
+2018-07-04 11:41:25,515 - INFO     - custom_log - 	 user => admin
+2018-07-04 11:41:25,515 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 11:41:25,515 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 11:41:25,516 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 11:41:25,516 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 11:41:27,255 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 11:41:27,255 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 11:41:27,255 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 11:41:27,255 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 11:41:27,255 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 11:41:27,256 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 11:41:27,256 - INFO     - custom_log - 	 Server items => description
+2018-07-04 11:41:27,256 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 11:41:27,256 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 11:41:27,256 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 11:41:27,257 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 11:41:27,257 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 11:41:27,257 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 11:41:27,257 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 11:41:27,257 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 11:41:27,257 - INFO     - custom_log - 	 Server items => views
+2018-07-04 11:41:27,258 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 11:41:27,258 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 11:41:27,258 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 11:44:51,404 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 11:44:51,405 - INFO     - custom_log - 	 Info Log start
+2018-07-04 11:44:51,405 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 11:44:51,405 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 11:44:51,406 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 11:44:51,438 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 11:44:51,438 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 11:44:51,438 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 11:44:51,438 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 11:44:51,458 - INFO     - custom_log - 	 name => remote
+2018-07-04 11:44:51,459 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 11:44:51,459 - INFO     - custom_log - 	 port => 8080
+2018-07-04 11:44:51,459 - INFO     - custom_log - 	 protocol => http
+2018-07-04 11:44:51,459 - INFO     - custom_log - 	 user => admin
+2018-07-04 11:44:51,459 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 11:44:51,459 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 11:44:51,459 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 11:44:51,459 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 11:44:52,001 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 11:44:52,002 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 11:44:52,002 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 11:44:52,002 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 11:44:52,002 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 11:44:52,002 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 11:44:52,002 - INFO     - custom_log - 	 Server items => description
+2018-07-04 11:44:52,003 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 11:44:52,003 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 11:44:52,003 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 11:44:52,003 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 11:44:52,003 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 11:44:52,004 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 11:44:52,004 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 11:44:52,004 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 11:44:52,004 - INFO     - custom_log - 	 Server items => views
+2018-07-04 11:44:52,004 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 11:44:52,005 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 11:44:52,005 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 11:45:44,230 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 11:45:44,231 - INFO     - custom_log - 	 Info Log start
+2018-07-04 11:45:44,231 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 11:45:44,231 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 11:45:44,232 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 11:45:44,264 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 11:45:44,264 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 11:45:44,264 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 11:45:44,264 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 11:45:44,283 - INFO     - custom_log - 	 name => remote
+2018-07-04 11:45:44,283 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 11:45:44,283 - INFO     - custom_log - 	 port => 8080
+2018-07-04 11:45:44,283 - INFO     - custom_log - 	 protocol => http
+2018-07-04 11:45:44,283 - INFO     - custom_log - 	 user => admin
+2018-07-04 11:45:44,283 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 11:45:44,284 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 11:45:44,284 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 11:45:44,284 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 11:45:44,915 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 11:45:44,915 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 11:45:44,916 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 11:45:44,916 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 11:45:44,916 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 11:45:44,916 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 11:45:44,916 - INFO     - custom_log - 	 Server items => description
+2018-07-04 11:45:44,916 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 11:45:44,916 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 11:45:44,916 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 11:45:44,916 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 11:45:44,916 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 11:45:44,917 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 11:45:44,917 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 11:45:44,917 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 11:45:44,917 - INFO     - custom_log - 	 Server items => views
+2018-07-04 11:45:44,917 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 11:45:44,917 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 11:45:44,917 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 11:47:16,699 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 11:47:16,700 - INFO     - custom_log - 	 Info Log start
+2018-07-04 11:47:16,700 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 11:47:16,701 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 11:47:16,701 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 11:47:16,732 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 11:47:16,732 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 11:47:16,733 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 11:47:16,733 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 11:47:16,757 - INFO     - custom_log - 	 name => remote
+2018-07-04 11:47:16,757 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 11:47:16,757 - INFO     - custom_log - 	 port => 8080
+2018-07-04 11:47:16,757 - INFO     - custom_log - 	 protocol => http
+2018-07-04 11:47:16,757 - INFO     - custom_log - 	 user => admin
+2018-07-04 11:47:16,758 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 11:47:16,758 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 11:47:16,758 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 11:47:16,758 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 11:47:17,280 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 11:47:17,281 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 11:47:17,281 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 11:47:17,281 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 11:47:17,281 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 11:47:17,281 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 11:47:17,282 - INFO     - custom_log - 	 Server items => description
+2018-07-04 11:47:17,282 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 11:47:17,282 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 11:47:17,282 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 11:47:17,282 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 11:47:17,282 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 11:47:17,282 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 11:47:17,282 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 11:47:17,282 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 11:47:17,282 - INFO     - custom_log - 	 Server items => views
+2018-07-04 11:47:17,283 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 11:47:17,288 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 11:47:17,288 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 11:47:32,532 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 11:47:32,532 - INFO     - custom_log - 	 Info Log start
+2018-07-04 11:47:32,533 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 11:47:32,533 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 11:47:32,533 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 11:47:32,553 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 11:47:32,554 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 11:47:32,554 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 11:47:32,554 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 11:47:32,569 - INFO     - custom_log - 	 name => remote
+2018-07-04 11:47:32,569 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 11:47:32,570 - INFO     - custom_log - 	 port => 8080
+2018-07-04 11:47:32,570 - INFO     - custom_log - 	 protocol => http
+2018-07-04 11:47:32,570 - INFO     - custom_log - 	 user => admin
+2018-07-04 11:47:32,570 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 11:47:32,570 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 11:47:32,570 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 11:47:32,570 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 11:47:33,268 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 11:47:33,268 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 11:47:33,268 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 11:47:33,268 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 11:47:33,268 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 11:47:33,268 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 11:47:33,269 - INFO     - custom_log - 	 Server items => description
+2018-07-04 11:47:33,269 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 11:47:33,269 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 11:47:33,269 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 11:47:33,269 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 11:47:33,269 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 11:47:33,269 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 11:47:33,269 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 11:47:33,269 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 11:47:33,269 - INFO     - custom_log - 	 Server items => views
+2018-07-04 11:47:33,270 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 11:47:33,270 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 11:47:33,270 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 11:56:12,101 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 11:56:12,101 - INFO     - custom_log - 	 Info Log start
+2018-07-04 11:56:12,101 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 11:56:12,101 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 11:56:12,102 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 11:56:12,137 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 11:56:12,138 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 11:56:12,138 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 11:56:12,138 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 11:56:12,159 - INFO     - custom_log - 	 name => remote
+2018-07-04 11:56:12,159 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 11:56:12,159 - INFO     - custom_log - 	 port => 8080
+2018-07-04 11:56:12,159 - INFO     - custom_log - 	 protocol => http
+2018-07-04 11:56:12,159 - INFO     - custom_log - 	 user => admin
+2018-07-04 11:56:12,160 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 11:56:12,160 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 11:56:12,160 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 11:56:12,160 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 11:56:13,060 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 11:56:13,060 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 11:56:13,060 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 11:56:13,060 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 11:56:13,061 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 11:56:13,061 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 11:56:13,061 - INFO     - custom_log - 	 Server items => description
+2018-07-04 11:56:13,061 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 11:56:13,061 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 11:56:13,061 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 11:56:13,061 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 11:56:13,061 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 11:56:13,062 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 11:56:13,062 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 11:56:13,062 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 11:56:13,062 - INFO     - custom_log - 	 Server items => views
+2018-07-04 11:56:13,062 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 11:56:13,062 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 11:56:13,062 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 11:57:08,041 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 11:57:08,041 - INFO     - custom_log - 	 Info Log start
+2018-07-04 11:57:08,041 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 11:57:08,041 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 11:57:08,042 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 11:57:08,072 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 11:57:08,072 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 11:57:08,073 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 11:57:08,073 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 11:57:08,116 - INFO     - custom_log - 	 name => remote
+2018-07-04 11:57:08,116 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 11:57:08,116 - INFO     - custom_log - 	 port => 8080
+2018-07-04 11:57:08,117 - INFO     - custom_log - 	 protocol => http
+2018-07-04 11:57:08,117 - INFO     - custom_log - 	 user => admin
+2018-07-04 11:57:08,117 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 11:57:08,117 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 11:57:08,117 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 11:57:08,117 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 11:57:08,774 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 11:57:08,774 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 11:57:08,774 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 11:57:08,775 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 11:57:08,775 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 11:57:08,775 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 11:57:08,775 - INFO     - custom_log - 	 Server items => description
+2018-07-04 11:57:08,775 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 11:57:08,775 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 11:57:08,775 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 11:57:08,775 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 11:57:08,776 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 11:57:08,776 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 11:57:08,776 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 11:57:08,776 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 11:57:08,776 - INFO     - custom_log - 	 Server items => views
+2018-07-04 11:57:08,776 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 11:57:08,777 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 11:57:08,777 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 12:47:16,171 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 12:47:16,172 - INFO     - custom_log - 	 Info Log start
+2018-07-04 12:47:16,172 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 12:47:16,172 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 12:47:16,173 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 12:47:16,210 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 12:47:16,210 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 12:47:16,210 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 12:47:16,211 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 12:47:16,231 - INFO     - custom_log - 	 name => remote
+2018-07-04 12:47:16,231 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 12:47:16,231 - INFO     - custom_log - 	 port => 8080
+2018-07-04 12:47:16,232 - INFO     - custom_log - 	 protocol => http
+2018-07-04 12:47:16,232 - INFO     - custom_log - 	 user => admin
+2018-07-04 12:47:16,232 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 12:47:16,232 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 12:47:16,232 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 12:47:16,232 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 12:47:17,147 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 12:47:17,147 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 12:47:17,147 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 12:47:17,147 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 12:47:17,147 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 12:47:17,147 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 12:47:17,148 - INFO     - custom_log - 	 Server items => description
+2018-07-04 12:47:17,148 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 12:47:17,148 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 12:47:17,148 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 12:47:17,148 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 12:47:17,148 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 12:47:17,148 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 12:47:17,148 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 12:47:17,148 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 12:47:17,148 - INFO     - custom_log - 	 Server items => views
+2018-07-04 12:47:17,149 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 12:47:17,151 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 12:47:17,152 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 12:59:11,674 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 12:59:11,675 - INFO     - custom_log - 	 Info Log start
+2018-07-04 12:59:11,676 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 12:59:11,676 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 12:59:11,676 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 12:59:11,712 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 12:59:11,712 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 12:59:11,713 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 12:59:11,713 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 12:59:11,740 - INFO     - custom_log - 	 name => remote
+2018-07-04 12:59:11,740 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 12:59:11,740 - INFO     - custom_log - 	 port => 8080
+2018-07-04 12:59:11,740 - INFO     - custom_log - 	 protocol => http
+2018-07-04 12:59:11,740 - INFO     - custom_log - 	 user => admin
+2018-07-04 12:59:11,740 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 12:59:11,740 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 12:59:11,741 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 12:59:11,741 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 12:59:12,279 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 12:59:12,289 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 12:59:12,289 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 12:59:12,289 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 12:59:12,289 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 12:59:12,289 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 12:59:12,290 - INFO     - custom_log - 	 Server items => description
+2018-07-04 12:59:12,290 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 12:59:12,290 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 12:59:12,290 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 12:59:12,290 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 12:59:12,291 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 12:59:12,291 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 12:59:12,291 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 12:59:12,291 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 12:59:12,292 - INFO     - custom_log - 	 Server items => views
+2018-07-04 12:59:12,292 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 12:59:12,292 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 12:59:12,292 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 13:00:19,042 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 13:00:19,043 - INFO     - custom_log - 	 Info Log start
+2018-07-04 13:00:19,043 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 13:00:19,043 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 13:00:19,044 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 13:00:19,078 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 13:00:19,078 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 13:00:19,078 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 13:00:19,078 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 13:00:19,102 - INFO     - custom_log - 	 name => remote
+2018-07-04 13:00:19,102 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 13:00:19,102 - INFO     - custom_log - 	 port => 8080
+2018-07-04 13:00:19,103 - INFO     - custom_log - 	 protocol => http
+2018-07-04 13:00:19,103 - INFO     - custom_log - 	 user => admin
+2018-07-04 13:00:19,103 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 13:00:19,103 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 13:00:19,103 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 13:00:19,103 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 13:00:19,806 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 13:00:19,806 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 13:00:19,807 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 13:00:19,807 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 13:00:19,807 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 13:00:19,807 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 13:00:19,807 - INFO     - custom_log - 	 Server items => description
+2018-07-04 13:00:19,807 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 13:00:19,807 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 13:00:19,807 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 13:00:19,808 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 13:00:19,808 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 13:00:19,808 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 13:00:19,808 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 13:00:19,808 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 13:00:19,808 - INFO     - custom_log - 	 Server items => views
+2018-07-04 13:00:19,808 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 13:00:19,809 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 13:00:19,809 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 13:02:46,317 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 13:02:46,318 - INFO     - custom_log - 	 Info Log start
+2018-07-04 13:02:46,318 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 13:02:46,319 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 13:02:46,319 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '.', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 13:02:46,401 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 13:02:46,402 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 13:02:46,403 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 13:02:46,403 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 13:02:46,494 - INFO     - custom_log - 	 name => remote
+2018-07-04 13:02:46,495 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 13:02:46,495 - INFO     - custom_log - 	 port => 8080
+2018-07-04 13:02:46,496 - INFO     - custom_log - 	 protocol => http
+2018-07-04 13:02:46,497 - INFO     - custom_log - 	 user => admin
+2018-07-04 13:02:46,497 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 13:02:46,498 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 13:02:46,498 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 13:02:46,500 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 13:02:47,191 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 13:02:47,191 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 13:02:47,192 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 13:02:47,192 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 13:02:47,192 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 13:02:47,193 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 13:02:47,193 - INFO     - custom_log - 	 Server items => description
+2018-07-04 13:02:47,193 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 13:02:47,194 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 13:02:47,194 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 13:02:47,195 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 13:02:47,195 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 13:02:47,196 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 13:02:47,196 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 13:02:47,197 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 13:02:47,197 - INFO     - custom_log - 	 Server items => views
+2018-07-04 13:02:47,198 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 13:02:47,199 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 13:02:47,200 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 13:06:15,348 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 13:06:15,349 - INFO     - custom_log - 	 Info Log start
+2018-07-04 13:06:15,349 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 13:06:15,349 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 13:06:15,349 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '.', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 13:06:15,381 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 13:06:15,381 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 13:06:15,381 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 13:06:15,381 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 13:06:15,402 - INFO     - custom_log - 	 name => remote
+2018-07-04 13:06:15,402 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 13:06:15,402 - INFO     - custom_log - 	 port => 8080
+2018-07-04 13:06:15,402 - INFO     - custom_log - 	 protocol => http
+2018-07-04 13:06:15,403 - INFO     - custom_log - 	 user => admin
+2018-07-04 13:06:15,403 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 13:06:15,403 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 13:06:15,403 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 13:06:15,403 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 13:06:16,139 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 13:06:16,139 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 13:06:16,139 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 13:06:16,139 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 13:06:16,139 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 13:06:16,140 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 13:06:16,140 - INFO     - custom_log - 	 Server items => description
+2018-07-04 13:06:16,140 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 13:06:16,140 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 13:06:16,140 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 13:06:16,140 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 13:06:16,140 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 13:06:16,140 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 13:06:16,140 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 13:06:16,140 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 13:06:16,140 - INFO     - custom_log - 	 Server items => views
+2018-07-04 13:06:16,141 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 13:06:16,141 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 13:06:16,141 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 13:07:21,995 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '.', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 13:07:21,996 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 13:07:21,997 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 13:07:21,997 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 13:07:21,997 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 13:07:22,097 - INFO     - custom_log - 	 name => remote
+2018-07-04 13:07:22,098 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 13:07:22,098 - INFO     - custom_log - 	 port => 8080
+2018-07-04 13:07:22,098 - INFO     - custom_log - 	 protocol => http
+2018-07-04 13:07:22,098 - INFO     - custom_log - 	 user => admin
+2018-07-04 13:07:22,099 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 13:07:22,099 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 13:07:22,099 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 13:07:22,099 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 13:07:22,909 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 13:07:22,909 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 13:07:22,910 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 13:07:22,910 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 13:07:22,910 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 13:07:22,911 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 13:07:22,911 - INFO     - custom_log - 	 Server items => description
+2018-07-04 13:07:22,912 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 13:07:22,912 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 13:07:22,912 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 13:07:22,913 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 13:07:22,913 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 13:07:22,913 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 13:07:22,913 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 13:07:22,914 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 13:07:22,914 - INFO     - custom_log - 	 Server items => views
+2018-07-04 13:07:22,914 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 13:07:22,915 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 13:07:22,915 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 13:09:07,664 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 13:09:07,665 - INFO     - custom_log - 	 Info Log start
+2018-07-04 13:09:07,665 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 13:09:07,665 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 13:09:07,666 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '.', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 13:09:07,752 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 13:09:07,752 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 13:09:07,753 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 13:09:07,754 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 13:09:07,851 - INFO     - custom_log - 	 name => remote
+2018-07-04 13:09:07,851 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 13:09:07,851 - INFO     - custom_log - 	 port => 8080
+2018-07-04 13:09:07,852 - INFO     - custom_log - 	 protocol => http
+2018-07-04 13:09:07,852 - INFO     - custom_log - 	 user => admin
+2018-07-04 13:09:07,853 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 13:09:07,853 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 13:09:07,853 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 13:09:07,854 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 13:09:08,631 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 13:09:08,632 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 13:09:08,632 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 13:09:08,632 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 13:09:08,633 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 13:09:08,633 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 13:09:08,634 - INFO     - custom_log - 	 Server items => description
+2018-07-04 13:09:08,634 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 13:09:08,634 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 13:09:08,635 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 13:09:08,635 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 13:09:08,635 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 13:09:08,635 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 13:09:08,636 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 13:09:08,636 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 13:09:08,636 - INFO     - custom_log - 	 Server items => views
+2018-07-04 13:09:08,637 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 13:09:08,638 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 13:09:08,639 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 13:29:59,060 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 13:29:59,060 - INFO     - custom_log - 	 Info Log start
+2018-07-04 13:29:59,061 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 13:29:59,061 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 13:29:59,061 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '.', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 13:29:59,092 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 13:29:59,092 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 13:29:59,092 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 13:29:59,092 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 13:29:59,110 - INFO     - custom_log - 	 name => remote
+2018-07-04 13:29:59,111 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 13:29:59,111 - INFO     - custom_log - 	 port => 8080
+2018-07-04 13:29:59,111 - INFO     - custom_log - 	 protocol => http
+2018-07-04 13:29:59,111 - INFO     - custom_log - 	 user => admin
+2018-07-04 13:29:59,111 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 13:29:59,111 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 13:29:59,111 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 13:29:59,111 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 13:29:59,614 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 13:29:59,614 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 13:29:59,614 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 13:29:59,614 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 13:29:59,614 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 13:29:59,614 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 13:29:59,615 - INFO     - custom_log - 	 Server items => description
+2018-07-04 13:29:59,615 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 13:29:59,615 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 13:29:59,615 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 13:29:59,615 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 13:29:59,615 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 13:29:59,615 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 13:29:59,615 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 13:29:59,615 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 13:29:59,615 - INFO     - custom_log - 	 Server items => views
+2018-07-04 13:29:59,615 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 13:29:59,616 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 13:29:59,616 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 13:30:05,124 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '.', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 13:30:05,124 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 13:30:05,124 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 13:30:05,124 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 13:30:05,124 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 13:30:05,147 - INFO     - custom_log - 	 name => remote
+2018-07-04 13:30:05,148 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 13:30:05,148 - INFO     - custom_log - 	 port => 8080
+2018-07-04 13:30:05,148 - INFO     - custom_log - 	 protocol => http
+2018-07-04 13:30:05,148 - INFO     - custom_log - 	 user => admin
+2018-07-04 13:30:05,148 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 13:30:05,148 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 13:30:05,148 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 13:30:05,148 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 13:30:05,625 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 13:30:05,625 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 13:30:05,625 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 13:30:05,625 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 13:30:05,625 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 13:30:05,625 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 13:30:05,625 - INFO     - custom_log - 	 Server items => description
+2018-07-04 13:30:05,626 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 13:30:05,626 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 13:30:05,626 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 13:30:05,626 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 13:30:05,626 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 13:30:05,626 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 13:30:05,626 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 13:30:05,626 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 13:30:05,626 - INFO     - custom_log - 	 Server items => views
+2018-07-04 13:30:05,627 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 13:30:05,627 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 13:30:05,627 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 13:30:26,763 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 13:30:26,763 - INFO     - custom_log - 	 Info Log start
+2018-07-04 13:30:26,763 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 13:30:26,764 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 13:30:26,764 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '.', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 13:30:26,798 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 13:30:26,798 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 13:30:26,799 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 13:30:26,799 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 13:30:26,820 - INFO     - custom_log - 	 name => remote
+2018-07-04 13:30:26,820 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 13:30:26,820 - INFO     - custom_log - 	 port => 8080
+2018-07-04 13:30:26,820 - INFO     - custom_log - 	 protocol => http
+2018-07-04 13:30:26,820 - INFO     - custom_log - 	 user => admin
+2018-07-04 13:30:26,820 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 13:30:26,820 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 13:30:26,820 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 13:30:26,821 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 13:30:27,294 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 13:30:27,295 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 13:30:27,295 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 13:30:27,295 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 13:30:27,295 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 13:30:27,295 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 13:30:27,295 - INFO     - custom_log - 	 Server items => description
+2018-07-04 13:30:27,296 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 13:30:27,296 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 13:30:27,296 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 13:30:27,296 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 13:30:27,296 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 13:30:27,296 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 13:30:27,297 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 13:30:27,297 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 13:30:27,297 - INFO     - custom_log - 	 Server items => views
+2018-07-04 13:30:27,297 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 13:30:27,297 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 13:30:27,297 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 13:31:09,581 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 13:31:09,581 - INFO     - custom_log - 	 Info Log start
+2018-07-04 13:31:09,582 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 13:31:09,582 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 13:31:09,582 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 13:31:09,604 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 13:31:09,604 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 13:31:09,605 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 13:31:09,605 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 13:31:09,623 - INFO     - custom_log - 	 name => remote
+2018-07-04 13:31:09,623 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 13:31:09,623 - INFO     - custom_log - 	 port => 8080
+2018-07-04 13:31:09,624 - INFO     - custom_log - 	 protocol => http
+2018-07-04 13:31:09,624 - INFO     - custom_log - 	 user => admin
+2018-07-04 13:31:09,624 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 13:31:09,624 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 13:31:09,624 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 13:31:09,624 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 13:31:10,052 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 13:31:10,052 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 13:31:10,052 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 13:31:10,052 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 13:31:10,052 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 13:31:10,053 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 13:31:10,053 - INFO     - custom_log - 	 Server items => description
+2018-07-04 13:31:10,053 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 13:31:10,053 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 13:31:10,053 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 13:31:10,053 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 13:31:10,053 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 13:31:10,053 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 13:31:10,053 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 13:31:10,054 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 13:31:10,054 - INFO     - custom_log - 	 Server items => views
+2018-07-04 13:31:10,054 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 13:31:10,054 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 13:31:10,054 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 13:55:13,774 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 13:55:13,775 - INFO     - custom_log - 	 Info Log start
+2018-07-04 13:55:13,776 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 13:55:13,776 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 13:55:13,776 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 13:55:13,810 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 13:55:13,810 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 13:55:13,810 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 13:55:13,810 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 13:55:13,830 - INFO     - custom_log - 	 name => remote
+2018-07-04 13:55:13,830 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 13:55:13,830 - INFO     - custom_log - 	 port => 8080
+2018-07-04 13:55:13,830 - INFO     - custom_log - 	 protocol => http
+2018-07-04 13:55:13,831 - INFO     - custom_log - 	 user => admin
+2018-07-04 13:55:13,831 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 13:55:13,831 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 13:55:13,831 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 13:55:13,831 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 13:55:14,324 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 13:55:14,325 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 13:55:14,325 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 13:55:14,325 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 13:55:14,325 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 13:55:14,325 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 13:55:14,325 - INFO     - custom_log - 	 Server items => description
+2018-07-04 13:55:14,325 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 13:55:14,326 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 13:55:14,326 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 13:55:14,326 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 13:55:14,326 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 13:55:14,326 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 13:55:14,326 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 13:55:14,326 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 13:55:14,326 - INFO     - custom_log - 	 Server items => views
+2018-07-04 13:55:14,327 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 13:55:14,327 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 13:55:14,327 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 14:03:03,476 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 14:03:03,477 - INFO     - custom_log - 	 Info Log start
+2018-07-04 14:03:03,477 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 14:03:03,478 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 14:03:03,478 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '.', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 14:03:03,559 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 14:03:03,560 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 14:03:03,561 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 14:03:03,561 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 14:03:03,658 - INFO     - custom_log - 	 name => remote
+2018-07-04 14:03:03,658 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 14:03:03,658 - INFO     - custom_log - 	 port => 8080
+2018-07-04 14:03:03,659 - INFO     - custom_log - 	 protocol => http
+2018-07-04 14:03:03,659 - INFO     - custom_log - 	 user => admin
+2018-07-04 14:03:03,660 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 14:03:03,660 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 14:03:03,660 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 14:03:03,661 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 14:03:04,230 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 14:03:04,230 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 14:03:04,231 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 14:03:04,231 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 14:03:04,231 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 14:03:04,232 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 14:03:04,232 - INFO     - custom_log - 	 Server items => description
+2018-07-04 14:03:04,232 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 14:03:04,233 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 14:03:04,233 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 14:03:04,234 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 14:03:04,234 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 14:03:04,234 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 14:03:04,235 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 14:03:04,235 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 14:03:04,236 - INFO     - custom_log - 	 Server items => views
+2018-07-04 14:03:04,236 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 14:03:04,236 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 14:03:04,238 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 14:06:31,962 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 14:06:31,962 - INFO     - custom_log - 	 Info Log start
+2018-07-04 14:06:31,962 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 14:06:31,962 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 14:06:31,962 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 14:06:31,991 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 14:06:31,991 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 14:06:31,992 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 14:06:31,992 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 14:06:32,016 - INFO     - custom_log - 	 name => remote
+2018-07-04 14:06:32,016 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 14:06:32,016 - INFO     - custom_log - 	 port => 8080
+2018-07-04 14:06:32,016 - INFO     - custom_log - 	 protocol => http
+2018-07-04 14:06:32,017 - INFO     - custom_log - 	 user => admin
+2018-07-04 14:06:32,017 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 14:06:32,017 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 14:06:32,017 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 14:06:32,017 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 14:06:32,505 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 14:06:32,505 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 14:06:32,505 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 14:06:32,505 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 14:06:32,506 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 14:06:32,506 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 14:06:32,506 - INFO     - custom_log - 	 Server items => description
+2018-07-04 14:06:32,506 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 14:06:32,506 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 14:06:32,507 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 14:06:32,507 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 14:06:32,507 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 14:06:32,507 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 14:06:32,507 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 14:06:32,508 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 14:06:32,508 - INFO     - custom_log - 	 Server items => views
+2018-07-04 14:06:32,508 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 14:06:32,508 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 14:06:32,508 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 14:06:52,157 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 14:06:52,158 - INFO     - custom_log - 	 Info Log start
+2018-07-04 14:06:52,158 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 14:06:52,158 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 14:06:52,159 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '.', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 14:06:52,231 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 14:06:52,232 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 14:06:52,233 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 14:06:52,234 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 14:06:52,328 - INFO     - custom_log - 	 name => remote
+2018-07-04 14:06:52,328 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 14:06:52,328 - INFO     - custom_log - 	 port => 8080
+2018-07-04 14:06:52,329 - INFO     - custom_log - 	 protocol => http
+2018-07-04 14:06:52,329 - INFO     - custom_log - 	 user => admin
+2018-07-04 14:06:52,330 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 14:06:52,330 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 14:06:52,331 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 14:06:52,331 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 14:06:53,171 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 14:06:53,172 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 14:06:53,172 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 14:06:53,172 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 14:06:53,173 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 14:06:53,173 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 14:06:53,174 - INFO     - custom_log - 	 Server items => description
+2018-07-04 14:06:53,174 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 14:06:53,174 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 14:06:53,175 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 14:06:53,175 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 14:06:53,176 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 14:06:53,176 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 14:06:53,176 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 14:06:53,177 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 14:06:53,177 - INFO     - custom_log - 	 Server items => views
+2018-07-04 14:06:53,178 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 14:06:53,178 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 14:06:53,178 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 14:11:32,366 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 14:11:32,367 - INFO     - custom_log - 	 Info Log start
+2018-07-04 14:11:32,367 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 14:11:32,367 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 14:11:32,368 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '.', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 14:11:32,451 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 14:11:32,451 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 14:11:32,453 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 14:11:32,453 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 14:11:32,551 - INFO     - custom_log - 	 name => remote
+2018-07-04 14:11:32,551 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 14:11:32,551 - INFO     - custom_log - 	 port => 8080
+2018-07-04 14:11:32,552 - INFO     - custom_log - 	 protocol => http
+2018-07-04 14:11:32,552 - INFO     - custom_log - 	 user => admin
+2018-07-04 14:11:32,553 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 14:11:32,554 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 14:11:32,554 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 14:11:32,554 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 14:11:33,180 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 14:11:33,181 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 14:11:33,181 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 14:11:33,182 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 14:11:33,182 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 14:11:33,183 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 14:11:33,183 - INFO     - custom_log - 	 Server items => description
+2018-07-04 14:11:33,184 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 14:11:33,185 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 14:11:33,185 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 14:11:33,186 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 14:11:33,186 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 14:11:33,187 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 14:11:33,187 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 14:11:33,189 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 14:11:33,190 - INFO     - custom_log - 	 Server items => views
+2018-07-04 14:11:33,192 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 14:11:33,193 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 14:11:33,193 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 14:13:29,579 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 14:13:29,579 - INFO     - custom_log - 	 Info Log start
+2018-07-04 14:13:29,579 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 14:13:29,580 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 14:13:29,580 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '.', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 14:13:29,663 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 14:13:29,663 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 14:13:29,664 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 14:13:29,665 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 14:13:29,758 - INFO     - custom_log - 	 name => remote
+2018-07-04 14:13:29,759 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 14:13:29,759 - INFO     - custom_log - 	 port => 8080
+2018-07-04 14:13:29,760 - INFO     - custom_log - 	 protocol => http
+2018-07-04 14:13:29,760 - INFO     - custom_log - 	 user => admin
+2018-07-04 14:13:29,760 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 14:13:29,761 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 14:13:29,761 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 14:13:29,761 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 14:13:30,621 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 14:13:30,621 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 14:13:30,622 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 14:13:30,622 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 14:13:30,622 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 14:13:30,623 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 14:13:30,623 - INFO     - custom_log - 	 Server items => description
+2018-07-04 14:13:30,624 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 14:13:30,624 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 14:13:30,624 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 14:13:30,625 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 14:13:30,625 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 14:13:30,626 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 14:13:30,626 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 14:13:30,626 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 14:13:30,627 - INFO     - custom_log - 	 Server items => views
+2018-07-04 14:13:30,628 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 14:13:30,628 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 14:13:30,629 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 14:21:56,922 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '.', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 14:21:56,930 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 14:21:56,930 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 14:21:56,931 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 14:21:56,931 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 14:21:57,031 - INFO     - custom_log - 	 name => remote
+2018-07-04 14:21:57,031 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 14:21:57,032 - INFO     - custom_log - 	 port => 8080
+2018-07-04 14:21:57,032 - INFO     - custom_log - 	 protocol => http
+2018-07-04 14:21:57,032 - INFO     - custom_log - 	 user => admin
+2018-07-04 14:21:57,032 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 14:21:57,033 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 14:21:57,033 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 14:21:57,033 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 14:21:57,822 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 14:21:57,822 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 14:21:57,822 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 14:21:57,823 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 14:21:57,823 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 14:21:57,823 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 14:21:57,823 - INFO     - custom_log - 	 Server items => description
+2018-07-04 14:21:57,824 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 14:21:57,824 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 14:21:57,825 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 14:21:57,825 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 14:21:57,825 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 14:21:57,825 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 14:21:57,826 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 14:21:57,826 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 14:21:57,826 - INFO     - custom_log - 	 Server items => views
+2018-07-04 14:21:57,827 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 14:21:57,827 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 14:21:57,827 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 14:23:40,057 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '.', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 14:23:40,064 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 14:23:40,064 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 14:23:40,065 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 14:23:40,065 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 14:23:40,170 - INFO     - custom_log - 	 name => remote
+2018-07-04 14:23:40,171 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 14:23:40,171 - INFO     - custom_log - 	 port => 8080
+2018-07-04 14:23:40,171 - INFO     - custom_log - 	 protocol => http
+2018-07-04 14:23:40,172 - INFO     - custom_log - 	 user => admin
+2018-07-04 14:23:40,172 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 14:23:40,173 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 14:23:40,173 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 14:23:40,174 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 14:23:41,035 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 14:23:41,035 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 14:23:41,036 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 14:23:41,036 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 14:23:41,036 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 14:23:41,037 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 14:23:41,037 - INFO     - custom_log - 	 Server items => description
+2018-07-04 14:23:41,037 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 14:23:41,038 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 14:23:41,038 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 14:23:41,038 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 14:23:41,038 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 14:23:41,039 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 14:23:41,039 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 14:23:41,040 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 14:23:41,040 - INFO     - custom_log - 	 Server items => views
+2018-07-04 14:23:41,041 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 14:23:41,041 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 14:23:41,042 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 14:24:49,331 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '.', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 14:24:49,332 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 14:24:49,333 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 14:24:49,333 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 14:24:49,333 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 14:24:49,357 - INFO     - custom_log - 	 name => remote
+2018-07-04 14:24:49,358 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 14:24:49,358 - INFO     - custom_log - 	 port => 8080
+2018-07-04 14:24:49,358 - INFO     - custom_log - 	 protocol => http
+2018-07-04 14:24:49,359 - INFO     - custom_log - 	 user => admin
+2018-07-04 14:24:49,360 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 14:24:49,360 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 14:24:49,361 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 14:24:49,361 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 14:24:49,831 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 14:24:49,832 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 14:24:49,832 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 14:24:49,832 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 14:24:49,832 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 14:24:49,832 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 14:24:49,832 - INFO     - custom_log - 	 Server items => description
+2018-07-04 14:24:49,832 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 14:24:49,832 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 14:24:49,833 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 14:24:49,833 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 14:24:49,833 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 14:24:49,833 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 14:24:49,833 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 14:24:49,833 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 14:24:49,833 - INFO     - custom_log - 	 Server items => views
+2018-07-04 14:24:49,833 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 14:24:49,836 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 14:24:49,837 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 14:25:10,295 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '.', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 14:25:10,295 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 14:25:10,296 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 14:25:10,296 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 14:25:10,297 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 14:25:10,397 - INFO     - custom_log - 	 name => remote
+2018-07-04 14:25:10,397 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 14:25:10,398 - INFO     - custom_log - 	 port => 8080
+2018-07-04 14:25:10,398 - INFO     - custom_log - 	 protocol => http
+2018-07-04 14:25:10,399 - INFO     - custom_log - 	 user => admin
+2018-07-04 14:25:10,399 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 14:25:10,399 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 14:25:10,400 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 14:25:10,400 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 14:25:10,957 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 14:25:10,957 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 14:25:10,958 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 14:25:10,958 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 14:25:10,959 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 14:25:10,959 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 14:25:10,959 - INFO     - custom_log - 	 Server items => description
+2018-07-04 14:25:10,960 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 14:25:10,960 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 14:25:10,960 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 14:25:10,961 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 14:25:10,961 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 14:25:10,961 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 14:25:10,962 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 14:25:10,963 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 14:25:10,963 - INFO     - custom_log - 	 Server items => views
+2018-07-04 14:25:10,964 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 14:25:10,964 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 14:25:10,965 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 14:25:38,157 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 14:25:38,158 - INFO     - custom_log - 	 Info Log start
+2018-07-04 14:25:38,158 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 14:25:38,158 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 14:25:38,159 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '.', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 14:25:38,238 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 14:25:38,239 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 14:25:38,240 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 14:25:38,240 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 14:25:38,333 - INFO     - custom_log - 	 name => remote
+2018-07-04 14:25:38,334 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 14:25:38,334 - INFO     - custom_log - 	 port => 8080
+2018-07-04 14:25:38,335 - INFO     - custom_log - 	 protocol => http
+2018-07-04 14:25:38,335 - INFO     - custom_log - 	 user => admin
+2018-07-04 14:25:38,335 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 14:25:38,336 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 14:25:38,336 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 14:25:38,336 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 14:25:38,934 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 14:25:38,935 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 14:25:38,935 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 14:25:38,936 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 14:25:38,944 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 14:25:38,948 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 14:25:38,949 - INFO     - custom_log - 	 Server items => description
+2018-07-04 14:25:38,950 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 14:25:38,951 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 14:25:38,952 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 14:25:38,953 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 14:25:38,955 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 14:25:38,959 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 14:25:38,960 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 14:25:38,960 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 14:25:38,963 - INFO     - custom_log - 	 Server items => views
+2018-07-04 14:25:38,963 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 14:25:38,964 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 14:25:38,964 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 14:26:06,245 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '.', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 14:26:06,252 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 14:26:06,253 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 14:26:06,253 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 14:26:06,253 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 14:26:06,345 - INFO     - custom_log - 	 name => remote
+2018-07-04 14:26:06,345 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 14:26:06,345 - INFO     - custom_log - 	 port => 8080
+2018-07-04 14:26:06,346 - INFO     - custom_log - 	 protocol => http
+2018-07-04 14:26:06,346 - INFO     - custom_log - 	 user => admin
+2018-07-04 14:26:06,346 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 14:26:06,346 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 14:26:06,347 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 14:26:06,347 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 14:26:06,883 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 14:26:06,883 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 14:26:06,884 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 14:26:06,884 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 14:26:06,885 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 14:26:06,885 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 14:26:06,886 - INFO     - custom_log - 	 Server items => description
+2018-07-04 14:26:06,886 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 14:26:06,887 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 14:26:06,887 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 14:26:06,887 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 14:26:06,888 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 14:26:06,888 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 14:26:06,888 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 14:26:06,889 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 14:26:06,889 - INFO     - custom_log - 	 Server items => views
+2018-07-04 14:26:06,889 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 14:26:06,890 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 14:26:06,890 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 14:28:49,167 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 14:28:49,168 - INFO     - custom_log - 	 Info Log start
+2018-07-04 14:28:49,168 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 14:28:49,169 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 14:28:49,169 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '.', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 14:28:49,251 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 14:28:49,252 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 14:28:49,252 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 14:28:49,253 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 14:28:49,346 - INFO     - custom_log - 	 name => remote
+2018-07-04 14:28:49,347 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 14:28:49,347 - INFO     - custom_log - 	 port => 8080
+2018-07-04 14:28:49,347 - INFO     - custom_log - 	 protocol => http
+2018-07-04 14:28:49,348 - INFO     - custom_log - 	 user => admin
+2018-07-04 14:28:49,348 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 14:28:49,348 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 14:28:49,349 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 14:28:49,349 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 14:28:49,852 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 14:28:49,852 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 14:28:49,853 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 14:28:49,853 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 14:28:49,853 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 14:28:49,854 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 14:28:49,854 - INFO     - custom_log - 	 Server items => description
+2018-07-04 14:28:49,855 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 14:28:49,856 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 14:28:49,856 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 14:28:49,857 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 14:28:49,857 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 14:28:49,857 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 14:28:49,858 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 14:28:49,858 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 14:28:49,858 - INFO     - custom_log - 	 Server items => views
+2018-07-04 14:28:49,859 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 14:28:49,860 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 14:28:49,861 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 14:29:12,655 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '.', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 14:29:12,655 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 14:29:12,656 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 14:29:12,656 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 14:29:12,657 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 14:29:12,755 - INFO     - custom_log - 	 name => remote
+2018-07-04 14:29:12,755 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 14:29:12,755 - INFO     - custom_log - 	 port => 8080
+2018-07-04 14:29:12,756 - INFO     - custom_log - 	 protocol => http
+2018-07-04 14:29:12,756 - INFO     - custom_log - 	 user => admin
+2018-07-04 14:29:12,756 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 14:29:12,757 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 14:29:12,757 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 14:29:12,758 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 14:29:13,311 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 14:29:13,312 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 14:29:13,312 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 14:29:13,312 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 14:29:13,312 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 14:29:13,313 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 14:29:13,313 - INFO     - custom_log - 	 Server items => description
+2018-07-04 14:29:13,313 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 14:29:13,313 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 14:29:13,314 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 14:29:13,314 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 14:29:13,314 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 14:29:13,315 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 14:29:13,315 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 14:29:13,315 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 14:29:13,315 - INFO     - custom_log - 	 Server items => views
+2018-07-04 14:29:13,316 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 14:29:13,316 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 14:29:13,316 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 14:35:17,908 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 14:35:17,909 - INFO     - custom_log - 	 Info Log start
+2018-07-04 14:35:17,909 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 14:35:17,909 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 14:35:17,910 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '.', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 14:35:17,990 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 14:35:17,990 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 14:35:17,992 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 14:35:17,992 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 14:35:18,088 - INFO     - custom_log - 	 name => remote
+2018-07-04 14:35:18,088 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 14:35:18,088 - INFO     - custom_log - 	 port => 8080
+2018-07-04 14:35:18,089 - INFO     - custom_log - 	 protocol => http
+2018-07-04 14:35:18,089 - INFO     - custom_log - 	 user => admin
+2018-07-04 14:35:18,089 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 14:35:18,090 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 14:35:18,090 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 14:35:18,090 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 14:35:18,888 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 14:35:18,888 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 14:35:18,888 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 14:35:18,889 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 14:35:18,889 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 14:35:18,890 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 14:35:18,890 - INFO     - custom_log - 	 Server items => description
+2018-07-04 14:35:18,890 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 14:35:18,890 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 14:35:18,891 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 14:35:18,891 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 14:35:18,891 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 14:35:18,891 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 14:35:18,892 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 14:35:18,892 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 14:35:18,892 - INFO     - custom_log - 	 Server items => views
+2018-07-04 14:35:18,893 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 14:35:18,893 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 14:35:18,893 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 14:36:05,104 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '.', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 14:36:05,111 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 14:36:05,111 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 14:36:05,111 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 14:36:05,111 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 14:36:05,139 - INFO     - custom_log - 	 name => remote
+2018-07-04 14:36:05,139 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 14:36:05,139 - INFO     - custom_log - 	 port => 8080
+2018-07-04 14:36:05,139 - INFO     - custom_log - 	 protocol => http
+2018-07-04 14:36:05,139 - INFO     - custom_log - 	 user => admin
+2018-07-04 14:36:05,139 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 14:36:05,139 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 14:36:05,139 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 14:36:05,140 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 14:36:05,645 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 14:36:05,645 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 14:36:05,646 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 14:36:05,646 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 14:36:05,646 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 14:36:05,646 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 14:36:05,646 - INFO     - custom_log - 	 Server items => description
+2018-07-04 14:36:05,647 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 14:36:05,647 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 14:36:05,647 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 14:36:05,647 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 14:36:05,647 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 14:36:05,647 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 14:36:05,647 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 14:36:05,648 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 14:36:05,648 - INFO     - custom_log - 	 Server items => views
+2018-07-04 14:36:05,648 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 14:36:05,648 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 14:36:05,648 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 14:36:12,989 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '.', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 14:36:12,989 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 14:36:12,990 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 14:36:12,990 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 14:36:12,990 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 14:36:13,011 - INFO     - custom_log - 	 name => remote
+2018-07-04 14:36:13,011 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 14:36:13,011 - INFO     - custom_log - 	 port => 8080
+2018-07-04 14:36:13,011 - INFO     - custom_log - 	 protocol => http
+2018-07-04 14:36:13,012 - INFO     - custom_log - 	 user => admin
+2018-07-04 14:36:13,012 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 14:36:13,012 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 14:36:13,012 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 14:36:13,012 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 14:36:13,526 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 14:36:13,526 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 14:36:13,526 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 14:36:13,526 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 14:36:13,526 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 14:36:13,526 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 14:36:13,527 - INFO     - custom_log - 	 Server items => description
+2018-07-04 14:36:13,527 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 14:36:13,527 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 14:36:13,527 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 14:36:13,527 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 14:36:13,527 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 14:36:13,527 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 14:36:13,528 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 14:36:13,528 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 14:36:13,528 - INFO     - custom_log - 	 Server items => views
+2018-07-04 14:36:13,528 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 14:36:13,528 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 14:36:13,528 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130
+2018-07-04 14:42:13,154 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 14:42:13,155 - INFO     - custom_log - 	 Info Log start
+2018-07-04 14:42:13,155 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 14:42:13,155 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 14:42:13,155 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python37.zip', '/usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7', '/usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload', '/usr/local/lib/python3.7/site-packages']
+2018-07-04 14:42:43,469 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 14:42:43,469 - INFO     - custom_log - 	 Info Log start
+2018-07-04 14:42:43,469 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 14:42:43,469 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 14:42:43,470 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python37.zip', '/usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7', '/usr/local/Cellar/python/3.7.0/Frameworks/Python.framework/Versions/3.7/lib/python3.7/lib-dynload', '/usr/local/lib/python3.7/site-packages']
+2018-07-04 14:50:59,418 - DEBUG    - custom_log - 	 Debug Log Start 
+2018-07-04 14:50:59,418 - INFO     - custom_log - 	 Info Log start
+2018-07-04 14:50:59,419 - ERROR    - custom_log - 	 Error Loh start
+2018-07-04 14:50:59,419 - CRITICAL - custom_log - 	 Critical Log start
+2018-07-04 14:50:59,419 - INFO     - custom_log - 	 sys.path => ['/Users/mathias/playground/docker-jenkins-scripted/python-jenkins/yaml_read_config', '/Users/mathias/playground/docker-jenkins-scripted/python-jenkins', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python36.zip', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6', '/usr/local/Cellar/python/3.6.5/Frameworks/Python.framework/Versions/3.6/lib/python3.6/lib-dynload', '/Users/mathias/Library/Python/3.6/lib/python/site-packages', '/usr/local/lib/python3.6/site-packages']
+2018-07-04 14:50:59,453 - DEBUG    - custom_log - 	 VERSION   : 1.0
+2018-07-04 14:50:59,453 - DEBUG    - custom_log - 	 VERBOSE   :False
+2018-07-04 14:50:59,453 - DEBUG    - custom_log - 	 CONFIG    : jenkins_connections.yml
+2018-07-04 14:50:59,453 - DEBUG    - custom_log - 	 REMAINING :[]
+2018-07-04 14:50:59,476 - INFO     - custom_log - 	 name => remote
+2018-07-04 14:50:59,477 - INFO     - custom_log - 	 serverName => 192.168.178.96
+2018-07-04 14:50:59,477 - INFO     - custom_log - 	 port => 8080
+2018-07-04 14:50:59,477 - INFO     - custom_log - 	 protocol => http
+2018-07-04 14:50:59,477 - INFO     - custom_log - 	 user => admin
+2018-07-04 14:50:59,477 - INFO     - custom_log - 	 password => XXXXX
+2018-07-04 14:50:59,477 - INFO     - custom_log - 	 timeout for connect the server => 3
+2018-07-04 14:50:59,477 - INFO     - custom_log - 	 Jenkins URL server => http://192.168.178.96:8080
+2018-07-04 14:50:59,477 - INFO     - custom_log - 	 Try to connect to server
+2018-07-04 14:50:59,997 - INFO     - custom_log - 	 Server items => _class
+2018-07-04 14:50:59,998 - INFO     - custom_log - 	 Server items => assignedLabels
+2018-07-04 14:50:59,998 - INFO     - custom_log - 	 Server items => mode
+2018-07-04 14:50:59,998 - INFO     - custom_log - 	 Server items => nodeDescription
+2018-07-04 14:50:59,998 - INFO     - custom_log - 	 Server items => nodeName
+2018-07-04 14:50:59,998 - INFO     - custom_log - 	 Server items => numExecutors
+2018-07-04 14:50:59,998 - INFO     - custom_log - 	 Server items => description
+2018-07-04 14:50:59,999 - INFO     - custom_log - 	 Server items => jobs
+2018-07-04 14:50:59,999 - INFO     - custom_log - 	 Server items => overallLoad
+2018-07-04 14:50:59,999 - INFO     - custom_log - 	 Server items => primaryView
+2018-07-04 14:50:59,999 - INFO     - custom_log - 	 Server items => quietingDown
+2018-07-04 14:50:59,999 - INFO     - custom_log - 	 Server items => slaveAgentPort
+2018-07-04 14:50:59,999 - INFO     - custom_log - 	 Server items => unlabeledLoad
+2018-07-04 14:51:00,000 - INFO     - custom_log - 	 Server items => useCrumbs
+2018-07-04 14:51:00,000 - INFO     - custom_log - 	 Server items => useSecurity
+2018-07-04 14:51:00,000 - INFO     - custom_log - 	 Server items => views
+2018-07-04 14:51:00,000 - INFO     - custom_log - 	 info => {'_class': 'hudson.model.Hudson', 'assignedLabels': [{'name': 'master'}], 'mode': 'NORMAL', 'nodeDescription': 'the master Jenkins node', 'nodeName': '', 'numExecutors': 2, 'description': None, 'jobs': [], 'overallLoad': {}, 'primaryView': {'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}, 'quietingDown': False, 'slaveAgentPort': 0, 'unlabeledLoad': {'_class': 'jenkins.model.UnlabeledLoadStatistics'}, 'useCrumbs': False, 'useSecurity': True, 'views': [{'_class': 'hudson.model.AllView', 'name': 'all', 'url': 'http://192.168.178.96:8080/'}]}
+2018-07-04 14:51:00,000 - INFO     - custom_log - 	 jobs => [] 
+2018-07-04 14:51:00,000 - INFO     - custom_log - 	 Hello admin from Jenkins 2.130

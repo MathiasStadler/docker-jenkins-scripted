@@ -121,3 +121,16 @@ LOGGER.info("info => %s", SERVER_INFO)
 LOGGER.info("jobs => %s ", SERVER_JOBS)
 
 LOGGER.info('Hello %s from Jenkins %s', REMOTE_USER['fullName'], VERSION)
+
+# plugins = SERVER.get_plugins_info()
+plugins = []
+# old print(type(plugins))
+# old print(plugins)
+
+for plugin in plugins:
+    # print("plugin => {}")
+    print(plugin['shortName'])
+    for key, value in plugin.items():
+        print(str(key) + " : " + str(value))
+
+SERVER.install_plugin("git")
