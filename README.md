@@ -132,3 +132,9 @@ https://www.tricksofthetrades.net/2017/10/02/ansible-local-playbooks/
 ```txt
 https://www.cyberciti.biz/faq/display-iptables-router-nat-connections-using-netstat-nat/
 ```
+
+## copy plugin setting to other instance
+
+```txt
+https://stackoverflow.com/questions/8724939/how-to-move-jenkins-from-one-pc-to-another/44701594#44701594
+```
