@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Exit immediately if a command returns a non-zero status
+set -e
+
 # install dig and hxselect
 # from here
 # https://askubuntu.com/questions/258219/how-do-i-make-apt-get-install-less-noisy

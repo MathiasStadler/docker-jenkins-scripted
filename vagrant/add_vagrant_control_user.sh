@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Exit immediately if a command returns a non-zero status
+set -e
+
 # create new user vagrant_control
 # from here
 # https://unix.stackexchange.com/questions/79909/how-to-add-a-unix-linux-user-in-a-bash-script
