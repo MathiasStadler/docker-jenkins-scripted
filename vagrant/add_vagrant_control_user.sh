@@ -66,7 +66,7 @@ function create_credential_in_jenkins() {
 	# convert RSA key => ssh-rsa key
 	# from here
 	# https://stackoverflow.com/questions/1011572/convert-pem-key-to-ssh-rsa-format/21290281
-	SSH_RSA=$(ssh-keygen -y -f $HOME_DIR/.ssh/$USER_KEYS_NAME)
+	SSH_RSA=$(ssh-keygen -y -N '' -f $HOME_DIR/.ssh/$USER_KEYS_NAME)
 
 	echo "SSH_RSA KEY => ${SSH_RSA}"
 
