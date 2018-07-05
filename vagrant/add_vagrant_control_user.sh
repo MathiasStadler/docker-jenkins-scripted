@@ -8,8 +8,8 @@ set -e
 # https://unix.stackexchange.com/questions/79909/how-to-add-a-unix-linux-user-in-a-bash-script
 
 USER="vagrant_control"
-USER_KEYS_NAME=$USER_KEY
-PASSWD="vagrant_control"
+USER_KEYS_NAME="${USER}_KEY"
+PASSWORD="vagrant_control"
 HOME_DIR="/home/vagrant_control"
 FIRST_NAME="Vagrant"
 LAST_NAME="Control"
@@ -38,7 +38,7 @@ function create_user() {
 
 function set_password() {
 	# TODO avaid password for login
-	echo "$USER:$PASSWD" | sudo chpasswd
+	echo "$USER:$PASSWORD" | sudo chpasswd
 }
 
 function create_ssh_directory() {
