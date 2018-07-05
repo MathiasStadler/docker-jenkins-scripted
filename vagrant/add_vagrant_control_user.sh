@@ -23,6 +23,9 @@ JENKINS_URL="http://admin:admin@$JENKINS_SERVER:8080"
 JENKINS_API_USER="admin"
 JENKINS_API_PASSWORD="admin"
 
+# global script variable
+SSH_RSA=""
+
 function clean_old_home_directory() {
 
 	if [ -e $HOME_DIR ]; then
@@ -59,9 +62,7 @@ function create_user_keys() {
 
 }
 
-function create_credential_in_jenkins() {
-
-	echo "create credential in jenkins"
+function convert_private_key() {
 
 	# convert RSA key => ssh-rsa key
 	# from here
@@ -70,11 +71,36 @@ function create_credential_in_jenkins() {
 
 	echo "SSH_RSA KEY => ${SSH_RSA}"
 
-	# from here
-	# https://www.greenreedtech.com/creating-jenkins-credentials-via-the-rest-api/
+}
 
-	# @TODO copy private key to JENKINS-Master Virtualbox
-	curl -X POST -u $JENKINS_API_USER:$JENKINS_API_PASSWORD $JENKINS_URL/credentials/store/system/domain/_/createCredentials --data-urlencode 'json={
+function prepare_json_data() {
+
+	# prepare json and check
+	JSON_DATA="{
+  \"\": \"0\",
+  \"credentials\": {
+    \"scope\": \"GLOBAL\",
+    \"id\": \"apicredentials\",
+    \"username\": \"apicredentials\",
+    \"password\": \"\",
+    \"privateKeySource\": {
+      \"stapler-class\": \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\",
+      \"privateKey\": \"${SSH_RSA}\",
+    },
+\"description\": \"apicredentials\",
+\"stapler-class\": \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\"
+  }"
+
+	echo "JSON_DATA =>  $JSON_DATA"
+
+}
+
+function create_credential_in_jenkins() {
+
+	echo "create credential in jenkins"
+
+	# prepare json and check
+	JSON_DATAGRAM="{
   "": "0",
   "credentials": {
     "scope": "GLOBAL",
@@ -83,11 +109,17 @@ function create_credential_in_jenkins() {
     "password": "",
     "privateKeySource": {
       "stapler-class": "com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey",
-      "privateKey": "'${SSH_RSA}'",
+      "privateKey": "${SSH_RSA}",
     },
 "description": "apicredentials",
 "stapler-class": "com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey"
-  }'
+  }"
+
+	# from here
+	# https://www.greenreedtech.com/creating-jenkins-credentials-via-the-rest-api/
+
+	# @TODO copy private key to JENKINS-Master Virtualbox
+	curl -X POST -u $JENKINS_API_USER:$JENKINS_API_PASSWORD $JENKINS_URL/credentials/store/system/domain/_/createCredentials --data-urlencode 'json='
 
 }
 
@@ -104,6 +136,8 @@ else
 	set_password
 	create_ssh_directory
 	create_user_keys
+	convert_private_key
+	prepare_json_data
 	create_credential_in_jenkins
 
 fi
