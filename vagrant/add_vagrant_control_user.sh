@@ -55,7 +55,7 @@ function create_user_keys() {
 	ssh-keygen -t rsa -f $USER_KEYS_NAME
 	# create authorized_keys
 	# authorized_keys file might not be present by default. If that’s the case, than create one
-	cat for_jenkins_key.pub >authorized_keys
+	cat ${USER_KEYS_NAME}.pub >authorized_keys
 
 }
 
