@@ -1,0 +1,14 @@
+curl -X POST 'http://jenkins:8080/credentials/store/system/domain/_/createCredentials' --data-urlencode 'json={
+  "": "0",
+  "credentials": {
+    "scope": "GLOBAL",
+    "id": "apicredentials",
+    "username": "apicredentials",
+    "password": "",
+    "privateKeySource": {
+      "stapler-class": "com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey$UsersPrivateKeySource",
+    },
+    "description": "apicredentials",
+    "stapler-class": "com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey"
+  }
+}'
