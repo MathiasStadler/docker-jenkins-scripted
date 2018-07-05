@@ -96,6 +96,15 @@ function prepare_json_data() {
 
 }
 
+function validate_json() {
+
+	# from here
+	# https://stackoverflow.com/questions/46954692/check-if-string-is-a-valid-json-with-jq
+
+	echo "$JSON_DATA" | ./jq -e . >/dev/null 2>&1 | echo "${PIPESTATUS[1]}"
+
+}
+
 function create_credential_in_jenkins() {
 
 	echo "create credential in jenkins"
@@ -123,6 +132,7 @@ else
 	create_user_keys
 	convert_private_key
 	prepare_json_data
+	validate_json
 	create_credential_in_jenkins
 
 fi
