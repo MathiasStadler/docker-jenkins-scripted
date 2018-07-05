@@ -103,7 +103,7 @@ function validate_json() {
 	# from here
 	# https://stackoverflow.com/questions/46954692/check-if-string-is-a-valid-json-with-jq
 
-	echo "$JSON_DATA" | ./jq -e . >/dev/null 2>&1 | echo "${PIPESTATUS[1]}"
+	echo "$JSON_DATA" | jq -e . >/dev/null 2>&1 | echo "${PIPESTATUS[1]}"
 
 }
 
