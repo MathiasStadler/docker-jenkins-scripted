@@ -133,6 +133,6 @@ else
 	convert_private_key
 	prepare_json_data
 	validate_json
-	create_credential_in_jenkins
+	# create_credential_in_jenkins
 
 fi
