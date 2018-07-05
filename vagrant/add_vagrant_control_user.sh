@@ -98,6 +98,8 @@ function prepare_json_data() {
 
 function validate_json() {
 
+	echo "JSON_DATA =>  $JSON_DATA"
+
 	# from here
 	# https://stackoverflow.com/questions/46954692/check-if-string-is-a-valid-json-with-jq
 
