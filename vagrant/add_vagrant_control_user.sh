@@ -52,7 +52,7 @@ function create_user_keys() {
 	# change to .ssh directory
 	cd $HOME_DIR/.ssh
 	# create key
-	ssh-keygen -t rsa -f $USER_KEYS_NAME
+	ssh-keygen -t rsa -N '' -f $USER_KEYS_NAME
 	# create authorized_keys
 	# authorized_keys file might not be present by default. If that’s the case, than create one
 	cat ${USER_KEYS_NAME}.pub >authorized_keys
@@ -66,7 +66,7 @@ function create_credential_in_jenkins() {
 	# convert RSA key => ssh-rsa key
 	# from here
 	# https://stackoverflow.com/questions/1011572/convert-pem-key-to-ssh-rsa-format/21290281
-	SSH_RSA=$(ssh-keygen -y -N '' -f $HOME_DIR/.ssh/$USER_KEYS_NAME)
+	SSH_RSA=$(ssh-keygen -y -f $HOME_DIR/.ssh/$USER_KEYS_NAME)
 
 	echo "SSH_RSA KEY => ${SSH_RSA}"
 
