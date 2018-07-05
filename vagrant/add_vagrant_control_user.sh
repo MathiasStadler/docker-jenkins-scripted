@@ -62,6 +62,14 @@ function create_user_keys() {
 function create_credential_in_jenkins() {
 
 	echo "create credential in jenkins"
+
+	# convert RSA key => ssh-rsa key
+	# from here
+	# https://stackoverflow.com/questions/1011572/convert-pem-key-to-ssh-rsa-format/21290281
+	SSH_RSA=$(ssh-keygen -y -f $HOME_DIR/.ssh/$USER_KEYS_NAME)
+
+	echo "SSH_RSA KEY => ${SSH_RSA}"
+
 	# from here
 	# https://www.greenreedtech.com/creating-jenkins-credentials-via-the-rest-api/
 
@@ -75,7 +83,7 @@ function create_credential_in_jenkins() {
     "password": "",
     "privateKeySource": {
       "stapler-class": "com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey",
-      "privateKey": "' + $(ssh-keygen -y -f $HOME_DIR/.ssh/$USER_KEYS_NAME) + '",
+      "privateKey": "'${SSH_RSA}'",
     },
 "description": "apicredentials",
 "stapler-class": "com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey"
