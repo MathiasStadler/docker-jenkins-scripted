@@ -25,6 +25,7 @@ JENKINS_API_PASSWORD="admin"
 
 # global script variable
 SSH_RSA=""
+JSON_DATA=""
 
 function clean_old_home_directory() {
 
@@ -99,27 +100,11 @@ function create_credential_in_jenkins() {
 
 	echo "create credential in jenkins"
 
-	# prepare json and check
-	JSON_DATAGRAM="{
-  "": "0",
-  "credentials": {
-    "scope": "GLOBAL",
-    "id": "apicredentials",
-    "username": "apicredentials",
-    "password": "",
-    "privateKeySource": {
-      "stapler-class": "com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey",
-      "privateKey": "${SSH_RSA}",
-    },
-"description": "apicredentials",
-"stapler-class": "com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey"
-  }"
-
 	# from here
 	# https://www.greenreedtech.com/creating-jenkins-credentials-via-the-rest-api/
 
 	# @TODO copy private key to JENKINS-Master Virtualbox
-	curl -X POST -u $JENKINS_API_USER:$JENKINS_API_PASSWORD $JENKINS_URL/credentials/store/system/domain/_/createCredentials --data-urlencode 'json='
+	curl -X POST -u $JENKINS_API_USER:$JENKINS_API_PASSWORD $JENKINS_URL/credentials/store/system/domain/_/createCredentials --data-urlencode "json=${JSON_DATA}"
 
 }
 
