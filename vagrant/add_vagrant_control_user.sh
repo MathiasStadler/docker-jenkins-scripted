@@ -22,8 +22,17 @@ JENKINS_URL="http://admin:admin@$JENKINS_SERVER:8080"
 JENKINS_API_USER="admin"
 JENKINS_API_PASSWORD="admin"
 
+function clean_old_home_directory() {
+
+	if [ -e $HOME_DIR ]; then
+
+		rm -rf $HOME_DIR
+	fi
+
+}
+
 function create_user() {
-	sudo adduser $USER --gecos "$FIRST_NAME $LAST_NAME,$ROOM_NUMBER,$WORK_PHONE,$HOME_PHONE" \ --disabled-password --home $HOME_DIR
+	sudo adduser $USER --gecos "$FIRST_NAME $LAST_NAME,$ROOM_NUMBER,$WORK_PHONE,$HOME_PHONE" --disabled-password --home $HOME_DIR
 }
 
 function set_password() {
@@ -81,6 +90,7 @@ if (id -u $USER); then
 else
 
 	echo "Create new user $USER"
+	clean_old_home_directory
 	create_user
 	set_password
 	create_ssh_directory
