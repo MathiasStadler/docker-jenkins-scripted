@@ -8,6 +8,7 @@ set -e
 # https://unix.stackexchange.com/questions/79909/how-to-add-a-unix-linux-user-in-a-bash-script
 
 USER="vagrant_control"
+USER_KEYS_NAME=$USER_KEY
 PASSWD="vagrant_control"
 HOME_DIR="/home/vagrant_control"
 FIRST_NAME="Vagrant"
@@ -51,7 +52,7 @@ function create_user_keys() {
 	# change to .ssh directory
 	cd $HOME_DIR/.ssh
 	# create key
-	ssh-keygen -t rsa -f for_jenkins_key
+	ssh-keygen -t rsa -f $USER_KEYS_NAME
 	# create authorized_keys
 	# authorized_keys file might not be present by default. If that’s the case, than create one
 	cat for_jenkins_key.pub >authorized_keys
@@ -74,7 +75,7 @@ function create_credential_in_jenkins() {
     "password": "",
     "privateKeySource": {
       "stapler-class": "com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey",
-      "privateKey": "$(ssh-keygen -y -f  /home/vagrant_control/.ssh/private_key)",
+      "privateKey": "' + $(ssh-keygen -y -f $HOME_DIR/.ssh/$USER_KEYS_NAME) + '",
     },
 "description": "apicredentials",
 "stapler-class": "com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey"
