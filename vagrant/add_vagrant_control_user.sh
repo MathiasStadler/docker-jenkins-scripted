@@ -121,8 +121,8 @@ function prepare_json_data() {
           }
         # }"
 
-	echo ${JSON_DATA_2}
-	echo ${JSON_DATA_2} >/tmp/json2.data
+	echo "${JSON_DATA_2}"
+	echo "${JSON_DATA_2}" >/tmp/json2.data
 
 }
 
