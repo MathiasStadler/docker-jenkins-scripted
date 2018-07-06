@@ -157,7 +157,9 @@ function create_credential_in_jenkins() {
 	# https://www.greenreedtech.com/creating-jenkins-credentials-via-the-rest-api/
 
 	# @TODO copy private key to JENKINS-Master Virtualbox
-	# curl -X POST -u $JENKINS_API_USER:$JENKINS_API_PASSWORD $JENKINS_URL/credentials/store/system/domain/_/createCredentials --data-urlencode "json=${JSON_DATA}"
+	curl -X POST -u $JENKINS_API_USER:$JENKINS_API_PASSWORD $JENKINS_URL/credentials/store/system/domain/_/createCredentials --data-urlencode "json=${JSON_DATA}"
+
+	# QUESTION Waht is => credentials/store/system/domain/_/newCredentials
 
 	# /credentials/configSumbit
 	# from here
