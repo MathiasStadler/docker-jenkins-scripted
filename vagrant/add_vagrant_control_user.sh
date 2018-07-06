@@ -85,8 +85,8 @@ function prepare_json_data() {
     \"username\": \"apicredentials\",
     \"password\": \"\",
     \"privateKeySource\": {
-      \"stapler-class\": \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\",
-      \"privateKey\": \"${SSH_RSA}\"
+      \"stapler-class\": \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey$DirectEntryPrivateKeySource\",
+	  \"privateKey\": \"${SSH_RSA}\"
     },
 \"description\": \"apicredentials\",
 \"stapler-class\": \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\"
@@ -122,6 +122,10 @@ function create_credential_in_jenkins() {
 	# @TODO copy private key to JENKINS-Master Virtualbox
 	curl -X POST -u $JENKINS_API_USER:$JENKINS_API_PASSWORD $JENKINS_URL/credentials/store/system/domain/_/createCredentials --data-urlencode "json=${JSON_DATA}"
 
+	# /credentials/configSumbit
+	# from here
+	# https://github.com/arangamani/jenkins_api_client/issues/162
+	curl -X POST -u $JENKINS_API_USER:$JENKINS_API_PASSWORD $JENKINS_URL//credentials/configSumbit --data-urlencode "json=${JSON_DATA}"
 }
 
 # main
