@@ -163,6 +163,9 @@ function create_credential_in_jenkins() {
 	# from here
 	# https://github.com/arangamani/jenkins_api_client/issues/162
 	curl -X POST -u $JENKINS_API_USER:$JENKINS_API_PASSWORD $JENKINS_URL/credentials/store/system/domain/_/createCredentials --data-urlencode "json=${JSON_DATA_2}"
+
+	# HINT for RSA key
+	# https://github.com/arangamani/jenkins_api_client/issues/162
 }
 
 # main
