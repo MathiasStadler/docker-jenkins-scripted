@@ -125,7 +125,7 @@ function create_credential_in_jenkins() {
 	# /credentials/configSumbit
 	# from here
 	# https://github.com/arangamani/jenkins_api_client/issues/162
-	curl -X POST -u $JENKINS_API_USER:$JENKINS_API_PASSWORD $JENKINS_URL//credentials/configSumbit --data-urlencode "json=${JSON_DATA}"
+	# curl -X POST -u $JENKINS_API_USER:$JENKINS_API_PASSWORD $JENKINS_URL//credentials/configSumbit --data-urlencode "json=${JSON_DATA}"
 }
 
 # main
