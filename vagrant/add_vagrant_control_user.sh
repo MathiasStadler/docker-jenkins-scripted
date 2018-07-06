@@ -86,7 +86,7 @@ function prepare_json_data() {
     \"password\": \"\",
     \"privateKeySource\": {
       \"stapler-class\": \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\",
-      \"privateKey\": \"${SSH_RSA}\",
+      \"privateKey\": \"${SSH_RSA}\"
     },
 \"description\": \"apicredentials\",
 \"stapler-class\": \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\"
@@ -98,12 +98,17 @@ function prepare_json_data() {
 
 function validate_json() {
 
-	echo "JSON_DATA =>  $JSON_DATA" >/tmp/json.data
+	echo "$JSON_DATA" >/tmp/json.data
 
 	# from here
 	# https://stackoverflow.com/questions/46954692/check-if-string-is-a-valid-json-with-jq
 
-	echo "$JSON_DATA" | jq -e . >/dev/null 2>&1
+	if (echo "$JSON_DATA" | jq -e .); then
+		echo "JSON data OK"
+	else
+		echo "JSON data wrong see messages please"
+		exit 0
+	fi
 
 }
 
