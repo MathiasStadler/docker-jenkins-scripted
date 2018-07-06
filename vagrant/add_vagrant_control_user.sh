@@ -85,7 +85,7 @@ function prepare_json_data() {
     \"username\": \"apicredentials\",
     \"password\": \"\",
     \"privateKeySource\": {
-      \"stapler-class\": \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey$DirectEntryPrivateKeySource\",
+      \"stapler-class\": \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\$DirectEntryPrivateKeySource\",
 	  \"privateKey\": \"${SSH_RSA}\"
     },
 \"description\": \"apicredentials\",
@@ -93,6 +93,36 @@ function prepare_json_data() {
   }}"
 
 	echo "JSON_DATA =>  $JSON_DATA"
+
+	JSON_DATA_2="{
+          \"name\" : \"testcred\",
+          \"description\" : \"test cred description\",
+          \"json\" : {
+            \"domainCredentials\" : {
+              \"domain\" : {
+                \"name\" : \"\",
+                \"description\" : \"\",
+              },
+              \"credentials\" : {
+                \"scope\" : \"GLOBAL\",
+                \"id\" : \"\",
+                \"username\" : \"root\",
+                \"description\" : \"root users credential\",
+                \"privateKeySource\" : {
+                  \"value\" : \"0\",
+                  \"privateKey\" : \"blah blah blah\",
+                  \"stapler-class\" : \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\$DirectEntryPrivateKeySource\"
+                },
+                \"passphrase\" : \"\",
+                \"stapler-class\" : \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\",
+                \"kind\" : \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\"
+              }
+            }
+          }
+        # }"
+
+	echo JSON_DATA_2
+	echo JSON_DATA_2 >/tmp/JSON2.DATA
 
 }
 
@@ -110,6 +140,13 @@ function validate_json() {
 		exit 0
 	fi
 
+	if (echo "$JSON_DATA_2" | jq -e .); then
+		echo "JSON data OK"
+	else
+		echo "JSON data wrong see messages please"
+		exit 0
+	fi
+
 }
 
 function create_credential_in_jenkins() {
@@ -120,12 +157,12 @@ function create_credential_in_jenkins() {
 	# https://www.greenreedtech.com/creating-jenkins-credentials-via-the-rest-api/
 
 	# @TODO copy private key to JENKINS-Master Virtualbox
-	curl -X POST -u $JENKINS_API_USER:$JENKINS_API_PASSWORD $JENKINS_URL/credentials/store/system/domain/_/createCredentials --data-urlencode "json=${JSON_DATA}"
+	# curl -X POST -u $JENKINS_API_USER:$JENKINS_API_PASSWORD $JENKINS_URL/credentials/store/system/domain/_/createCredentials --data-urlencode "json=${JSON_DATA}"
 
 	# /credentials/configSumbit
 	# from here
 	# https://github.com/arangamani/jenkins_api_client/issues/162
-	# curl -X POST -u $JENKINS_API_USER:$JENKINS_API_PASSWORD $JENKINS_URL//credentials/configSumbit --data-urlencode "json=${JSON_DATA}"
+	curl -X POST -u $JENKINS_API_USER:$JENKINS_API_PASSWORD $JENKINS_URL/credentials/configSumbit --data-urlencode "json=${JSON_DATA_2}"
 }
 
 # main
