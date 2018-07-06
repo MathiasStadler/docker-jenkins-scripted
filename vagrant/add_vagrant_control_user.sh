@@ -90,7 +90,7 @@ function prepare_json_data() {
     },
 \"description\": \"apicredentials\",
 \"stapler-class\": \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\"
-  }"
+  }}"
 
 	echo "JSON_DATA =>  $JSON_DATA"
 
