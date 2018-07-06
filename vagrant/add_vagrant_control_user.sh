@@ -101,7 +101,7 @@ function prepare_json_data() {
             \"domainCredentials\" : {
               \"domain\" : {
                 \"name\" : \"\",
-                \"description\" : \"\",
+                \"description\" : \"\"
               },
               \"credentials\" : {
                 \"scope\" : \"GLOBAL\",
@@ -119,7 +119,7 @@ function prepare_json_data() {
               }
             }
           }
-        # }"
+        }"
 
 	echo "${JSON_DATA_2}"
 	echo "${JSON_DATA_2}" >/tmp/json2.data
