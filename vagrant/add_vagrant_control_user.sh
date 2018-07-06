@@ -121,8 +121,8 @@ function prepare_json_data() {
           }
         # }"
 
-	echo JSON_DATA_2
-	echo JSON_DATA_2 >/tmp/JSON2.DATA
+	echo ${JSON_DATA_2}
+	echo ${JSON_DATA_2} >/tmp/json2.data
 
 }
 
@@ -134,16 +134,16 @@ function validate_json() {
 	# https://stackoverflow.com/questions/46954692/check-if-string-is-a-valid-json-with-jq
 
 	if (echo "$JSON_DATA" | jq -e .); then
-		echo "JSON data OK"
+		echo "JSON_DAT data OK"
 	else
 		echo "JSON data wrong see messages please"
 		exit 0
 	fi
 
 	if (echo "$JSON_DATA_2" | jq -e .); then
-		echo "JSON data OK"
+		echo "JSON_DATA_2 data OK"
 	else
-		echo "JSON data wrong see messages please"
+		echo "JSON_DATA_2 data wrong see messages please"
 		exit 0
 	fi
 
