@@ -63,6 +63,22 @@ function create_user_keys() {
 
 }
 
+function change_owner_of_key_to_user() {
+
+	# private key
+	chown $USER $HOME_DIR/.ssh/$USER_KEYS_NAME
+
+	# change file mode bits
+	chmod 0600 $HOME_DIR/.ssh/$USER_KEYS_NAME
+
+	# public key
+	chown $USER $HOME_DIR/.ssh/$USER_KEYS_NAME.pub
+
+	# change file mode bits
+	chmod 0600 $HOME_DIR/.ssh/$USER_KEYS_NAME.pub
+
+}
+
 function convert_private_key() {
 
 	# convert RSA key => ssh-rsa key
@@ -183,6 +199,7 @@ else
 	set_password
 	create_ssh_directory
 	create_user_keys
+	change_owner_of_key_to_user
 	convert_private_key
 	prepare_json_data
 	validate_json
