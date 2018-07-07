@@ -56,10 +56,21 @@ function create_user_keys() {
 	# change to .ssh directory
 	cd $HOME_DIR/.ssh
 	# create key
-	ssh-keygen -t rsa -N '' -f $USER_KEYS_NAME
+	# old ssh-keygen -t rsa -N '' -f $USER_KEYS_NAME
+	ssh-keygen -t rsa -f $USER_KEYS_NAME -q -P ""
 	# create authorized_keys
 	# authorized_keys file might not be present by default. If that’s the case, than create one
 	cat ${USER_KEYS_NAME}.pub >authorized_keys
+
+}
+
+function validate_key_pair() {
+	# from here
+	# https://serverfault.com/questions/426394/how-to-check-if-a-rsa-public-private-key-pair-matched
+
+	PRIVKEY=$HOME_DIR/.ssh/$USER_KEYS_NAME
+	TESTKEY=$HOME_DIR/.ssh/$USER_KEYS_NAME.pub
+	diff <(ssh-keygen -y -e -f "$PRIVKEY") <(ssh-keygen -y -e -f "$TESTKEY")
 
 }
 
@@ -205,6 +216,7 @@ else
 	set_password
 	create_ssh_directory
 	create_user_keys
+	validate_key_pair
 	change_owner_of_key_to_user
 	convert_private_key
 	prepare_json_data
