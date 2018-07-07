@@ -70,7 +70,43 @@ function validate_key_pair() {
 
 	PRIVKEY=$HOME_DIR/.ssh/$USER_KEYS_NAME
 	TESTKEY=$HOME_DIR/.ssh/$USER_KEYS_NAME.pub
-	diff <(ssh-keygen -y -e -f "$PRIVKEY") <(ssh-keygen -y -e -f "$TESTKEY")
+	if (diff <(ssh-keygen -y -e -f "$PRIVKEY") <(ssh-keygen -y -e -f "$TESTKEY")); then
+
+		echo "key pair match"
+
+	else
+
+		echo " Key pair  NOT match"
+
+		exit 0
+
+	fi
+
+}
+
+function check_private_key_has_passphrase() {
+
+	# ATTENTION weak approach
+	# from here
+	# https://security.stackexchange.com/questions/129724/how-to-check-if-an-ssh-private-key-has-passphrase-or-not
+
+	#The "RSA key" is actually a set of values stored as an ASN.1 structure
+	# in the standardized DER binary format, then encoded in base-64 to get
+	# the final PEM file. A very easy way to determine whether a key is encoded
+	# or not is simply to check whether the ASN.1 header is present, and this is
+	# usually as simple as checking if the "key" begins with the letters MII
+
+	# Therefor check key begins with MII
+
+	if (cat $HOME_DIR/.ssh/$USER_KEYS_NAME | grep '^MII'); then
+
+		echo "Key has NO passphrase"
+
+	else
+
+		echo "Key has passphrase"
+
+	fi
 
 }
 
@@ -217,6 +253,7 @@ else
 	create_ssh_directory
 	create_user_keys
 	validate_key_pair
+	check_private_key_has_passphrase
 	change_owner_of_key_to_user
 	convert_private_key
 	prepare_json_data
