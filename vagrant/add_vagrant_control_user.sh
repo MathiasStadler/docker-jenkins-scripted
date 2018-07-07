@@ -77,6 +77,12 @@ function change_owner_of_key_to_user() {
 	# change file mode bits
 	chmod 0600 $HOME_DIR/.ssh/$USER_KEYS_NAME.pub
 
+	# authorized_keys
+	chown $USER $HOME_DIR/.ssh/authorized_keys
+
+	# change file mode bits
+	chmod 0644 $HOME_DIR/.ssh/authorized_keys
+
 }
 
 function convert_private_key() {
