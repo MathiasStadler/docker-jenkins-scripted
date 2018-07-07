@@ -81,14 +81,14 @@ function prepare_json_data() {
   \"\": \"0\",
   \"credentials\": {
     \"scope\": \"GLOBAL\",
-    \"id\": \"apicredentials\",
-    \"username\": \"apicredentials\",
+    \"id\": \"ID_${USER}\",
+    \"username\": \"${USER}\",
     \"password\": \"\",
     \"privateKeySource\": {
       \"stapler-class\": \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\$DirectEntryPrivateKeySource\",
 	  \"privateKey\": \"${SSH_RSA}\"
     },
-\"description\": \"apicredentials\",
+\"description\": \"${USER} for control remote host\",
 \"stapler-class\": \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\"
   }}"
 
