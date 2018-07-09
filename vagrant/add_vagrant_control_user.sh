@@ -206,8 +206,27 @@ function prepare_json_data() {
 
 function escape_json() {
 
-	# escape JSON DATA
-	JSON_DATA=$(tr -d '\n' | tr -d '[[:blank:]]' ${JSON_DATA})
+	JSON_TOPIC_RAW=${JSON_DATA}
+
+	# escape JSON_DATA
+	# from here
+	# https://stackoverflow.com/questions/10053678/escaping-characters-in-bash-for-json
+	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//\\/\\\\} # \
+	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//\//\\\/} # /
+	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//\'/\\\'} # ' (not strictly needed ?)
+	# " already escape in this case
+	# JSON_TOPIC_RAW=${JSON_TOPIC_RAW//\"/\\\"} # "
+	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//   /\\t} # \t (tab)
+	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//
+/\\\n}
+
+	# \n (newline)
+	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//^M/\\\r} # \r (carriage return)
+	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//^L/\\\f} # \f (form feed)
+	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//^H/\\\b} # \b (backspace)
+	# end
+
+	JSON_DATA=${JSON_TOPIC_RAW}
 
 }
 
