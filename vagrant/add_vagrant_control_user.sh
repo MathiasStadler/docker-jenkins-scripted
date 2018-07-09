@@ -115,11 +115,17 @@ function change_owner_of_key_to_user() {
 	# private key
 	chown $USER $HOME_DIR/.ssh/$USER_KEYS_NAME
 
+	# change group id to user gid
+	chgrp $(id -g $USER) $HOME_DIR/.ssh/$USER_KEYS_NAME
+
 	# change file mode bits
 	chmod 0600 $HOME_DIR/.ssh/$USER_KEYS_NAME
 
 	# public key
 	chown $USER $HOME_DIR/.ssh/$USER_KEYS_NAME.pub
+
+	# change group id to user gid
+	chgrp $(id -g $USER) $HOME_DIR/.ssh/$USER_KEYS_NAME.pub
 
 	# change file mode bits
 	chmod 0600 $HOME_DIR/.ssh/$USER_KEYS_NAME.pub
