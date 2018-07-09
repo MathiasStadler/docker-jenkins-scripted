@@ -159,7 +159,7 @@ function private_key_to_json() {
 
 function prepare_json_data() {
 
-	# TODO old KEY=$(cat $HOME_DIR/.ssh/$USER_KEYS_NAME)
+	KEY=$(cat $HOME_DIR/.ssh/$USER_KEYS_NAME)
 
 	# prepare json and check
 	JSON_DATA="{
@@ -171,7 +171,7 @@ function prepare_json_data() {
     \"password\": \"\",
     \"privateKeySource\": {
       \"stapler-class\": \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\$DirectEntryPrivateKeySource\",
-	  \"privateKey\": \"${JSON_PRIVATE_KEY}\"
+	  \"privateKey\": \"${KEY}\"
     },
 \"description\": \"${USER} for control remote host\",
 \"stapler-class\": \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\"
@@ -299,10 +299,10 @@ else
 	validate_key_pair
 	check_private_key_has_passphrase
 	change_owner_of_key_to_user
-	# TODO old convert_private_key
-	private_key_to_json
+	# TODO old ssh-rsa key doesn't work in jenkins convert_private_key
+	# TODO check it is wrong private_key_to_json
 	prepare_json_data
-	# TODO old escape_json
+	escape_json
 	validate_json
 	create_credential_in_jenkins
 
