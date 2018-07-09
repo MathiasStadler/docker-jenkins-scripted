@@ -155,7 +155,7 @@ function prepare_json_data() {
     \"password\": \"\",
     \"privateKeySource\": {
       \"stapler-class\": \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\$DirectEntryPrivateKeySource\",
-	  \"privateKey\": \"${SSH_RSA}\"
+	  \"privateKey\": \"$($HOME_DIR/.ssh/$USER_KEYS_NAME)\"
     },
 \"description\": \"${USER} for control remote host\",
 \"stapler-class\": \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\"
