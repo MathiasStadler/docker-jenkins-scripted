@@ -204,6 +204,13 @@ function prepare_json_data() {
 
 }
 
+function escape_json() {
+
+	# escape JSON DATA
+	JSON_DATA=$(tr -d '\n' | tr -d '[[:blank:]]' ${JSON_DATA})
+
+}
+
 function validate_json() {
 
 	# from here
@@ -264,7 +271,8 @@ else
 	change_owner_of_key_to_user
 	convert_private_key
 	prepare_json_data
-	# validate_json
+	escape_json
+	validate_json
 	create_credential_in_jenkins
 
 fi
