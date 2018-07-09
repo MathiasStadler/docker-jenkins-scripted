@@ -151,6 +151,8 @@ function convert_private_key() {
 
 function prepare_json_data() {
 
+	KEY=$(cat $HOME_DIR/.ssh/$USER_KEYS_NAME)
+
 	# prepare json and check
 	JSON_DATA="{
   \"\": \"0\",
@@ -161,7 +163,7 @@ function prepare_json_data() {
     \"password\": \"\",
     \"privateKeySource\": {
       \"stapler-class\": \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\$DirectEntryPrivateKeySource\",
-	  \"privateKey\": \"$($HOME_DIR/.ssh/$USER_KEYS_NAME)\"
+	  \"privateKey\": \"${KEY}\"
     },
 \"description\": \"${USER} for control remote host\",
 \"stapler-class\": \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\"
