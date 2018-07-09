@@ -157,9 +157,33 @@ function private_key_to_json() {
 
 }
 
+function escape_control_characters() {
+
+	# JSON_PRIVATE_KEY=$(<$HOME_DIR/.ssh/$USER_KEYS_NAME)
+
+	JSON_PRIVATE_KEY="test"
+	# sed -i 's/\x01/\\&/g'
+
+	# Tested using bash version 4.1.5
+	for ((i = 0; i <= 9; i++)); do
+		# your-unix-command-here
+		echo $i
+
+		JSON_PRIVATE_KEY=$(echo ${JSON_PRIVATE_KEY} | sed -i "s/\x0$i/\\&/g")
+	done
+	for ((i = 10; i <= 31; i++)); do
+		# your-unix-command-here
+		echo $i
+
+		JSON_PRIVATE_KEY=$(echo ${JSON_PRIVATE_KEY} | sed -i "s/\x0$i/\\&/g")
+	done
+
+}
+
 function prepare_json_data() {
 
-	KEY=$(cat $HOME_DIR/.ssh/$USER_KEYS_NAME)
+	# KEY=$(cat $HOME_DIR/.ssh/$USER_KEYS_NAME)
+	KEY=${JSON_PRIVATE_KEY}
 
 	# prepare json and check
 	JSON_DATA="{
@@ -301,8 +325,9 @@ else
 	change_owner_of_key_to_user
 	# TODO old ssh-rsa key doesn't work in jenkins convert_private_key
 	# TODO check it is wrong private_key_to_json
+	escape_control_characters
 	prepare_json_data
-	escape_json
+	# TODO old escape_json
 	validate_json
 	create_credential_in_jenkins
 
