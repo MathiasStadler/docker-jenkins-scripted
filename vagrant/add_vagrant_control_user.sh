@@ -217,8 +217,7 @@ function escape_json() {
 	# " already escape in this case
 	# JSON_TOPIC_RAW=${JSON_TOPIC_RAW//\"/\\\"} # "
 	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//   /\\t} # \t (tab)
-	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//
-/\\\n}
+	JSON_TOPIC_RAW=${JSON_TOPIC_RAW///\\\n}
 
 	# \n (newline)
 	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//^M/\\\r} # \r (carriage return)
@@ -227,10 +226,13 @@ function escape_json() {
 	# end
 
 	JSON_DATA=${JSON_TOPIC_RAW}
+	echo "$JSON_DATA" >/tmp/json_escape.data
 
 }
 
 function validate_json() {
+
+	echo "$JSON_DATA" >/tmp/json_validate.data
 
 	# from here
 	# https://stackoverflow.com/questions/46954692/check-if-string-is-a-valid-json-with-jq
