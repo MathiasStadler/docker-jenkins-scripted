@@ -159,9 +159,11 @@ function private_key_to_json() {
 
 function escape_control_characters() {
 
-	# JSON_PRIVATE_KEY=$(<$HOME_DIR/.ssh/$USER_KEYS_NAME)
+	# private key to string
+	JSON_PRIVATE_KEY=$(<$HOME_DIR/.ssh/$USER_KEYS_NAME)
 
-	JSON_PRIVATE_KEY="test"
+	# documentation
+	# replace control characters with sed
 	# sed -i 's/\x01/\\&/g'
 
 	# Tested using bash version 4.1.5
