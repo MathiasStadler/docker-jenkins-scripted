@@ -265,7 +265,7 @@ else
 	change_owner_of_key_to_user
 	convert_private_key
 	prepare_json_data
-	validate_json
+	# validate_json
 	create_credential_in_jenkins
 
 fi
