@@ -169,13 +169,13 @@ function escape_control_characters() {
 		# your-unix-command-here
 		echo $i
 
-		JSON_PRIVATE_KEY=$(echo ${JSON_PRIVATE_KEY} | sed -i "s/\x0$i/\\&/g")
+		JSON_PRIVATE_KEY=$(echo ${JSON_PRIVATE_KEY} | sed "s/\x0$i/\\&/g")
 	done
 	for ((i = 10; i <= 31; i++)); do
 		# your-unix-command-here
 		echo $i
 
-		JSON_PRIVATE_KEY=$(echo ${JSON_PRIVATE_KEY} | sed -i "s/\x0$i/\\&/g")
+		JSON_PRIVATE_KEY=$(echo ${JSON_PRIVATE_KEY} | sed "s/\x0$i/\\&/g")
 	done
 
 }
