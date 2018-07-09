@@ -26,6 +26,7 @@ JENKINS_API_PASSWORD="admin"
 # global script variable
 SSH_RSA=""
 JSON_DATA=""
+JSON_PRIVATE_KEY=""
 
 function clean_old_home_directory() {
 
@@ -149,9 +150,16 @@ function convert_private_key() {
 
 }
 
+function private_key_to_json() {
+
+	# convert key to json
+	JSON_PRIVATE_KEY=$(cat $HOME_DIR/.ssh/$USER_KEYS_NAME | jq -aR .)
+
+}
+
 function prepare_json_data() {
 
-	KEY=$(cat $HOME_DIR/.ssh/$USER_KEYS_NAME)
+	# TODO old KEY=$(cat $HOME_DIR/.ssh/$USER_KEYS_NAME)
 
 	# prepare json and check
 	JSON_DATA="{
@@ -163,7 +171,7 @@ function prepare_json_data() {
     \"password\": \"\",
     \"privateKeySource\": {
       \"stapler-class\": \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\$DirectEntryPrivateKeySource\",
-	  \"privateKey\": \"${KEY}\"
+	  \"privateKey\": \"${JSON_PRIVATE_KEY}\"
     },
 \"description\": \"${USER} for control remote host\",
 \"stapler-class\": \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\"
@@ -216,7 +224,8 @@ function escape_json() {
 	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//\'/\\\'} # ' (not strictly needed ?)
 	# " already escape in this case
 	# JSON_TOPIC_RAW=${JSON_TOPIC_RAW//\"/\\\"} # "
-	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//   /\\t} # \t (tab)
+	# disable:
+	# JSON_TOPIC_RAW=${JSON_TOPIC_RAW//   /\\t} # \t (tab)
 	JSON_TOPIC_RAW=${JSON_TOPIC_RAW///\\\n}
 
 	# \n (newline)
@@ -290,9 +299,10 @@ else
 	validate_key_pair
 	check_private_key_has_passphrase
 	change_owner_of_key_to_user
-	convert_private_key
+	# TODO old convert_private_key
+	private_key_to_json
 	prepare_json_data
-	escape_json
+	# TODO old escape_json
 	validate_json
 	create_credential_in_jenkins
 
