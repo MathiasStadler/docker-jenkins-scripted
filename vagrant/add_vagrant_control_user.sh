@@ -182,6 +182,33 @@ function escape_control_characters() {
 
 }
 
+function escape_json_string() {
+
+	# private key to string
+	JSON_TOPIC_RAW=$(<$HOME_DIR/.ssh/$USER_KEYS_NAME)
+
+	# escape JSON_DATA
+	# from here
+	# https://stackoverflow.com/questions/10053678/escaping-characters-in-bash-for-json
+	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//\\/\\\\} # \
+	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//\//\\\/} # /
+	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//\'/\\\'} # ' (not strictly needed ?)
+	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//\"/\\\"} # "
+	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//   /\\t} # \t (tab)
+	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//
+/\\\n}
+
+	# \n (newline)
+	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//^M/\\\r} # \r (carriage return)
+	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//^L/\\\f} # \f (form feed)
+	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//^H/\\\b} # \b (backspace)
+	# end
+
+	JSON_PRIVATE_KEY=${JSON_TOPIC_RAW}
+	echo "$JSON_PRIVATE_KEY" >/tmp/json_private_key.data
+
+}
+
 function prepare_json_data() {
 
 	# KEY=$(cat $HOME_DIR/.ssh/$USER_KEYS_NAME)
@@ -235,33 +262,6 @@ function prepare_json_data() {
 
 	echo "${JSON_DATA_2}"
 	echo "${JSON_DATA_2}" >/tmp/json2.data
-
-}
-
-function escape_json() {
-
-	JSON_TOPIC_RAW=${JSON_DATA}
-
-	# escape JSON_DATA
-	# from here
-	# https://stackoverflow.com/questions/10053678/escaping-characters-in-bash-for-json
-	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//\\/\\\\} # \
-	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//\//\\\/} # /
-	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//\'/\\\'} # ' (not strictly needed ?)
-	# " already escape in this case
-	# JSON_TOPIC_RAW=${JSON_TOPIC_RAW//\"/\\\"} # "
-	# disable:
-	# JSON_TOPIC_RAW=${JSON_TOPIC_RAW//   /\\t} # \t (tab)
-	JSON_TOPIC_RAW=${JSON_TOPIC_RAW///\\\n}
-
-	# \n (newline)
-	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//^M/\\\r} # \r (carriage return)
-	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//^L/\\\f} # \f (form feed)
-	JSON_TOPIC_RAW=${JSON_TOPIC_RAW//^H/\\\b} # \b (backspace)
-	# end
-
-	JSON_DATA=${JSON_TOPIC_RAW}
-	echo "$JSON_DATA" >/tmp/json_escape.data
 
 }
 
@@ -327,7 +327,8 @@ else
 	change_owner_of_key_to_user
 	# TODO old ssh-rsa key doesn't work in jenkins convert_private_key
 	# TODO check it is wrong private_key_to_json
-	escape_control_characters
+	# escape_control_characters
+	escape_json_string
 	prepare_json_data
 	# TODO old escape_json
 	validate_json
