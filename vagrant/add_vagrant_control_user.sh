@@ -42,7 +42,7 @@ function create_user() {
 }
 
 function set_password() {
-	# TODO avaid password for login
+	# TODO avoid password for login
 	echo "$USER:$PASSWORD" | sudo chpasswd
 }
 
@@ -69,9 +69,9 @@ function validate_key_pair() {
 	# from here
 	# https://serverfault.com/questions/426394/how-to-check-if-a-rsa-public-private-key-pair-matched
 
-	PRIVKEY=$HOME_DIR/.ssh/$USER_KEYS_NAME
-	TESTKEY=$HOME_DIR/.ssh/$USER_KEYS_NAME.pub
-	if (diff <(ssh-keygen -y -e -f "$PRIVKEY") <(ssh-keygen -y -e -f "$TESTKEY")); then
+	PRIVATE_KEY=$HOME_DIR/.ssh/$USER_KEYS_NAME
+	TEST_KEY=$HOME_DIR/.ssh/$USER_KEYS_NAME.pub
+	if (diff <(ssh-keygen -y -e -f "$PRIVATE_KEY") <(ssh-keygen -y -e -f "$TEST_KEY")); then
 
 		echo "key pair match"
 
@@ -99,7 +99,9 @@ function check_private_key_has_passphrase() {
 
 	# Therefor check key begins with MII
 
-	if (cat $HOME_DIR/.ssh/$USER_KEYS_NAME | grep '^MII'); then
+	USER_KEY_PRIVATE=$(<$HOME_DIR/.ssh/$USER_KEYS_NAME)
+
+	if (echo "$USER_KEY_PRIVATE" | grep '^MII'); then
 
 		echo "Key has NO passphrase"
 
@@ -117,7 +119,7 @@ function change_owner_of_key_to_user() {
 	chown $USER $HOME_DIR/.ssh/$USER_KEYS_NAME
 
 	# change group id to user gid
-	chgrp $(id -g $USER) $HOME_DIR/.ssh/$USER_KEYS_NAME
+	chgrp "$(id -g $USER)" $HOME_DIR/.ssh/$USER_KEYS_NAME
 
 	# change file mode bits
 	chmod 0600 $HOME_DIR/.ssh/$USER_KEYS_NAME
@@ -126,7 +128,7 @@ function change_owner_of_key_to_user() {
 	chown $USER $HOME_DIR/.ssh/$USER_KEYS_NAME.pub
 
 	# change group id to user gid
-	chgrp $(id -g $USER) $HOME_DIR/.ssh/$USER_KEYS_NAME.pub
+	chgrp "$(id -g $USER)" $HOME_DIR/.ssh/$USER_KEYS_NAME.pub
 
 	# change file mode bits
 	chmod 0600 $HOME_DIR/.ssh/$USER_KEYS_NAME.pub
@@ -150,13 +152,6 @@ function convert_private_key() {
 
 }
 
-function private_key_to_json() {
-
-	# convert key to json
-	JSON_PRIVATE_KEY=$(cat $HOME_DIR/.ssh/$USER_KEYS_NAME | jq -aR .)
-
-}
-
 function escape_control_characters() {
 
 	# private key to string
@@ -171,13 +166,13 @@ function escape_control_characters() {
 		# your-unix-command-here
 		echo $i
 
-		JSON_PRIVATE_KEY=$(echo ${JSON_PRIVATE_KEY} | sed "s/\x0$i/\\&/g")
+		JSON_PRIVATE_KEY=${JSON_PRIVATE_KEY//\x0$i/\\&/g}
 	done
 	for ((i = 10; i <= 31; i++)); do
 		# your-unix-command-here
 		echo $i
 
-		JSON_PRIVATE_KEY=$(echo ${JSON_PRIVATE_KEY} | sed "s/\x0$i/\\&/g")
+		JSON_PRIVATE_KEY=${JSON_PRIVATE_KEY//\x$i/\\&/g}
 	done
 
 }
@@ -233,36 +228,6 @@ function prepare_json_data() {
 	echo "JSON_DATA=>  $JSON_DATA"
 	echo "$JSON_DATA" >/tmp/json.data
 
-	JSON_DATA_2="{
-          \"name\" : \"testcred\",
-          \"description\" : \"test cred description\",
-          \"json\" : {
-            \"domainCredentials\" : {
-              \"domain\" : {
-                \"name\" : \"\",
-                \"description\" : \"\"
-              },
-              \"credentials\" : {
-                \"scope\" : \"GLOBAL\",
-                \"id\" : \"\",
-                \"username\" : \"root\",
-                \"description\" : \"root users credential\",
-                \"privateKeySource\" : {
-                  \"value\" : \"0\",
-                  \"privateKey\" : \"blah blah blah\",
-                  \"stapler-class\" : \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\$DirectEntryPrivateKeySource\"
-                },
-                \"passphrase\" : \"\",
-                \"stapler-class\" : \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\",
-                \"kind\" : \"com.cloudbees.jenkins.plugins.sshcredentials.impl.BasicSSHUserPrivateKey\"
-              }
-            }
-          }
-        }"
-
-	echo "${JSON_DATA_2}"
-	echo "${JSON_DATA_2}" >/tmp/json2.data
-
 }
 
 function validate_json() {
@@ -279,13 +244,6 @@ function validate_json() {
 		exit 0
 	fi
 
-	if (echo "$JSON_DATA_2" | jq -e .); then
-		echo "JSON_DATA_2 data OK"
-	else
-		echo "JSON_DATA_2 data wrong see messages please"
-		exit 0
-	fi
-
 }
 
 function create_credential_in_jenkins() {
@@ -298,14 +256,9 @@ function create_credential_in_jenkins() {
 	# @TODO copy private key to JENKINS-Master Virtualbox
 	curl -X POST -u $JENKINS_API_USER:$JENKINS_API_PASSWORD $JENKINS_URL/credentials/store/system/domain/_/createCredentials --data-urlencode "json=${JSON_DATA}"
 
-	# QUESTION Waht is => credentials/store/system/domain/_/newCredentials
+	# QUESTION What is => credentials/store/system/domain/_/newCredentials
 
-	# /credentials/configSumbit
-	# from here
-	# https://github.com/arangamani/jenkins_api_client/issues/162
-	# curl -X POST -u $JENKINS_API_USER:$JENKINS_API_PASSWORD $JENKINS_URL/credentials/store/system/domain/_/createCredentials --data-urlencode "json=${JSON_DATA_2}"
-
-	# HINT for RSA key
+	# HINT for RSA key last entry
 	# https://github.com/arangamani/jenkins_api_client/issues/162
 }
 
@@ -325,12 +278,9 @@ else
 	validate_key_pair
 	check_private_key_has_passphrase
 	change_owner_of_key_to_user
-	# TODO old ssh-rsa key doesn't work in jenkins convert_private_key
-	# TODO check it is wrong private_key_to_json
-	# escape_control_characters
+	escape_control_characters
 	escape_json_string
 	prepare_json_data
-	# TODO old escape_json
 	validate_json
 	create_credential_in_jenkins
 
