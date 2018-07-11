@@ -1,0 +1,16 @@
+{
+  "_class": "com.cloudbees.jenkins.plugins.sshcredentials.SSHUserListBoxModel",
+  "values": [
+    { "name": "- none -", "selected": false, "value": "" },
+    {
+      "name": "test suser (test_user)",
+      "selected": false,
+      "value": "x_test_user"
+    },
+    {
+      "name": "vagrant_control (vagrant_control for control remote host)",
+      "selected": false,
+      "value": "ID_vagrant_control"
+    }
+  ]
+}

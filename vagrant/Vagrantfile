@@ -45,7 +45,7 @@ VAGRANTFILE_API_VERSION = "2"
 ENV["LC_ALL"] = "en_US.UTF-8"
 
 # from here https://github.com/popstas/ansible-server/blob/master/Vagrantfile
-$VM_NAME = ENV.has_key?('VM_NAME') ? ENV['VM_NAME'] : VM_NAME
+VM_NAME = ENV.has_key?('VM_NAME') ? ENV['VM_NAME'] : VM_NAME
 
 # provide the Virtualbox host version to file
 system("
