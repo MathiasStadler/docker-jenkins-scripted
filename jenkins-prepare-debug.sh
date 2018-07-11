@@ -33,7 +33,7 @@ function checkout_jenkins_repo() {
 
 function switch_version() {
 
-	cd "${PLAY_GROUND}"/jenkins || exit 1
+	cd "$HOME/${PLAY_GROUND}/jenkins" || exit 1
 	git checkout tags/${JENKINS_TAG_VERSION}
 
 }
@@ -45,6 +45,7 @@ function build_minimal_jenkins() {
 
 }
 
+check_maven_installed
 create_playground
 checkout_jenkins_repo
 switch_version
