@@ -7,7 +7,7 @@
 ## install tar.gz from apache-mirror
 
 ```bash
-MAVEN_INSTALL_SCRIPT="maven-install-debian.sh"
+INSTALL_MAVEN_SCRIPT="install-maven-debian.sh"
 cat <<EOF >"${MAVEN_INSTALL_SCRIPT}"
 #!/bin/bash
 # Exit immediately if a command returns a non-zero status
@@ -24,5 +24,5 @@ echo "export M2_HOME=/usr/local/apache-maven" | sudo tee -a \${PROFILE_D_FILE} >
 echo "export MAVEN_HOME=/usr/local/apache-maven" | sudo tee -a \${PROFILE_D_FILE} >/dev/null
 echo "export PATH=${M2_HOME}/bin:\${PATH}" | sudo tee -a \${PROFILE_D_FILE} >/dev/null
 EOF
-chmod +x "${MAVEN_INSTALL_SCRIPT}"
+chmod +x "${INSTALL_MAVEN_SCRIPT}"
 ```
