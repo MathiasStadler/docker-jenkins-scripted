@@ -202,8 +202,11 @@ Vagrant.require_version ">= #{VAGRANT_VERSION}"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 # network
     # What box should we base this build on?
+    # from here
+    # https://stackoverflow.com/questions/17845637/how-to-change-vagrant-default-machine-name
     config.vm.box = VAGRANT_BOX_NAME
     config.vm.hostname = VM_NAME
+    config.vm.define VM_NAME
     cache_dir = local_cache(config.vm.box)
 
     # disable vgguest plugin to start before cache dir is mounted
@@ -321,10 +324,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.provision "list-files", type: "local_shell", command: "ls >/tmp/test_out.out"
 
 
-
+    # Not work for multi instances
     # Set the name of the VM. See: http://stackoverflow.com/a/17864388/100134
-    config.vm.define :VM_NAME do |vm_define|
-    end
+    # config.vm.define :VM_NAME do |vm_define|
+    # end
 
     # # Ansible provisioner.
     # config.vm.provision "ansible" do |ansible|
