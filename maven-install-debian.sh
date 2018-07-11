@@ -1,4 +1,6 @@
 #!/bin/bash
+# Exit immediately if a command returns a non-zero status
+set -e
 # PLEASE CHANGE/FIX anythings in  maven-install-debian.md thanks
 MAVEN_FILE="apache-maven-3.5.4-bin.tar.gz"
 PROFILE_D_FILE="/etc/profile.d/apache-maven.sh"
