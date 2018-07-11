@@ -1,4 +1,4 @@
-# install jekins src as eclipse project
+# install jenkins src as eclipse project
 
 ## install eclipse
 
@@ -17,7 +17,7 @@ cd ~/playground
 git clone https://github.com/jenkinsci/jenkins.git
 ```
 
-## switsch to and other current version
+## switch to and other current version
 
 ```bash
 # be sure you have all tags local
@@ -49,11 +49,28 @@ mvn -Plight-test install
 mvn -DdownloadSources=true eclipse:eclipse
 ```
 
+## compile jenkins
+
+```bash
+mvn clean install -pl war -am -DskipTests
+```
+
+## run jenkins
+
+- [from here](https://wiki.jenkins.io/display/JENKINS/Starting+and+Accessing+Jenkins)
+
+```bash
+cd ./war/target
+java -jar jenkins.war
+```
+
 ## Debugging Jenkins
 
 ```bash
 cd war
 mvnDebug jenkins-dev:run
+# or
+mvn clean hpi:run
 ```
 
 ## old staff

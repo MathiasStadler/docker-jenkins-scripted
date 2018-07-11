@@ -1,6 +1,12 @@
 {
     "cSpell.words": [
         "CIDR",
+        "Ddownload",
+        "Declipse",
+        "Doutput",
+        "Dskip",
+        "Dstapler",
+        "Javadocs",
         "NETMASK",
         "Sumbit",
         "VBOX",
@@ -11,6 +17,7 @@
         "chmod",
         "chown",
         "chpasswd",
+        "classpath",
         "clazz",
         "cloudbees",
         "dkms",
@@ -23,6 +30,7 @@
         "hxselect",
         "inet",
         "islocked",
+        "jvnet",
         "keygen",
         "libffi",
         "libssl",
