@@ -4,9 +4,9 @@
 
 ## enable stapler tracing
 
-- [from here](http://stapler.kohsuke.org/apidocs/org/kohsuke/stapler/Dispatcher.html) see last commert
+- [from here](http://stapler.kohsuke.org/apidocs/org/kohsuke/stapler/Dispatcher.html) see last comment
 
-## enable on Dibian
+## enable on Debian
 
 - append to /etc/defaults/jenkins
 
