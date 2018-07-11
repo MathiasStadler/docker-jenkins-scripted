@@ -8,7 +8,7 @@
 
 ```bash
 INSTALL_MAVEN_SCRIPT="install-maven-debian.sh"
-cat <<EOF >"${MAVEN_INSTALL_SCRIPT}"
+cat <<EOF >"${INSTALL_MAVEN_SCRIPT}"
 #!/bin/bash
 # Exit immediately if a command returns a non-zero status
 set -e
