@@ -8,12 +8,12 @@
 
 ```bash
 INSTALL_MAVEN_SCRIPT="install-maven-debian.sh"
-cat <<EOF >'"${INSTALL_MAVEN_SCRIPT}"'
+COMMENT="shellcheck disable=SC1090,SC1091"
+cat <<EOF >"${INSTALL_MAVEN_SCRIPT}"
 #!/bin/bash
 # Exit immediately if a command returns a non-zero status
 set -e
 # PLEASE CHANGE/FIX anythings in  maven-install-debian.md thanks
-COMMENT="shellcheck disable=SC1090,SC1091"
 MAVEN_INSTALL_DIR="/opt/apache-maven-3.5.4"
 MAVEN_LINK_DIR="/usr/local/apache-maven"
 MAVEN_FILE="apache-maven-3.5.4-bin.tar.gz"
