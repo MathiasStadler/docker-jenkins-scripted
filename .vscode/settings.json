@@ -55,6 +55,7 @@
         "sbin",
         "selfgz",
         "setuptools",
+        "shellcheck",
         "showvminfo",
         "sshcredentials",
         "trapapa",

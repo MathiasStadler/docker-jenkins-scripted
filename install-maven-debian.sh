@@ -9,7 +9,10 @@ curl http://www-eu.apache.org/dist/maven/maven-3/3.5.4/binaries/${MAVEN_FILE} -o
 sudo tar -xzf /tmp/${MAVEN_FILE} -C /opt
 sudo rm -rf apache-maven
 sudo ln -f -s ${MAVEN_FILE} apache-maven
-echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64" | sudo tee -a ${PROFILE_D_FILE} >/dev/null
+echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64" | sudo tee ${PROFILE_D_FILE} >/dev/null
 echo "export M2_HOME=/usr/local/apache-maven" | sudo tee -a ${PROFILE_D_FILE} >/dev/null
 echo "export MAVEN_HOME=/usr/local/apache-maven" | sudo tee -a ${PROFILE_D_FILE} >/dev/null
-echo "export PATH=/bin:${PATH}" | sudo tee -a ${PROFILE_D_FILE} >/dev/null
+echo "export PATH=${M2_HOME}/bin:${PATH}" | sudo tee -a ${PROFILE_D_FILE} >/dev/null
+# shellcheck disable=SC1090,SC1091
+. "${PROFILE_D_FILE}"
+mvn --version
