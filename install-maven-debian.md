@@ -4,7 +4,13 @@
 
 ## **ATTENTION** The default / standard package was to old
 
-## install tar.gz from apache-mirror
+## **ATTENTION** running the follow script from a bash terminal APPLE terminal base on **BSD** derivate
+
+```bash
+/bin/bash
+```
+
+## install tar.gz from apache-mirror fau.de
 
 ```bash
 INSTALL_MAVEN_SCRIPT="install-maven-debian.sh"
@@ -31,5 +37,5 @@ echo "export PATH=\${MAVEN_LINK_DIR}/bin:\${PATH}" | sudo tee -a \${PROFILE_D_FI
 . "\${PROFILE_D_FILE}"
 mvn --version
 EOF
-chmod +x "\${INSTALL_MAVEN_SCRIPT}"
+chmod +x "${INSTALL_MAVEN_SCRIPT}"
 ```
