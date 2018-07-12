@@ -17,7 +17,7 @@ function check_maven_installed() {
 function create_playground() {
 
 	cd "$HOME" || exit 1
-	mkdir "${PLAY_GROUND}"
+	mkdir -p "${PLAY_GROUND}"
 	cd "${PLAY_GROUND}" || exit 1
 
 }
